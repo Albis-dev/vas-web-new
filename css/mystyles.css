@@ -7139,7 +7139,5 @@ label.panel-block {
 a {
   color: inherit; }
 
-a[class="pop"]:after {
-  font-family: 'FontAwesome';
-  content: " \f08e";
-  font-size: medium; }
+.fa-external-link-alt {
+  font-size: 0.5em; }
