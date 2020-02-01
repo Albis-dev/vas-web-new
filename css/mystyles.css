@@ -7122,7 +7122,8 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 .hero-home {
-  background-image: url("../image/i1.jpg"); }
+  background-image: url("../image/i1.jpg");
+  background-size: cover; }
 
 .navbar-item-section {
   margin-left: 2rem; }
