@@ -4065,10 +4065,10 @@ a.list-item {
   .navbar.is-white {
     background-color: white;
     color: #0a0a0a; }
-    .navbar.is-white .navbar-brand > .navbar-item, .navbar.is-white .navbar-brand > .navbar-item-logo, .navbar.is-white .navbar-brand > .navbar-item-section,
+    .navbar.is-white .navbar-brand > .navbar-item, .navbar.is-white .navbar-brand > .navbar-item-logo, .navbar.is-white .navbar-brand > .navbar-item-footer, .navbar.is-white .navbar-brand > .navbar-item-section,
     .navbar.is-white .navbar-brand .navbar-link {
       color: #0a0a0a; }
-    .navbar.is-white .navbar-brand > a.navbar-item:focus, .navbar.is-white .navbar-brand > a.navbar-item-logo:focus, .navbar.is-white .navbar-brand > a.navbar-item-section:focus, .navbar.is-white .navbar-brand > a.navbar-item:hover, .navbar.is-white .navbar-brand > a.navbar-item-logo:hover, .navbar.is-white .navbar-brand > a.navbar-item-section:hover, .navbar.is-white .navbar-brand > a.navbar-item.is-active, .navbar.is-white .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-white .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-white .navbar-brand > a.navbar-item:focus, .navbar.is-white .navbar-brand > a.navbar-item-logo:focus, .navbar.is-white .navbar-brand > a.navbar-item-footer:focus, .navbar.is-white .navbar-brand > a.navbar-item-section:focus, .navbar.is-white .navbar-brand > a.navbar-item:hover, .navbar.is-white .navbar-brand > a.navbar-item-logo:hover, .navbar.is-white .navbar-brand > a.navbar-item-footer:hover, .navbar.is-white .navbar-brand > a.navbar-item-section:hover, .navbar.is-white .navbar-brand > a.navbar-item.is-active, .navbar.is-white .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-white .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-white .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-white .navbar-brand .navbar-link:focus,
     .navbar.is-white .navbar-brand .navbar-link:hover,
     .navbar.is-white .navbar-brand .navbar-link.is-active {
@@ -4079,25 +4079,29 @@ a.list-item {
     .navbar.is-white .navbar-burger {
       color: #0a0a0a; }
     @media screen and (min-width: 1024px) {
-      .navbar.is-white .navbar-start > .navbar-item, .navbar.is-white .navbar-start > .navbar-item-logo, .navbar.is-white .navbar-start > .navbar-item-section,
+      .navbar.is-white .navbar-start > .navbar-item, .navbar.is-white .navbar-start > .navbar-item-logo, .navbar.is-white .navbar-start > .navbar-item-footer, .navbar.is-white .navbar-start > .navbar-item-section,
       .navbar.is-white .navbar-start .navbar-link,
       .navbar.is-white .navbar-end > .navbar-item,
       .navbar.is-white .navbar-end > .navbar-item-logo,
+      .navbar.is-white .navbar-end > .navbar-item-footer,
       .navbar.is-white .navbar-end > .navbar-item-section,
       .navbar.is-white .navbar-end .navbar-link {
         color: #0a0a0a; }
-      .navbar.is-white .navbar-start > a.navbar-item:focus, .navbar.is-white .navbar-start > a.navbar-item-logo:focus, .navbar.is-white .navbar-start > a.navbar-item-section:focus, .navbar.is-white .navbar-start > a.navbar-item:hover, .navbar.is-white .navbar-start > a.navbar-item-logo:hover, .navbar.is-white .navbar-start > a.navbar-item-section:hover, .navbar.is-white .navbar-start > a.navbar-item.is-active, .navbar.is-white .navbar-start > a.is-active.navbar-item-logo, .navbar.is-white .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-white .navbar-start > a.navbar-item:focus, .navbar.is-white .navbar-start > a.navbar-item-logo:focus, .navbar.is-white .navbar-start > a.navbar-item-footer:focus, .navbar.is-white .navbar-start > a.navbar-item-section:focus, .navbar.is-white .navbar-start > a.navbar-item:hover, .navbar.is-white .navbar-start > a.navbar-item-logo:hover, .navbar.is-white .navbar-start > a.navbar-item-footer:hover, .navbar.is-white .navbar-start > a.navbar-item-section:hover, .navbar.is-white .navbar-start > a.navbar-item.is-active, .navbar.is-white .navbar-start > a.is-active.navbar-item-logo, .navbar.is-white .navbar-start > a.is-active.navbar-item-footer, .navbar.is-white .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-white .navbar-start .navbar-link:focus,
       .navbar.is-white .navbar-start .navbar-link:hover,
       .navbar.is-white .navbar-start .navbar-link.is-active,
       .navbar.is-white .navbar-end > a.navbar-item:focus,
       .navbar.is-white .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-white .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-white .navbar-end > a.navbar-item-section:focus,
       .navbar.is-white .navbar-end > a.navbar-item:hover,
       .navbar.is-white .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-white .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-white .navbar-end > a.navbar-item-section:hover,
       .navbar.is-white .navbar-end > a.navbar-item.is-active,
       .navbar.is-white .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-white .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-white .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-white .navbar-end .navbar-link:focus,
       .navbar.is-white .navbar-end .navbar-link:hover,
@@ -4107,25 +4111,27 @@ a.list-item {
       .navbar.is-white .navbar-start .navbar-link::after,
       .navbar.is-white .navbar-end .navbar-link::after {
         border-color: #0a0a0a; }
-      .navbar.is-white .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-white .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-white .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-white .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-white .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-white .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-white .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-white .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-white .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-white .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-white .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-white .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-white .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-white .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-white .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: #f2f2f2;
         color: #0a0a0a; }
-      .navbar.is-white .navbar-dropdown a.navbar-item.is-active, .navbar.is-white .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-white .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-white .navbar-dropdown a.navbar-item.is-active, .navbar.is-white .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-white .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-white .navbar-dropdown a.is-active.navbar-item-section {
         background-color: white;
         color: #0a0a0a; } }
   .navbar.is-black {
     background-color: #0a0a0a;
     color: white; }
-    .navbar.is-black .navbar-brand > .navbar-item, .navbar.is-black .navbar-brand > .navbar-item-logo, .navbar.is-black .navbar-brand > .navbar-item-section,
+    .navbar.is-black .navbar-brand > .navbar-item, .navbar.is-black .navbar-brand > .navbar-item-logo, .navbar.is-black .navbar-brand > .navbar-item-footer, .navbar.is-black .navbar-brand > .navbar-item-section,
     .navbar.is-black .navbar-brand .navbar-link {
       color: white; }
-    .navbar.is-black .navbar-brand > a.navbar-item:focus, .navbar.is-black .navbar-brand > a.navbar-item-logo:focus, .navbar.is-black .navbar-brand > a.navbar-item-section:focus, .navbar.is-black .navbar-brand > a.navbar-item:hover, .navbar.is-black .navbar-brand > a.navbar-item-logo:hover, .navbar.is-black .navbar-brand > a.navbar-item-section:hover, .navbar.is-black .navbar-brand > a.navbar-item.is-active, .navbar.is-black .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-black .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-black .navbar-brand > a.navbar-item:focus, .navbar.is-black .navbar-brand > a.navbar-item-logo:focus, .navbar.is-black .navbar-brand > a.navbar-item-footer:focus, .navbar.is-black .navbar-brand > a.navbar-item-section:focus, .navbar.is-black .navbar-brand > a.navbar-item:hover, .navbar.is-black .navbar-brand > a.navbar-item-logo:hover, .navbar.is-black .navbar-brand > a.navbar-item-footer:hover, .navbar.is-black .navbar-brand > a.navbar-item-section:hover, .navbar.is-black .navbar-brand > a.navbar-item.is-active, .navbar.is-black .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-black .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-black .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-black .navbar-brand .navbar-link:focus,
     .navbar.is-black .navbar-brand .navbar-link:hover,
     .navbar.is-black .navbar-brand .navbar-link.is-active {
@@ -4136,25 +4142,29 @@ a.list-item {
     .navbar.is-black .navbar-burger {
       color: white; }
     @media screen and (min-width: 1024px) {
-      .navbar.is-black .navbar-start > .navbar-item, .navbar.is-black .navbar-start > .navbar-item-logo, .navbar.is-black .navbar-start > .navbar-item-section,
+      .navbar.is-black .navbar-start > .navbar-item, .navbar.is-black .navbar-start > .navbar-item-logo, .navbar.is-black .navbar-start > .navbar-item-footer, .navbar.is-black .navbar-start > .navbar-item-section,
       .navbar.is-black .navbar-start .navbar-link,
       .navbar.is-black .navbar-end > .navbar-item,
       .navbar.is-black .navbar-end > .navbar-item-logo,
+      .navbar.is-black .navbar-end > .navbar-item-footer,
       .navbar.is-black .navbar-end > .navbar-item-section,
       .navbar.is-black .navbar-end .navbar-link {
         color: white; }
-      .navbar.is-black .navbar-start > a.navbar-item:focus, .navbar.is-black .navbar-start > a.navbar-item-logo:focus, .navbar.is-black .navbar-start > a.navbar-item-section:focus, .navbar.is-black .navbar-start > a.navbar-item:hover, .navbar.is-black .navbar-start > a.navbar-item-logo:hover, .navbar.is-black .navbar-start > a.navbar-item-section:hover, .navbar.is-black .navbar-start > a.navbar-item.is-active, .navbar.is-black .navbar-start > a.is-active.navbar-item-logo, .navbar.is-black .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-black .navbar-start > a.navbar-item:focus, .navbar.is-black .navbar-start > a.navbar-item-logo:focus, .navbar.is-black .navbar-start > a.navbar-item-footer:focus, .navbar.is-black .navbar-start > a.navbar-item-section:focus, .navbar.is-black .navbar-start > a.navbar-item:hover, .navbar.is-black .navbar-start > a.navbar-item-logo:hover, .navbar.is-black .navbar-start > a.navbar-item-footer:hover, .navbar.is-black .navbar-start > a.navbar-item-section:hover, .navbar.is-black .navbar-start > a.navbar-item.is-active, .navbar.is-black .navbar-start > a.is-active.navbar-item-logo, .navbar.is-black .navbar-start > a.is-active.navbar-item-footer, .navbar.is-black .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-black .navbar-start .navbar-link:focus,
       .navbar.is-black .navbar-start .navbar-link:hover,
       .navbar.is-black .navbar-start .navbar-link.is-active,
       .navbar.is-black .navbar-end > a.navbar-item:focus,
       .navbar.is-black .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-black .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-black .navbar-end > a.navbar-item-section:focus,
       .navbar.is-black .navbar-end > a.navbar-item:hover,
       .navbar.is-black .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-black .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-black .navbar-end > a.navbar-item-section:hover,
       .navbar.is-black .navbar-end > a.navbar-item.is-active,
       .navbar.is-black .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-black .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-black .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-black .navbar-end .navbar-link:focus,
       .navbar.is-black .navbar-end .navbar-link:hover,
@@ -4164,25 +4174,27 @@ a.list-item {
       .navbar.is-black .navbar-start .navbar-link::after,
       .navbar.is-black .navbar-end .navbar-link::after {
         border-color: white; }
-      .navbar.is-black .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-black .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-black .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-black .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-black .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-black .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-black .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-black .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-black .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-black .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-black .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-black .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-black .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-black .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-black .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: black;
         color: white; }
-      .navbar.is-black .navbar-dropdown a.navbar-item.is-active, .navbar.is-black .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-black .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-black .navbar-dropdown a.navbar-item.is-active, .navbar.is-black .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-black .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-black .navbar-dropdown a.is-active.navbar-item-section {
         background-color: #0a0a0a;
         color: white; } }
   .navbar.is-light {
     background-color: whitesmoke;
     color: rgba(0, 0, 0, 0.7); }
-    .navbar.is-light .navbar-brand > .navbar-item, .navbar.is-light .navbar-brand > .navbar-item-logo, .navbar.is-light .navbar-brand > .navbar-item-section,
+    .navbar.is-light .navbar-brand > .navbar-item, .navbar.is-light .navbar-brand > .navbar-item-logo, .navbar.is-light .navbar-brand > .navbar-item-footer, .navbar.is-light .navbar-brand > .navbar-item-section,
     .navbar.is-light .navbar-brand .navbar-link {
       color: rgba(0, 0, 0, 0.7); }
-    .navbar.is-light .navbar-brand > a.navbar-item:focus, .navbar.is-light .navbar-brand > a.navbar-item-logo:focus, .navbar.is-light .navbar-brand > a.navbar-item-section:focus, .navbar.is-light .navbar-brand > a.navbar-item:hover, .navbar.is-light .navbar-brand > a.navbar-item-logo:hover, .navbar.is-light .navbar-brand > a.navbar-item-section:hover, .navbar.is-light .navbar-brand > a.navbar-item.is-active, .navbar.is-light .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-light .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-light .navbar-brand > a.navbar-item:focus, .navbar.is-light .navbar-brand > a.navbar-item-logo:focus, .navbar.is-light .navbar-brand > a.navbar-item-footer:focus, .navbar.is-light .navbar-brand > a.navbar-item-section:focus, .navbar.is-light .navbar-brand > a.navbar-item:hover, .navbar.is-light .navbar-brand > a.navbar-item-logo:hover, .navbar.is-light .navbar-brand > a.navbar-item-footer:hover, .navbar.is-light .navbar-brand > a.navbar-item-section:hover, .navbar.is-light .navbar-brand > a.navbar-item.is-active, .navbar.is-light .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-light .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-light .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-light .navbar-brand .navbar-link:focus,
     .navbar.is-light .navbar-brand .navbar-link:hover,
     .navbar.is-light .navbar-brand .navbar-link.is-active {
@@ -4193,25 +4205,29 @@ a.list-item {
     .navbar.is-light .navbar-burger {
       color: rgba(0, 0, 0, 0.7); }
     @media screen and (min-width: 1024px) {
-      .navbar.is-light .navbar-start > .navbar-item, .navbar.is-light .navbar-start > .navbar-item-logo, .navbar.is-light .navbar-start > .navbar-item-section,
+      .navbar.is-light .navbar-start > .navbar-item, .navbar.is-light .navbar-start > .navbar-item-logo, .navbar.is-light .navbar-start > .navbar-item-footer, .navbar.is-light .navbar-start > .navbar-item-section,
       .navbar.is-light .navbar-start .navbar-link,
       .navbar.is-light .navbar-end > .navbar-item,
       .navbar.is-light .navbar-end > .navbar-item-logo,
+      .navbar.is-light .navbar-end > .navbar-item-footer,
       .navbar.is-light .navbar-end > .navbar-item-section,
       .navbar.is-light .navbar-end .navbar-link {
         color: rgba(0, 0, 0, 0.7); }
-      .navbar.is-light .navbar-start > a.navbar-item:focus, .navbar.is-light .navbar-start > a.navbar-item-logo:focus, .navbar.is-light .navbar-start > a.navbar-item-section:focus, .navbar.is-light .navbar-start > a.navbar-item:hover, .navbar.is-light .navbar-start > a.navbar-item-logo:hover, .navbar.is-light .navbar-start > a.navbar-item-section:hover, .navbar.is-light .navbar-start > a.navbar-item.is-active, .navbar.is-light .navbar-start > a.is-active.navbar-item-logo, .navbar.is-light .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-light .navbar-start > a.navbar-item:focus, .navbar.is-light .navbar-start > a.navbar-item-logo:focus, .navbar.is-light .navbar-start > a.navbar-item-footer:focus, .navbar.is-light .navbar-start > a.navbar-item-section:focus, .navbar.is-light .navbar-start > a.navbar-item:hover, .navbar.is-light .navbar-start > a.navbar-item-logo:hover, .navbar.is-light .navbar-start > a.navbar-item-footer:hover, .navbar.is-light .navbar-start > a.navbar-item-section:hover, .navbar.is-light .navbar-start > a.navbar-item.is-active, .navbar.is-light .navbar-start > a.is-active.navbar-item-logo, .navbar.is-light .navbar-start > a.is-active.navbar-item-footer, .navbar.is-light .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-light .navbar-start .navbar-link:focus,
       .navbar.is-light .navbar-start .navbar-link:hover,
       .navbar.is-light .navbar-start .navbar-link.is-active,
       .navbar.is-light .navbar-end > a.navbar-item:focus,
       .navbar.is-light .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-light .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-light .navbar-end > a.navbar-item-section:focus,
       .navbar.is-light .navbar-end > a.navbar-item:hover,
       .navbar.is-light .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-light .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-light .navbar-end > a.navbar-item-section:hover,
       .navbar.is-light .navbar-end > a.navbar-item.is-active,
       .navbar.is-light .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-light .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-light .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-light .navbar-end .navbar-link:focus,
       .navbar.is-light .navbar-end .navbar-link:hover,
@@ -4221,25 +4237,27 @@ a.list-item {
       .navbar.is-light .navbar-start .navbar-link::after,
       .navbar.is-light .navbar-end .navbar-link::after {
         border-color: rgba(0, 0, 0, 0.7); }
-      .navbar.is-light .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-light .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-light .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-light .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-light .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-light .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-light .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-light .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-light .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-light .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-light .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-light .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-light .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-light .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-light .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: #e8e8e8;
         color: rgba(0, 0, 0, 0.7); }
-      .navbar.is-light .navbar-dropdown a.navbar-item.is-active, .navbar.is-light .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-light .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-light .navbar-dropdown a.navbar-item.is-active, .navbar.is-light .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-light .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-light .navbar-dropdown a.is-active.navbar-item-section {
         background-color: whitesmoke;
         color: rgba(0, 0, 0, 0.7); } }
   .navbar.is-dark {
     background-color: #363636;
     color: #fff; }
-    .navbar.is-dark .navbar-brand > .navbar-item, .navbar.is-dark .navbar-brand > .navbar-item-logo, .navbar.is-dark .navbar-brand > .navbar-item-section,
+    .navbar.is-dark .navbar-brand > .navbar-item, .navbar.is-dark .navbar-brand > .navbar-item-logo, .navbar.is-dark .navbar-brand > .navbar-item-footer, .navbar.is-dark .navbar-brand > .navbar-item-section,
     .navbar.is-dark .navbar-brand .navbar-link {
       color: #fff; }
-    .navbar.is-dark .navbar-brand > a.navbar-item:focus, .navbar.is-dark .navbar-brand > a.navbar-item-logo:focus, .navbar.is-dark .navbar-brand > a.navbar-item-section:focus, .navbar.is-dark .navbar-brand > a.navbar-item:hover, .navbar.is-dark .navbar-brand > a.navbar-item-logo:hover, .navbar.is-dark .navbar-brand > a.navbar-item-section:hover, .navbar.is-dark .navbar-brand > a.navbar-item.is-active, .navbar.is-dark .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-dark .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-dark .navbar-brand > a.navbar-item:focus, .navbar.is-dark .navbar-brand > a.navbar-item-logo:focus, .navbar.is-dark .navbar-brand > a.navbar-item-footer:focus, .navbar.is-dark .navbar-brand > a.navbar-item-section:focus, .navbar.is-dark .navbar-brand > a.navbar-item:hover, .navbar.is-dark .navbar-brand > a.navbar-item-logo:hover, .navbar.is-dark .navbar-brand > a.navbar-item-footer:hover, .navbar.is-dark .navbar-brand > a.navbar-item-section:hover, .navbar.is-dark .navbar-brand > a.navbar-item.is-active, .navbar.is-dark .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-dark .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-dark .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-dark .navbar-brand .navbar-link:focus,
     .navbar.is-dark .navbar-brand .navbar-link:hover,
     .navbar.is-dark .navbar-brand .navbar-link.is-active {
@@ -4250,25 +4268,29 @@ a.list-item {
     .navbar.is-dark .navbar-burger {
       color: #fff; }
     @media screen and (min-width: 1024px) {
-      .navbar.is-dark .navbar-start > .navbar-item, .navbar.is-dark .navbar-start > .navbar-item-logo, .navbar.is-dark .navbar-start > .navbar-item-section,
+      .navbar.is-dark .navbar-start > .navbar-item, .navbar.is-dark .navbar-start > .navbar-item-logo, .navbar.is-dark .navbar-start > .navbar-item-footer, .navbar.is-dark .navbar-start > .navbar-item-section,
       .navbar.is-dark .navbar-start .navbar-link,
       .navbar.is-dark .navbar-end > .navbar-item,
       .navbar.is-dark .navbar-end > .navbar-item-logo,
+      .navbar.is-dark .navbar-end > .navbar-item-footer,
       .navbar.is-dark .navbar-end > .navbar-item-section,
       .navbar.is-dark .navbar-end .navbar-link {
         color: #fff; }
-      .navbar.is-dark .navbar-start > a.navbar-item:focus, .navbar.is-dark .navbar-start > a.navbar-item-logo:focus, .navbar.is-dark .navbar-start > a.navbar-item-section:focus, .navbar.is-dark .navbar-start > a.navbar-item:hover, .navbar.is-dark .navbar-start > a.navbar-item-logo:hover, .navbar.is-dark .navbar-start > a.navbar-item-section:hover, .navbar.is-dark .navbar-start > a.navbar-item.is-active, .navbar.is-dark .navbar-start > a.is-active.navbar-item-logo, .navbar.is-dark .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-dark .navbar-start > a.navbar-item:focus, .navbar.is-dark .navbar-start > a.navbar-item-logo:focus, .navbar.is-dark .navbar-start > a.navbar-item-footer:focus, .navbar.is-dark .navbar-start > a.navbar-item-section:focus, .navbar.is-dark .navbar-start > a.navbar-item:hover, .navbar.is-dark .navbar-start > a.navbar-item-logo:hover, .navbar.is-dark .navbar-start > a.navbar-item-footer:hover, .navbar.is-dark .navbar-start > a.navbar-item-section:hover, .navbar.is-dark .navbar-start > a.navbar-item.is-active, .navbar.is-dark .navbar-start > a.is-active.navbar-item-logo, .navbar.is-dark .navbar-start > a.is-active.navbar-item-footer, .navbar.is-dark .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-dark .navbar-start .navbar-link:focus,
       .navbar.is-dark .navbar-start .navbar-link:hover,
       .navbar.is-dark .navbar-start .navbar-link.is-active,
       .navbar.is-dark .navbar-end > a.navbar-item:focus,
       .navbar.is-dark .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-dark .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-dark .navbar-end > a.navbar-item-section:focus,
       .navbar.is-dark .navbar-end > a.navbar-item:hover,
       .navbar.is-dark .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-dark .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-dark .navbar-end > a.navbar-item-section:hover,
       .navbar.is-dark .navbar-end > a.navbar-item.is-active,
       .navbar.is-dark .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-dark .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-dark .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-dark .navbar-end .navbar-link:focus,
       .navbar.is-dark .navbar-end .navbar-link:hover,
@@ -4278,25 +4300,27 @@ a.list-item {
       .navbar.is-dark .navbar-start .navbar-link::after,
       .navbar.is-dark .navbar-end .navbar-link::after {
         border-color: #fff; }
-      .navbar.is-dark .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-dark .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-dark .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-dark .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-dark .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-dark .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-dark .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-dark .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-dark .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-dark .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-dark .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-dark .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-dark .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-dark .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: #292929;
         color: #fff; }
-      .navbar.is-dark .navbar-dropdown a.navbar-item.is-active, .navbar.is-dark .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-dark .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-dark .navbar-dropdown a.navbar-item.is-active, .navbar.is-dark .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-dark .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-dark .navbar-dropdown a.is-active.navbar-item-section {
         background-color: #363636;
         color: #fff; } }
   .navbar.is-primary {
     background-color: #00d1b2;
     color: #fff; }
-    .navbar.is-primary .navbar-brand > .navbar-item, .navbar.is-primary .navbar-brand > .navbar-item-logo, .navbar.is-primary .navbar-brand > .navbar-item-section,
+    .navbar.is-primary .navbar-brand > .navbar-item, .navbar.is-primary .navbar-brand > .navbar-item-logo, .navbar.is-primary .navbar-brand > .navbar-item-footer, .navbar.is-primary .navbar-brand > .navbar-item-section,
     .navbar.is-primary .navbar-brand .navbar-link {
       color: #fff; }
-    .navbar.is-primary .navbar-brand > a.navbar-item:focus, .navbar.is-primary .navbar-brand > a.navbar-item-logo:focus, .navbar.is-primary .navbar-brand > a.navbar-item-section:focus, .navbar.is-primary .navbar-brand > a.navbar-item:hover, .navbar.is-primary .navbar-brand > a.navbar-item-logo:hover, .navbar.is-primary .navbar-brand > a.navbar-item-section:hover, .navbar.is-primary .navbar-brand > a.navbar-item.is-active, .navbar.is-primary .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-primary .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-primary .navbar-brand > a.navbar-item:focus, .navbar.is-primary .navbar-brand > a.navbar-item-logo:focus, .navbar.is-primary .navbar-brand > a.navbar-item-footer:focus, .navbar.is-primary .navbar-brand > a.navbar-item-section:focus, .navbar.is-primary .navbar-brand > a.navbar-item:hover, .navbar.is-primary .navbar-brand > a.navbar-item-logo:hover, .navbar.is-primary .navbar-brand > a.navbar-item-footer:hover, .navbar.is-primary .navbar-brand > a.navbar-item-section:hover, .navbar.is-primary .navbar-brand > a.navbar-item.is-active, .navbar.is-primary .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-primary .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-primary .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-primary .navbar-brand .navbar-link:focus,
     .navbar.is-primary .navbar-brand .navbar-link:hover,
     .navbar.is-primary .navbar-brand .navbar-link.is-active {
@@ -4307,25 +4331,29 @@ a.list-item {
     .navbar.is-primary .navbar-burger {
       color: #fff; }
     @media screen and (min-width: 1024px) {
-      .navbar.is-primary .navbar-start > .navbar-item, .navbar.is-primary .navbar-start > .navbar-item-logo, .navbar.is-primary .navbar-start > .navbar-item-section,
+      .navbar.is-primary .navbar-start > .navbar-item, .navbar.is-primary .navbar-start > .navbar-item-logo, .navbar.is-primary .navbar-start > .navbar-item-footer, .navbar.is-primary .navbar-start > .navbar-item-section,
       .navbar.is-primary .navbar-start .navbar-link,
       .navbar.is-primary .navbar-end > .navbar-item,
       .navbar.is-primary .navbar-end > .navbar-item-logo,
+      .navbar.is-primary .navbar-end > .navbar-item-footer,
       .navbar.is-primary .navbar-end > .navbar-item-section,
       .navbar.is-primary .navbar-end .navbar-link {
         color: #fff; }
-      .navbar.is-primary .navbar-start > a.navbar-item:focus, .navbar.is-primary .navbar-start > a.navbar-item-logo:focus, .navbar.is-primary .navbar-start > a.navbar-item-section:focus, .navbar.is-primary .navbar-start > a.navbar-item:hover, .navbar.is-primary .navbar-start > a.navbar-item-logo:hover, .navbar.is-primary .navbar-start > a.navbar-item-section:hover, .navbar.is-primary .navbar-start > a.navbar-item.is-active, .navbar.is-primary .navbar-start > a.is-active.navbar-item-logo, .navbar.is-primary .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-primary .navbar-start > a.navbar-item:focus, .navbar.is-primary .navbar-start > a.navbar-item-logo:focus, .navbar.is-primary .navbar-start > a.navbar-item-footer:focus, .navbar.is-primary .navbar-start > a.navbar-item-section:focus, .navbar.is-primary .navbar-start > a.navbar-item:hover, .navbar.is-primary .navbar-start > a.navbar-item-logo:hover, .navbar.is-primary .navbar-start > a.navbar-item-footer:hover, .navbar.is-primary .navbar-start > a.navbar-item-section:hover, .navbar.is-primary .navbar-start > a.navbar-item.is-active, .navbar.is-primary .navbar-start > a.is-active.navbar-item-logo, .navbar.is-primary .navbar-start > a.is-active.navbar-item-footer, .navbar.is-primary .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-primary .navbar-start .navbar-link:focus,
       .navbar.is-primary .navbar-start .navbar-link:hover,
       .navbar.is-primary .navbar-start .navbar-link.is-active,
       .navbar.is-primary .navbar-end > a.navbar-item:focus,
       .navbar.is-primary .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-primary .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-primary .navbar-end > a.navbar-item-section:focus,
       .navbar.is-primary .navbar-end > a.navbar-item:hover,
       .navbar.is-primary .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-primary .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-primary .navbar-end > a.navbar-item-section:hover,
       .navbar.is-primary .navbar-end > a.navbar-item.is-active,
       .navbar.is-primary .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-primary .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-primary .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-primary .navbar-end .navbar-link:focus,
       .navbar.is-primary .navbar-end .navbar-link:hover,
@@ -4335,25 +4363,27 @@ a.list-item {
       .navbar.is-primary .navbar-start .navbar-link::after,
       .navbar.is-primary .navbar-end .navbar-link::after {
         border-color: #fff; }
-      .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-primary .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-primary .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-primary .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-primary .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-primary .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-primary .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-primary .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-primary .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-primary .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-primary .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-primary .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: #00b89c;
         color: #fff; }
-      .navbar.is-primary .navbar-dropdown a.navbar-item.is-active, .navbar.is-primary .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-primary .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-primary .navbar-dropdown a.navbar-item.is-active, .navbar.is-primary .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-primary .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-primary .navbar-dropdown a.is-active.navbar-item-section {
         background-color: #00d1b2;
         color: #fff; } }
   .navbar.is-link {
     background-color: #3273dc;
     color: #fff; }
-    .navbar.is-link .navbar-brand > .navbar-item, .navbar.is-link .navbar-brand > .navbar-item-logo, .navbar.is-link .navbar-brand > .navbar-item-section,
+    .navbar.is-link .navbar-brand > .navbar-item, .navbar.is-link .navbar-brand > .navbar-item-logo, .navbar.is-link .navbar-brand > .navbar-item-footer, .navbar.is-link .navbar-brand > .navbar-item-section,
     .navbar.is-link .navbar-brand .navbar-link {
       color: #fff; }
-    .navbar.is-link .navbar-brand > a.navbar-item:focus, .navbar.is-link .navbar-brand > a.navbar-item-logo:focus, .navbar.is-link .navbar-brand > a.navbar-item-section:focus, .navbar.is-link .navbar-brand > a.navbar-item:hover, .navbar.is-link .navbar-brand > a.navbar-item-logo:hover, .navbar.is-link .navbar-brand > a.navbar-item-section:hover, .navbar.is-link .navbar-brand > a.navbar-item.is-active, .navbar.is-link .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-link .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-link .navbar-brand > a.navbar-item:focus, .navbar.is-link .navbar-brand > a.navbar-item-logo:focus, .navbar.is-link .navbar-brand > a.navbar-item-footer:focus, .navbar.is-link .navbar-brand > a.navbar-item-section:focus, .navbar.is-link .navbar-brand > a.navbar-item:hover, .navbar.is-link .navbar-brand > a.navbar-item-logo:hover, .navbar.is-link .navbar-brand > a.navbar-item-footer:hover, .navbar.is-link .navbar-brand > a.navbar-item-section:hover, .navbar.is-link .navbar-brand > a.navbar-item.is-active, .navbar.is-link .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-link .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-link .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-link .navbar-brand .navbar-link:focus,
     .navbar.is-link .navbar-brand .navbar-link:hover,
     .navbar.is-link .navbar-brand .navbar-link.is-active {
@@ -4364,25 +4394,29 @@ a.list-item {
     .navbar.is-link .navbar-burger {
       color: #fff; }
     @media screen and (min-width: 1024px) {
-      .navbar.is-link .navbar-start > .navbar-item, .navbar.is-link .navbar-start > .navbar-item-logo, .navbar.is-link .navbar-start > .navbar-item-section,
+      .navbar.is-link .navbar-start > .navbar-item, .navbar.is-link .navbar-start > .navbar-item-logo, .navbar.is-link .navbar-start > .navbar-item-footer, .navbar.is-link .navbar-start > .navbar-item-section,
       .navbar.is-link .navbar-start .navbar-link,
       .navbar.is-link .navbar-end > .navbar-item,
       .navbar.is-link .navbar-end > .navbar-item-logo,
+      .navbar.is-link .navbar-end > .navbar-item-footer,
       .navbar.is-link .navbar-end > .navbar-item-section,
       .navbar.is-link .navbar-end .navbar-link {
         color: #fff; }
-      .navbar.is-link .navbar-start > a.navbar-item:focus, .navbar.is-link .navbar-start > a.navbar-item-logo:focus, .navbar.is-link .navbar-start > a.navbar-item-section:focus, .navbar.is-link .navbar-start > a.navbar-item:hover, .navbar.is-link .navbar-start > a.navbar-item-logo:hover, .navbar.is-link .navbar-start > a.navbar-item-section:hover, .navbar.is-link .navbar-start > a.navbar-item.is-active, .navbar.is-link .navbar-start > a.is-active.navbar-item-logo, .navbar.is-link .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-link .navbar-start > a.navbar-item:focus, .navbar.is-link .navbar-start > a.navbar-item-logo:focus, .navbar.is-link .navbar-start > a.navbar-item-footer:focus, .navbar.is-link .navbar-start > a.navbar-item-section:focus, .navbar.is-link .navbar-start > a.navbar-item:hover, .navbar.is-link .navbar-start > a.navbar-item-logo:hover, .navbar.is-link .navbar-start > a.navbar-item-footer:hover, .navbar.is-link .navbar-start > a.navbar-item-section:hover, .navbar.is-link .navbar-start > a.navbar-item.is-active, .navbar.is-link .navbar-start > a.is-active.navbar-item-logo, .navbar.is-link .navbar-start > a.is-active.navbar-item-footer, .navbar.is-link .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-link .navbar-start .navbar-link:focus,
       .navbar.is-link .navbar-start .navbar-link:hover,
       .navbar.is-link .navbar-start .navbar-link.is-active,
       .navbar.is-link .navbar-end > a.navbar-item:focus,
       .navbar.is-link .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-link .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-link .navbar-end > a.navbar-item-section:focus,
       .navbar.is-link .navbar-end > a.navbar-item:hover,
       .navbar.is-link .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-link .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-link .navbar-end > a.navbar-item-section:hover,
       .navbar.is-link .navbar-end > a.navbar-item.is-active,
       .navbar.is-link .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-link .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-link .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-link .navbar-end .navbar-link:focus,
       .navbar.is-link .navbar-end .navbar-link:hover,
@@ -4392,25 +4426,27 @@ a.list-item {
       .navbar.is-link .navbar-start .navbar-link::after,
       .navbar.is-link .navbar-end .navbar-link::after {
         border-color: #fff; }
-      .navbar.is-link .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-link .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-link .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-link .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-link .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-link .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-link .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-link .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-link .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-link .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-link .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-link .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-link .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-link .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-link .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: #2366d1;
         color: #fff; }
-      .navbar.is-link .navbar-dropdown a.navbar-item.is-active, .navbar.is-link .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-link .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-link .navbar-dropdown a.navbar-item.is-active, .navbar.is-link .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-link .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-link .navbar-dropdown a.is-active.navbar-item-section {
         background-color: #3273dc;
         color: #fff; } }
   .navbar.is-info {
     background-color: #3298dc;
     color: #fff; }
-    .navbar.is-info .navbar-brand > .navbar-item, .navbar.is-info .navbar-brand > .navbar-item-logo, .navbar.is-info .navbar-brand > .navbar-item-section,
+    .navbar.is-info .navbar-brand > .navbar-item, .navbar.is-info .navbar-brand > .navbar-item-logo, .navbar.is-info .navbar-brand > .navbar-item-footer, .navbar.is-info .navbar-brand > .navbar-item-section,
     .navbar.is-info .navbar-brand .navbar-link {
       color: #fff; }
-    .navbar.is-info .navbar-brand > a.navbar-item:focus, .navbar.is-info .navbar-brand > a.navbar-item-logo:focus, .navbar.is-info .navbar-brand > a.navbar-item-section:focus, .navbar.is-info .navbar-brand > a.navbar-item:hover, .navbar.is-info .navbar-brand > a.navbar-item-logo:hover, .navbar.is-info .navbar-brand > a.navbar-item-section:hover, .navbar.is-info .navbar-brand > a.navbar-item.is-active, .navbar.is-info .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-info .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-info .navbar-brand > a.navbar-item:focus, .navbar.is-info .navbar-brand > a.navbar-item-logo:focus, .navbar.is-info .navbar-brand > a.navbar-item-footer:focus, .navbar.is-info .navbar-brand > a.navbar-item-section:focus, .navbar.is-info .navbar-brand > a.navbar-item:hover, .navbar.is-info .navbar-brand > a.navbar-item-logo:hover, .navbar.is-info .navbar-brand > a.navbar-item-footer:hover, .navbar.is-info .navbar-brand > a.navbar-item-section:hover, .navbar.is-info .navbar-brand > a.navbar-item.is-active, .navbar.is-info .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-info .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-info .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-info .navbar-brand .navbar-link:focus,
     .navbar.is-info .navbar-brand .navbar-link:hover,
     .navbar.is-info .navbar-brand .navbar-link.is-active {
@@ -4421,25 +4457,29 @@ a.list-item {
     .navbar.is-info .navbar-burger {
       color: #fff; }
     @media screen and (min-width: 1024px) {
-      .navbar.is-info .navbar-start > .navbar-item, .navbar.is-info .navbar-start > .navbar-item-logo, .navbar.is-info .navbar-start > .navbar-item-section,
+      .navbar.is-info .navbar-start > .navbar-item, .navbar.is-info .navbar-start > .navbar-item-logo, .navbar.is-info .navbar-start > .navbar-item-footer, .navbar.is-info .navbar-start > .navbar-item-section,
       .navbar.is-info .navbar-start .navbar-link,
       .navbar.is-info .navbar-end > .navbar-item,
       .navbar.is-info .navbar-end > .navbar-item-logo,
+      .navbar.is-info .navbar-end > .navbar-item-footer,
       .navbar.is-info .navbar-end > .navbar-item-section,
       .navbar.is-info .navbar-end .navbar-link {
         color: #fff; }
-      .navbar.is-info .navbar-start > a.navbar-item:focus, .navbar.is-info .navbar-start > a.navbar-item-logo:focus, .navbar.is-info .navbar-start > a.navbar-item-section:focus, .navbar.is-info .navbar-start > a.navbar-item:hover, .navbar.is-info .navbar-start > a.navbar-item-logo:hover, .navbar.is-info .navbar-start > a.navbar-item-section:hover, .navbar.is-info .navbar-start > a.navbar-item.is-active, .navbar.is-info .navbar-start > a.is-active.navbar-item-logo, .navbar.is-info .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-info .navbar-start > a.navbar-item:focus, .navbar.is-info .navbar-start > a.navbar-item-logo:focus, .navbar.is-info .navbar-start > a.navbar-item-footer:focus, .navbar.is-info .navbar-start > a.navbar-item-section:focus, .navbar.is-info .navbar-start > a.navbar-item:hover, .navbar.is-info .navbar-start > a.navbar-item-logo:hover, .navbar.is-info .navbar-start > a.navbar-item-footer:hover, .navbar.is-info .navbar-start > a.navbar-item-section:hover, .navbar.is-info .navbar-start > a.navbar-item.is-active, .navbar.is-info .navbar-start > a.is-active.navbar-item-logo, .navbar.is-info .navbar-start > a.is-active.navbar-item-footer, .navbar.is-info .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-info .navbar-start .navbar-link:focus,
       .navbar.is-info .navbar-start .navbar-link:hover,
       .navbar.is-info .navbar-start .navbar-link.is-active,
       .navbar.is-info .navbar-end > a.navbar-item:focus,
       .navbar.is-info .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-info .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-info .navbar-end > a.navbar-item-section:focus,
       .navbar.is-info .navbar-end > a.navbar-item:hover,
       .navbar.is-info .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-info .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-info .navbar-end > a.navbar-item-section:hover,
       .navbar.is-info .navbar-end > a.navbar-item.is-active,
       .navbar.is-info .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-info .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-info .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-info .navbar-end .navbar-link:focus,
       .navbar.is-info .navbar-end .navbar-link:hover,
@@ -4449,25 +4489,27 @@ a.list-item {
       .navbar.is-info .navbar-start .navbar-link::after,
       .navbar.is-info .navbar-end .navbar-link::after {
         border-color: #fff; }
-      .navbar.is-info .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-info .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-info .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-info .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-info .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-info .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-info .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-info .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-info .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-info .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-info .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-info .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-info .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-info .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-info .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: #238cd1;
         color: #fff; }
-      .navbar.is-info .navbar-dropdown a.navbar-item.is-active, .navbar.is-info .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-info .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-info .navbar-dropdown a.navbar-item.is-active, .navbar.is-info .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-info .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-info .navbar-dropdown a.is-active.navbar-item-section {
         background-color: #3298dc;
         color: #fff; } }
   .navbar.is-success {
     background-color: #48c774;
     color: #fff; }
-    .navbar.is-success .navbar-brand > .navbar-item, .navbar.is-success .navbar-brand > .navbar-item-logo, .navbar.is-success .navbar-brand > .navbar-item-section,
+    .navbar.is-success .navbar-brand > .navbar-item, .navbar.is-success .navbar-brand > .navbar-item-logo, .navbar.is-success .navbar-brand > .navbar-item-footer, .navbar.is-success .navbar-brand > .navbar-item-section,
     .navbar.is-success .navbar-brand .navbar-link {
       color: #fff; }
-    .navbar.is-success .navbar-brand > a.navbar-item:focus, .navbar.is-success .navbar-brand > a.navbar-item-logo:focus, .navbar.is-success .navbar-brand > a.navbar-item-section:focus, .navbar.is-success .navbar-brand > a.navbar-item:hover, .navbar.is-success .navbar-brand > a.navbar-item-logo:hover, .navbar.is-success .navbar-brand > a.navbar-item-section:hover, .navbar.is-success .navbar-brand > a.navbar-item.is-active, .navbar.is-success .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-success .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-success .navbar-brand > a.navbar-item:focus, .navbar.is-success .navbar-brand > a.navbar-item-logo:focus, .navbar.is-success .navbar-brand > a.navbar-item-footer:focus, .navbar.is-success .navbar-brand > a.navbar-item-section:focus, .navbar.is-success .navbar-brand > a.navbar-item:hover, .navbar.is-success .navbar-brand > a.navbar-item-logo:hover, .navbar.is-success .navbar-brand > a.navbar-item-footer:hover, .navbar.is-success .navbar-brand > a.navbar-item-section:hover, .navbar.is-success .navbar-brand > a.navbar-item.is-active, .navbar.is-success .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-success .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-success .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-success .navbar-brand .navbar-link:focus,
     .navbar.is-success .navbar-brand .navbar-link:hover,
     .navbar.is-success .navbar-brand .navbar-link.is-active {
@@ -4478,25 +4520,29 @@ a.list-item {
     .navbar.is-success .navbar-burger {
       color: #fff; }
     @media screen and (min-width: 1024px) {
-      .navbar.is-success .navbar-start > .navbar-item, .navbar.is-success .navbar-start > .navbar-item-logo, .navbar.is-success .navbar-start > .navbar-item-section,
+      .navbar.is-success .navbar-start > .navbar-item, .navbar.is-success .navbar-start > .navbar-item-logo, .navbar.is-success .navbar-start > .navbar-item-footer, .navbar.is-success .navbar-start > .navbar-item-section,
       .navbar.is-success .navbar-start .navbar-link,
       .navbar.is-success .navbar-end > .navbar-item,
       .navbar.is-success .navbar-end > .navbar-item-logo,
+      .navbar.is-success .navbar-end > .navbar-item-footer,
       .navbar.is-success .navbar-end > .navbar-item-section,
       .navbar.is-success .navbar-end .navbar-link {
         color: #fff; }
-      .navbar.is-success .navbar-start > a.navbar-item:focus, .navbar.is-success .navbar-start > a.navbar-item-logo:focus, .navbar.is-success .navbar-start > a.navbar-item-section:focus, .navbar.is-success .navbar-start > a.navbar-item:hover, .navbar.is-success .navbar-start > a.navbar-item-logo:hover, .navbar.is-success .navbar-start > a.navbar-item-section:hover, .navbar.is-success .navbar-start > a.navbar-item.is-active, .navbar.is-success .navbar-start > a.is-active.navbar-item-logo, .navbar.is-success .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-success .navbar-start > a.navbar-item:focus, .navbar.is-success .navbar-start > a.navbar-item-logo:focus, .navbar.is-success .navbar-start > a.navbar-item-footer:focus, .navbar.is-success .navbar-start > a.navbar-item-section:focus, .navbar.is-success .navbar-start > a.navbar-item:hover, .navbar.is-success .navbar-start > a.navbar-item-logo:hover, .navbar.is-success .navbar-start > a.navbar-item-footer:hover, .navbar.is-success .navbar-start > a.navbar-item-section:hover, .navbar.is-success .navbar-start > a.navbar-item.is-active, .navbar.is-success .navbar-start > a.is-active.navbar-item-logo, .navbar.is-success .navbar-start > a.is-active.navbar-item-footer, .navbar.is-success .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-success .navbar-start .navbar-link:focus,
       .navbar.is-success .navbar-start .navbar-link:hover,
       .navbar.is-success .navbar-start .navbar-link.is-active,
       .navbar.is-success .navbar-end > a.navbar-item:focus,
       .navbar.is-success .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-success .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-success .navbar-end > a.navbar-item-section:focus,
       .navbar.is-success .navbar-end > a.navbar-item:hover,
       .navbar.is-success .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-success .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-success .navbar-end > a.navbar-item-section:hover,
       .navbar.is-success .navbar-end > a.navbar-item.is-active,
       .navbar.is-success .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-success .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-success .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-success .navbar-end .navbar-link:focus,
       .navbar.is-success .navbar-end .navbar-link:hover,
@@ -4506,25 +4552,27 @@ a.list-item {
       .navbar.is-success .navbar-start .navbar-link::after,
       .navbar.is-success .navbar-end .navbar-link::after {
         border-color: #fff; }
-      .navbar.is-success .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-success .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-success .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-success .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-success .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-success .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-success .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-success .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-success .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-success .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-success .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-success .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-success .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-success .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-success .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: #3abb67;
         color: #fff; }
-      .navbar.is-success .navbar-dropdown a.navbar-item.is-active, .navbar.is-success .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-success .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-success .navbar-dropdown a.navbar-item.is-active, .navbar.is-success .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-success .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-success .navbar-dropdown a.is-active.navbar-item-section {
         background-color: #48c774;
         color: #fff; } }
   .navbar.is-warning {
     background-color: #ffdd57;
     color: rgba(0, 0, 0, 0.7); }
-    .navbar.is-warning .navbar-brand > .navbar-item, .navbar.is-warning .navbar-brand > .navbar-item-logo, .navbar.is-warning .navbar-brand > .navbar-item-section,
+    .navbar.is-warning .navbar-brand > .navbar-item, .navbar.is-warning .navbar-brand > .navbar-item-logo, .navbar.is-warning .navbar-brand > .navbar-item-footer, .navbar.is-warning .navbar-brand > .navbar-item-section,
     .navbar.is-warning .navbar-brand .navbar-link {
       color: rgba(0, 0, 0, 0.7); }
-    .navbar.is-warning .navbar-brand > a.navbar-item:focus, .navbar.is-warning .navbar-brand > a.navbar-item-logo:focus, .navbar.is-warning .navbar-brand > a.navbar-item-section:focus, .navbar.is-warning .navbar-brand > a.navbar-item:hover, .navbar.is-warning .navbar-brand > a.navbar-item-logo:hover, .navbar.is-warning .navbar-brand > a.navbar-item-section:hover, .navbar.is-warning .navbar-brand > a.navbar-item.is-active, .navbar.is-warning .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-warning .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-warning .navbar-brand > a.navbar-item:focus, .navbar.is-warning .navbar-brand > a.navbar-item-logo:focus, .navbar.is-warning .navbar-brand > a.navbar-item-footer:focus, .navbar.is-warning .navbar-brand > a.navbar-item-section:focus, .navbar.is-warning .navbar-brand > a.navbar-item:hover, .navbar.is-warning .navbar-brand > a.navbar-item-logo:hover, .navbar.is-warning .navbar-brand > a.navbar-item-footer:hover, .navbar.is-warning .navbar-brand > a.navbar-item-section:hover, .navbar.is-warning .navbar-brand > a.navbar-item.is-active, .navbar.is-warning .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-warning .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-warning .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-warning .navbar-brand .navbar-link:focus,
     .navbar.is-warning .navbar-brand .navbar-link:hover,
     .navbar.is-warning .navbar-brand .navbar-link.is-active {
@@ -4535,25 +4583,29 @@ a.list-item {
     .navbar.is-warning .navbar-burger {
       color: rgba(0, 0, 0, 0.7); }
     @media screen and (min-width: 1024px) {
-      .navbar.is-warning .navbar-start > .navbar-item, .navbar.is-warning .navbar-start > .navbar-item-logo, .navbar.is-warning .navbar-start > .navbar-item-section,
+      .navbar.is-warning .navbar-start > .navbar-item, .navbar.is-warning .navbar-start > .navbar-item-logo, .navbar.is-warning .navbar-start > .navbar-item-footer, .navbar.is-warning .navbar-start > .navbar-item-section,
       .navbar.is-warning .navbar-start .navbar-link,
       .navbar.is-warning .navbar-end > .navbar-item,
       .navbar.is-warning .navbar-end > .navbar-item-logo,
+      .navbar.is-warning .navbar-end > .navbar-item-footer,
       .navbar.is-warning .navbar-end > .navbar-item-section,
       .navbar.is-warning .navbar-end .navbar-link {
         color: rgba(0, 0, 0, 0.7); }
-      .navbar.is-warning .navbar-start > a.navbar-item:focus, .navbar.is-warning .navbar-start > a.navbar-item-logo:focus, .navbar.is-warning .navbar-start > a.navbar-item-section:focus, .navbar.is-warning .navbar-start > a.navbar-item:hover, .navbar.is-warning .navbar-start > a.navbar-item-logo:hover, .navbar.is-warning .navbar-start > a.navbar-item-section:hover, .navbar.is-warning .navbar-start > a.navbar-item.is-active, .navbar.is-warning .navbar-start > a.is-active.navbar-item-logo, .navbar.is-warning .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-warning .navbar-start > a.navbar-item:focus, .navbar.is-warning .navbar-start > a.navbar-item-logo:focus, .navbar.is-warning .navbar-start > a.navbar-item-footer:focus, .navbar.is-warning .navbar-start > a.navbar-item-section:focus, .navbar.is-warning .navbar-start > a.navbar-item:hover, .navbar.is-warning .navbar-start > a.navbar-item-logo:hover, .navbar.is-warning .navbar-start > a.navbar-item-footer:hover, .navbar.is-warning .navbar-start > a.navbar-item-section:hover, .navbar.is-warning .navbar-start > a.navbar-item.is-active, .navbar.is-warning .navbar-start > a.is-active.navbar-item-logo, .navbar.is-warning .navbar-start > a.is-active.navbar-item-footer, .navbar.is-warning .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-warning .navbar-start .navbar-link:focus,
       .navbar.is-warning .navbar-start .navbar-link:hover,
       .navbar.is-warning .navbar-start .navbar-link.is-active,
       .navbar.is-warning .navbar-end > a.navbar-item:focus,
       .navbar.is-warning .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-warning .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-warning .navbar-end > a.navbar-item-section:focus,
       .navbar.is-warning .navbar-end > a.navbar-item:hover,
       .navbar.is-warning .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-warning .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-warning .navbar-end > a.navbar-item-section:hover,
       .navbar.is-warning .navbar-end > a.navbar-item.is-active,
       .navbar.is-warning .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-warning .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-warning .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-warning .navbar-end .navbar-link:focus,
       .navbar.is-warning .navbar-end .navbar-link:hover,
@@ -4563,25 +4615,27 @@ a.list-item {
       .navbar.is-warning .navbar-start .navbar-link::after,
       .navbar.is-warning .navbar-end .navbar-link::after {
         border-color: rgba(0, 0, 0, 0.7); }
-      .navbar.is-warning .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-warning .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-warning .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-warning .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-warning .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-warning .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-warning .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-warning .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-warning .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-warning .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-warning .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-warning .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-warning .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-warning .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-warning .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: #ffd83d;
         color: rgba(0, 0, 0, 0.7); }
-      .navbar.is-warning .navbar-dropdown a.navbar-item.is-active, .navbar.is-warning .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-warning .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-warning .navbar-dropdown a.navbar-item.is-active, .navbar.is-warning .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-warning .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-warning .navbar-dropdown a.is-active.navbar-item-section {
         background-color: #ffdd57;
         color: rgba(0, 0, 0, 0.7); } }
   .navbar.is-danger {
     background-color: #f14668;
     color: #fff; }
-    .navbar.is-danger .navbar-brand > .navbar-item, .navbar.is-danger .navbar-brand > .navbar-item-logo, .navbar.is-danger .navbar-brand > .navbar-item-section,
+    .navbar.is-danger .navbar-brand > .navbar-item, .navbar.is-danger .navbar-brand > .navbar-item-logo, .navbar.is-danger .navbar-brand > .navbar-item-footer, .navbar.is-danger .navbar-brand > .navbar-item-section,
     .navbar.is-danger .navbar-brand .navbar-link {
       color: #fff; }
-    .navbar.is-danger .navbar-brand > a.navbar-item:focus, .navbar.is-danger .navbar-brand > a.navbar-item-logo:focus, .navbar.is-danger .navbar-brand > a.navbar-item-section:focus, .navbar.is-danger .navbar-brand > a.navbar-item:hover, .navbar.is-danger .navbar-brand > a.navbar-item-logo:hover, .navbar.is-danger .navbar-brand > a.navbar-item-section:hover, .navbar.is-danger .navbar-brand > a.navbar-item.is-active, .navbar.is-danger .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-danger .navbar-brand > a.is-active.navbar-item-section,
+    .navbar.is-danger .navbar-brand > a.navbar-item:focus, .navbar.is-danger .navbar-brand > a.navbar-item-logo:focus, .navbar.is-danger .navbar-brand > a.navbar-item-footer:focus, .navbar.is-danger .navbar-brand > a.navbar-item-section:focus, .navbar.is-danger .navbar-brand > a.navbar-item:hover, .navbar.is-danger .navbar-brand > a.navbar-item-logo:hover, .navbar.is-danger .navbar-brand > a.navbar-item-footer:hover, .navbar.is-danger .navbar-brand > a.navbar-item-section:hover, .navbar.is-danger .navbar-brand > a.navbar-item.is-active, .navbar.is-danger .navbar-brand > a.is-active.navbar-item-logo, .navbar.is-danger .navbar-brand > a.is-active.navbar-item-footer, .navbar.is-danger .navbar-brand > a.is-active.navbar-item-section,
     .navbar.is-danger .navbar-brand .navbar-link:focus,
     .navbar.is-danger .navbar-brand .navbar-link:hover,
     .navbar.is-danger .navbar-brand .navbar-link.is-active {
@@ -4592,25 +4646,29 @@ a.list-item {
     .navbar.is-danger .navbar-burger {
       color: #fff; }
     @media screen and (min-width: 1024px) {
-      .navbar.is-danger .navbar-start > .navbar-item, .navbar.is-danger .navbar-start > .navbar-item-logo, .navbar.is-danger .navbar-start > .navbar-item-section,
+      .navbar.is-danger .navbar-start > .navbar-item, .navbar.is-danger .navbar-start > .navbar-item-logo, .navbar.is-danger .navbar-start > .navbar-item-footer, .navbar.is-danger .navbar-start > .navbar-item-section,
       .navbar.is-danger .navbar-start .navbar-link,
       .navbar.is-danger .navbar-end > .navbar-item,
       .navbar.is-danger .navbar-end > .navbar-item-logo,
+      .navbar.is-danger .navbar-end > .navbar-item-footer,
       .navbar.is-danger .navbar-end > .navbar-item-section,
       .navbar.is-danger .navbar-end .navbar-link {
         color: #fff; }
-      .navbar.is-danger .navbar-start > a.navbar-item:focus, .navbar.is-danger .navbar-start > a.navbar-item-logo:focus, .navbar.is-danger .navbar-start > a.navbar-item-section:focus, .navbar.is-danger .navbar-start > a.navbar-item:hover, .navbar.is-danger .navbar-start > a.navbar-item-logo:hover, .navbar.is-danger .navbar-start > a.navbar-item-section:hover, .navbar.is-danger .navbar-start > a.navbar-item.is-active, .navbar.is-danger .navbar-start > a.is-active.navbar-item-logo, .navbar.is-danger .navbar-start > a.is-active.navbar-item-section,
+      .navbar.is-danger .navbar-start > a.navbar-item:focus, .navbar.is-danger .navbar-start > a.navbar-item-logo:focus, .navbar.is-danger .navbar-start > a.navbar-item-footer:focus, .navbar.is-danger .navbar-start > a.navbar-item-section:focus, .navbar.is-danger .navbar-start > a.navbar-item:hover, .navbar.is-danger .navbar-start > a.navbar-item-logo:hover, .navbar.is-danger .navbar-start > a.navbar-item-footer:hover, .navbar.is-danger .navbar-start > a.navbar-item-section:hover, .navbar.is-danger .navbar-start > a.navbar-item.is-active, .navbar.is-danger .navbar-start > a.is-active.navbar-item-logo, .navbar.is-danger .navbar-start > a.is-active.navbar-item-footer, .navbar.is-danger .navbar-start > a.is-active.navbar-item-section,
       .navbar.is-danger .navbar-start .navbar-link:focus,
       .navbar.is-danger .navbar-start .navbar-link:hover,
       .navbar.is-danger .navbar-start .navbar-link.is-active,
       .navbar.is-danger .navbar-end > a.navbar-item:focus,
       .navbar.is-danger .navbar-end > a.navbar-item-logo:focus,
+      .navbar.is-danger .navbar-end > a.navbar-item-footer:focus,
       .navbar.is-danger .navbar-end > a.navbar-item-section:focus,
       .navbar.is-danger .navbar-end > a.navbar-item:hover,
       .navbar.is-danger .navbar-end > a.navbar-item-logo:hover,
+      .navbar.is-danger .navbar-end > a.navbar-item-footer:hover,
       .navbar.is-danger .navbar-end > a.navbar-item-section:hover,
       .navbar.is-danger .navbar-end > a.navbar-item.is-active,
       .navbar.is-danger .navbar-end > a.is-active.navbar-item-logo,
+      .navbar.is-danger .navbar-end > a.is-active.navbar-item-footer,
       .navbar.is-danger .navbar-end > a.is-active.navbar-item-section,
       .navbar.is-danger .navbar-end .navbar-link:focus,
       .navbar.is-danger .navbar-end .navbar-link:hover,
@@ -4620,16 +4678,18 @@ a.list-item {
       .navbar.is-danger .navbar-start .navbar-link::after,
       .navbar.is-danger .navbar-end .navbar-link::after {
         border-color: #fff; }
-      .navbar.is-danger .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-danger .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-danger .has-dropdown.navbar-item-section:focus .navbar-link,
+      .navbar.is-danger .navbar-item.has-dropdown:focus .navbar-link, .navbar.is-danger .has-dropdown.navbar-item-logo:focus .navbar-link, .navbar.is-danger .has-dropdown.navbar-item-footer:focus .navbar-link, .navbar.is-danger .has-dropdown.navbar-item-section:focus .navbar-link,
       .navbar.is-danger .navbar-item.has-dropdown:hover .navbar-link,
       .navbar.is-danger .has-dropdown.navbar-item-logo:hover .navbar-link,
+      .navbar.is-danger .has-dropdown.navbar-item-footer:hover .navbar-link,
       .navbar.is-danger .has-dropdown.navbar-item-section:hover .navbar-link,
       .navbar.is-danger .navbar-item.has-dropdown.is-active .navbar-link,
       .navbar.is-danger .has-dropdown.is-active.navbar-item-logo .navbar-link,
+      .navbar.is-danger .has-dropdown.is-active.navbar-item-footer .navbar-link,
       .navbar.is-danger .has-dropdown.is-active.navbar-item-section .navbar-link {
         background-color: #ef2e55;
         color: #fff; }
-      .navbar.is-danger .navbar-dropdown a.navbar-item.is-active, .navbar.is-danger .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-danger .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar.is-danger .navbar-dropdown a.navbar-item.is-active, .navbar.is-danger .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-danger .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-danger .navbar-dropdown a.is-active.navbar-item-section {
         background-color: #f14668;
         color: #fff; } }
   .navbar > .container {
@@ -4638,7 +4698,7 @@ a.list-item {
     min-height: 3.25rem;
     width: 100%; }
   .navbar.has-shadow {
-    box-shadow: 0 2px 0 0 whitesmoke; }
+    box-shadow: 0px 1px 5px 0px #666666; }
   .navbar.is-fixed-bottom, .navbar.is-fixed-top {
     left: 0;
     position: fixed;
@@ -4647,7 +4707,7 @@ a.list-item {
   .navbar.is-fixed-bottom {
     bottom: 0; }
     .navbar.is-fixed-bottom.has-shadow {
-      box-shadow: 0 -2px 0 0 whitesmoke; }
+      box-shadow: 0 -2px 0 0 #666666; }
   .navbar.is-fixed-top {
     top: 0; }
 
@@ -4665,7 +4725,7 @@ body.has-navbar-fixed-bottom {
   flex-shrink: 0;
   min-height: 3.25rem; }
 
-.navbar-brand a.navbar-item:focus, .navbar-brand a.navbar-item-logo:focus, .navbar-brand a.navbar-item-section:focus, .navbar-brand a.navbar-item:hover, .navbar-brand a.navbar-item-logo:hover, .navbar-brand a.navbar-item-section:hover {
+.navbar-brand a.navbar-item:focus, .navbar-brand a.navbar-item-logo:focus, .navbar-brand a.navbar-item-footer:focus, .navbar-brand a.navbar-item-section:focus, .navbar-brand a.navbar-item:hover, .navbar-brand a.navbar-item-logo:hover, .navbar-brand a.navbar-item-footer:hover, .navbar-brand a.navbar-item-section:hover {
   background-color: transparent; }
 
 .navbar-tabs {
@@ -4711,22 +4771,22 @@ body.has-navbar-fixed-bottom {
 .navbar-menu {
   display: none; }
 
-.navbar-item, .navbar-item-logo, .navbar-item-section,
+.navbar-item, .navbar-item-logo, .navbar-item-footer, .navbar-item-section,
 .navbar-link {
   color: #4a4a4a;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
   position: relative; }
-  .navbar-item .icon:only-child, .navbar-item-logo .icon:only-child, .navbar-item-section .icon:only-child,
+  .navbar-item .icon:only-child, .navbar-item-logo .icon:only-child, .navbar-item-footer .icon:only-child, .navbar-item-section .icon:only-child,
   .navbar-link .icon:only-child {
     margin-left: -0.25rem;
     margin-right: -0.25rem; }
 
-a.navbar-item, a.navbar-item-logo, a.navbar-item-section,
+a.navbar-item, a.navbar-item-logo, a.navbar-item-footer, a.navbar-item-section,
 .navbar-link {
   cursor: pointer; }
-  a.navbar-item:focus, a.navbar-item-logo:focus, a.navbar-item-section:focus, a.navbar-item:focus-within, a.navbar-item-logo:focus-within, a.navbar-item-section:focus-within, a.navbar-item:hover, a.navbar-item-logo:hover, a.navbar-item-section:hover, a.navbar-item.is-active, a.is-active.navbar-item-logo, a.is-active.navbar-item-section,
+  a.navbar-item:focus, a.navbar-item-logo:focus, a.navbar-item-footer:focus, a.navbar-item-section:focus, a.navbar-item:focus-within, a.navbar-item-logo:focus-within, a.navbar-item-footer:focus-within, a.navbar-item-section:focus-within, a.navbar-item:hover, a.navbar-item-logo:hover, a.navbar-item-footer:hover, a.navbar-item-section:hover, a.navbar-item.is-active, a.is-active.navbar-item-logo, a.is-active.navbar-item-footer, a.is-active.navbar-item-section,
   .navbar-link:focus,
   .navbar-link:focus-within,
   .navbar-link:hover,
@@ -4734,25 +4794,25 @@ a.navbar-item, a.navbar-item-logo, a.navbar-item-section,
     background-color: #fafafa;
     color: #3273dc; }
 
-.navbar-item, .navbar-item-logo, .navbar-item-section {
+.navbar-item, .navbar-item-logo, .navbar-item-footer, .navbar-item-section {
   display: block;
   flex-grow: 0;
   flex-shrink: 0; }
-  .navbar-item img, .navbar-item-logo img, .navbar-item-section img {
+  .navbar-item img, .navbar-item-logo img, .navbar-item-footer img, .navbar-item-section img {
     max-height: 1.75rem; }
-  .navbar-item.has-dropdown, .has-dropdown.navbar-item-logo, .has-dropdown.navbar-item-section {
+  .navbar-item.has-dropdown, .has-dropdown.navbar-item-logo, .has-dropdown.navbar-item-footer, .has-dropdown.navbar-item-section {
     padding: 0; }
-  .navbar-item.is-expanded, .is-expanded.navbar-item-logo, .is-expanded.navbar-item-section {
+  .navbar-item.is-expanded, .is-expanded.navbar-item-logo, .is-expanded.navbar-item-footer, .is-expanded.navbar-item-section {
     flex-grow: 1;
     flex-shrink: 1; }
-  .navbar-item.is-tab, .is-tab.navbar-item-logo, .is-tab.navbar-item-section {
+  .navbar-item.is-tab, .is-tab.navbar-item-logo, .is-tab.navbar-item-footer, .is-tab.navbar-item-section {
     border-bottom: 1px solid transparent;
     min-height: 3.25rem;
     padding-bottom: calc(0.5rem - 1px); }
-    .navbar-item.is-tab:focus, .is-tab.navbar-item-logo:focus, .is-tab.navbar-item-section:focus, .navbar-item.is-tab:hover, .is-tab.navbar-item-logo:hover, .is-tab.navbar-item-section:hover {
+    .navbar-item.is-tab:focus, .is-tab.navbar-item-logo:focus, .is-tab.navbar-item-footer:focus, .is-tab.navbar-item-section:focus, .navbar-item.is-tab:hover, .is-tab.navbar-item-logo:hover, .is-tab.navbar-item-footer:hover, .is-tab.navbar-item-section:hover {
       background-color: transparent;
       border-bottom-color: #3273dc; }
-    .navbar-item.is-tab.is-active, .is-tab.is-active.navbar-item-logo, .is-tab.is-active.navbar-item-section {
+    .navbar-item.is-tab.is-active, .is-tab.is-active.navbar-item-logo, .is-tab.is-active.navbar-item-footer, .is-tab.is-active.navbar-item-section {
       background-color: transparent;
       border-bottom-color: #3273dc;
       border-bottom-style: solid;
@@ -4775,7 +4835,7 @@ a.navbar-item, a.navbar-item-logo, a.navbar-item-section,
   font-size: 0.875rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem; }
-  .navbar-dropdown .navbar-item, .navbar-dropdown .navbar-item-logo, .navbar-dropdown .navbar-item-section {
+  .navbar-dropdown .navbar-item, .navbar-dropdown .navbar-item-logo, .navbar-dropdown .navbar-item-footer, .navbar-dropdown .navbar-item-section {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
 
@@ -4790,9 +4850,10 @@ a.navbar-item, a.navbar-item-logo, a.navbar-item-section,
   .navbar > .container {
     display: block; }
 
-  .navbar-brand .navbar-item, .navbar-brand .navbar-item-logo, .navbar-brand .navbar-item-section,
+  .navbar-brand .navbar-item, .navbar-brand .navbar-item-logo, .navbar-brand .navbar-item-footer, .navbar-brand .navbar-item-section,
   .navbar-tabs .navbar-item,
   .navbar-tabs .navbar-item-logo,
+  .navbar-tabs .navbar-item-footer,
   .navbar-tabs .navbar-item-section {
     align-items: center;
     display: flex; }
@@ -4844,47 +4905,47 @@ a.navbar-item, a.navbar-item-logo, a.navbar-item-section,
       .navbar.is-spaced .navbar-start,
       .navbar.is-spaced .navbar-end {
         align-items: center; }
-      .navbar.is-spaced a.navbar-item, .navbar.is-spaced a.navbar-item-logo, .navbar.is-spaced a.navbar-item-section,
+      .navbar.is-spaced a.navbar-item, .navbar.is-spaced a.navbar-item-logo, .navbar.is-spaced a.navbar-item-footer, .navbar.is-spaced a.navbar-item-section,
       .navbar.is-spaced .navbar-link {
         border-radius: 4px; }
-    .navbar.is-transparent a.navbar-item:focus, .navbar.is-transparent a.navbar-item-logo:focus, .navbar.is-transparent a.navbar-item-section:focus, .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item-logo:hover, .navbar.is-transparent a.navbar-item-section:hover, .navbar.is-transparent a.navbar-item.is-active, .navbar.is-transparent a.is-active.navbar-item-logo, .navbar.is-transparent a.is-active.navbar-item-section,
+    .navbar.is-transparent a.navbar-item:focus, .navbar.is-transparent a.navbar-item-logo:focus, .navbar.is-transparent a.navbar-item-footer:focus, .navbar.is-transparent a.navbar-item-section:focus, .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item-logo:hover, .navbar.is-transparent a.navbar-item-footer:hover, .navbar.is-transparent a.navbar-item-section:hover, .navbar.is-transparent a.navbar-item.is-active, .navbar.is-transparent a.is-active.navbar-item-logo, .navbar.is-transparent a.is-active.navbar-item-footer, .navbar.is-transparent a.is-active.navbar-item-section,
     .navbar.is-transparent .navbar-link:focus,
     .navbar.is-transparent .navbar-link:hover,
     .navbar.is-transparent .navbar-link.is-active {
       background-color: transparent !important; }
-    .navbar.is-transparent .navbar-item.has-dropdown.is-active .navbar-link, .navbar.is-transparent .has-dropdown.is-active.navbar-item-logo .navbar-link, .navbar.is-transparent .has-dropdown.is-active.navbar-item-section .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:focus .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-logo:focus .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-section:focus .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:focus-within .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-logo:focus-within .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-section:focus-within .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:hover .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-logo:hover .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-section:hover .navbar-link {
+    .navbar.is-transparent .navbar-item.has-dropdown.is-active .navbar-link, .navbar.is-transparent .has-dropdown.is-active.navbar-item-logo .navbar-link, .navbar.is-transparent .has-dropdown.is-active.navbar-item-footer .navbar-link, .navbar.is-transparent .has-dropdown.is-active.navbar-item-section .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:focus .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-logo:focus .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-footer:focus .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-section:focus .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:focus-within .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-logo:focus-within .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-footer:focus-within .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-section:focus-within .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:hover .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-logo:hover .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-footer:hover .navbar-link, .navbar.is-transparent .has-dropdown.is-hoverable.navbar-item-section:hover .navbar-link {
       background-color: transparent !important; }
-    .navbar.is-transparent .navbar-dropdown a.navbar-item:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item-logo:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item-section:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item:hover, .navbar.is-transparent .navbar-dropdown a.navbar-item-logo:hover, .navbar.is-transparent .navbar-dropdown a.navbar-item-section:hover {
+    .navbar.is-transparent .navbar-dropdown a.navbar-item:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item-logo:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item-footer:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item-section:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item:hover, .navbar.is-transparent .navbar-dropdown a.navbar-item-logo:hover, .navbar.is-transparent .navbar-dropdown a.navbar-item-footer:hover, .navbar.is-transparent .navbar-dropdown a.navbar-item-section:hover {
       background-color: whitesmoke;
       color: #0a0a0a; }
-    .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active, .navbar.is-transparent .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-transparent .navbar-dropdown a.is-active.navbar-item-section {
+    .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active, .navbar.is-transparent .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-transparent .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-transparent .navbar-dropdown a.is-active.navbar-item-section {
       background-color: whitesmoke;
       color: #3273dc; }
 
   .navbar-burger {
     display: none; }
 
-  .navbar-item, .navbar-item-logo, .navbar-item-section,
+  .navbar-item, .navbar-item-logo, .navbar-item-footer, .navbar-item-section,
   .navbar-link {
     align-items: center;
     display: flex; }
 
-  .navbar-item, .navbar-item-logo, .navbar-item-section {
+  .navbar-item, .navbar-item-logo, .navbar-item-footer, .navbar-item-section {
     display: flex; }
-    .navbar-item.has-dropdown, .has-dropdown.navbar-item-logo, .has-dropdown.navbar-item-section {
+    .navbar-item.has-dropdown, .has-dropdown.navbar-item-logo, .has-dropdown.navbar-item-footer, .has-dropdown.navbar-item-section {
       align-items: stretch; }
-    .navbar-item.has-dropdown-up .navbar-link::after, .has-dropdown-up.navbar-item-logo .navbar-link::after, .has-dropdown-up.navbar-item-section .navbar-link::after {
+    .navbar-item.has-dropdown-up .navbar-link::after, .has-dropdown-up.navbar-item-logo .navbar-link::after, .has-dropdown-up.navbar-item-footer .navbar-link::after, .has-dropdown-up.navbar-item-section .navbar-link::after {
       transform: rotate(135deg) translate(0.25em, -0.25em); }
-    .navbar-item.has-dropdown-up .navbar-dropdown, .has-dropdown-up.navbar-item-logo .navbar-dropdown, .has-dropdown-up.navbar-item-section .navbar-dropdown {
+    .navbar-item.has-dropdown-up .navbar-dropdown, .has-dropdown-up.navbar-item-logo .navbar-dropdown, .has-dropdown-up.navbar-item-footer .navbar-dropdown, .has-dropdown-up.navbar-item-section .navbar-dropdown {
       border-bottom: 2px solid #dbdbdb;
       border-radius: 6px 6px 0 0;
       border-top: none;
       bottom: 100%;
       box-shadow: 0 -8px 8px rgba(10, 10, 10, 0.1);
       top: auto; }
-    .navbar-item.is-active .navbar-dropdown, .is-active.navbar-item-logo .navbar-dropdown, .is-active.navbar-item-section .navbar-dropdown, .navbar-item.is-hoverable:focus .navbar-dropdown, .is-hoverable.navbar-item-logo:focus .navbar-dropdown, .is-hoverable.navbar-item-section:focus .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown, .is-hoverable.navbar-item-logo:focus-within .navbar-dropdown, .is-hoverable.navbar-item-section:focus-within .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown, .is-hoverable.navbar-item-logo:hover .navbar-dropdown, .is-hoverable.navbar-item-section:hover .navbar-dropdown {
+    .navbar-item.is-active .navbar-dropdown, .is-active.navbar-item-logo .navbar-dropdown, .is-active.navbar-item-footer .navbar-dropdown, .is-active.navbar-item-section .navbar-dropdown, .navbar-item.is-hoverable:focus .navbar-dropdown, .is-hoverable.navbar-item-logo:focus .navbar-dropdown, .is-hoverable.navbar-item-footer:focus .navbar-dropdown, .is-hoverable.navbar-item-section:focus .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown, .is-hoverable.navbar-item-logo:focus-within .navbar-dropdown, .is-hoverable.navbar-item-footer:focus-within .navbar-dropdown, .is-hoverable.navbar-item-section:focus-within .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown, .is-hoverable.navbar-item-logo:hover .navbar-dropdown, .is-hoverable.navbar-item-footer:hover .navbar-dropdown, .is-hoverable.navbar-item-section:hover .navbar-dropdown {
       display: block; }
-      .navbar.is-spaced .navbar-item.is-active .navbar-dropdown, .navbar.is-spaced .is-active.navbar-item-logo .navbar-dropdown, .navbar.is-spaced .is-active.navbar-item-section .navbar-dropdown, .navbar-item.is-active .navbar-dropdown.is-boxed, .is-active.navbar-item-logo .navbar-dropdown.is-boxed, .is-active.navbar-item-section .navbar-dropdown.is-boxed, .navbar.is-spaced .navbar-item.is-hoverable:focus .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-logo:focus .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-section:focus .navbar-dropdown, .navbar-item.is-hoverable:focus .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-logo:focus .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-section:focus .navbar-dropdown.is-boxed, .navbar.is-spaced .navbar-item.is-hoverable:focus-within .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-logo:focus-within .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-section:focus-within .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-logo:focus-within .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-section:focus-within .navbar-dropdown.is-boxed, .navbar.is-spaced .navbar-item.is-hoverable:hover .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-logo:hover .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-section:hover .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-logo:hover .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-section:hover .navbar-dropdown.is-boxed {
+      .navbar.is-spaced .navbar-item.is-active .navbar-dropdown, .navbar.is-spaced .is-active.navbar-item-logo .navbar-dropdown, .navbar.is-spaced .is-active.navbar-item-footer .navbar-dropdown, .navbar.is-spaced .is-active.navbar-item-section .navbar-dropdown, .navbar-item.is-active .navbar-dropdown.is-boxed, .is-active.navbar-item-logo .navbar-dropdown.is-boxed, .is-active.navbar-item-footer .navbar-dropdown.is-boxed, .is-active.navbar-item-section .navbar-dropdown.is-boxed, .navbar.is-spaced .navbar-item.is-hoverable:focus .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-logo:focus .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-footer:focus .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-section:focus .navbar-dropdown, .navbar-item.is-hoverable:focus .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-logo:focus .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-footer:focus .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-section:focus .navbar-dropdown.is-boxed, .navbar.is-spaced .navbar-item.is-hoverable:focus-within .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-logo:focus-within .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-footer:focus-within .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-section:focus-within .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-logo:focus-within .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-footer:focus-within .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-section:focus-within .navbar-dropdown.is-boxed, .navbar.is-spaced .navbar-item.is-hoverable:hover .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-logo:hover .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-footer:hover .navbar-dropdown, .navbar.is-spaced .is-hoverable.navbar-item-section:hover .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-logo:hover .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-footer:hover .navbar-dropdown.is-boxed, .is-hoverable.navbar-item-section:hover .navbar-dropdown.is-boxed {
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0); }
@@ -4914,15 +4975,15 @@ a.navbar-item, a.navbar-item-logo, a.navbar-item-section,
     position: absolute;
     top: 100%;
     z-index: 20; }
-    .navbar-dropdown .navbar-item, .navbar-dropdown .navbar-item-logo, .navbar-dropdown .navbar-item-section {
+    .navbar-dropdown .navbar-item, .navbar-dropdown .navbar-item-logo, .navbar-dropdown .navbar-item-footer, .navbar-dropdown .navbar-item-section {
       padding: 0.375rem 1rem;
       white-space: nowrap; }
-    .navbar-dropdown a.navbar-item, .navbar-dropdown a.navbar-item-logo, .navbar-dropdown a.navbar-item-section {
+    .navbar-dropdown a.navbar-item, .navbar-dropdown a.navbar-item-logo, .navbar-dropdown a.navbar-item-footer, .navbar-dropdown a.navbar-item-section {
       padding-right: 3rem; }
-      .navbar-dropdown a.navbar-item:focus, .navbar-dropdown a.navbar-item-logo:focus, .navbar-dropdown a.navbar-item-section:focus, .navbar-dropdown a.navbar-item:hover, .navbar-dropdown a.navbar-item-logo:hover, .navbar-dropdown a.navbar-item-section:hover {
+      .navbar-dropdown a.navbar-item:focus, .navbar-dropdown a.navbar-item-logo:focus, .navbar-dropdown a.navbar-item-footer:focus, .navbar-dropdown a.navbar-item-section:focus, .navbar-dropdown a.navbar-item:hover, .navbar-dropdown a.navbar-item-logo:hover, .navbar-dropdown a.navbar-item-footer:hover, .navbar-dropdown a.navbar-item-section:hover {
         background-color: whitesmoke;
         color: #0a0a0a; }
-      .navbar-dropdown a.navbar-item.is-active, .navbar-dropdown a.is-active.navbar-item-logo, .navbar-dropdown a.is-active.navbar-item-section {
+      .navbar-dropdown a.navbar-item.is-active, .navbar-dropdown a.is-active.navbar-item-logo, .navbar-dropdown a.is-active.navbar-item-footer, .navbar-dropdown a.is-active.navbar-item-section {
         background-color: whitesmoke;
         color: #3273dc; }
     .navbar.is-spaced .navbar-dropdown, .navbar-dropdown.is-boxed {
@@ -4975,14 +5036,14 @@ a.navbar-item, a.navbar-item-logo, a.navbar-item-section,
   body.has-spaced-navbar-fixed-bottom {
     padding-bottom: 5.25rem; }
 
-  a.navbar-item.is-active, a.is-active.navbar-item-logo, a.is-active.navbar-item-section,
+  a.navbar-item.is-active, a.is-active.navbar-item-logo, a.is-active.navbar-item-footer, a.is-active.navbar-item-section,
   .navbar-link.is-active {
     color: #0a0a0a; }
-  a.navbar-item.is-active:not(:focus):not(:hover), a.is-active.navbar-item-logo:not(:focus):not(:hover), a.is-active.navbar-item-section:not(:focus):not(:hover),
+  a.navbar-item.is-active:not(:focus):not(:hover), a.is-active.navbar-item-logo:not(:focus):not(:hover), a.is-active.navbar-item-footer:not(:focus):not(:hover), a.is-active.navbar-item-section:not(:focus):not(:hover),
   .navbar-link.is-active:not(:focus):not(:hover) {
     background-color: transparent; }
 
-  .navbar-item.has-dropdown:focus .navbar-link, .has-dropdown.navbar-item-logo:focus .navbar-link, .has-dropdown.navbar-item-section:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .has-dropdown.navbar-item-logo:hover .navbar-link, .has-dropdown.navbar-item-section:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link, .has-dropdown.is-active.navbar-item-logo .navbar-link, .has-dropdown.is-active.navbar-item-section .navbar-link {
+  .navbar-item.has-dropdown:focus .navbar-link, .has-dropdown.navbar-item-logo:focus .navbar-link, .has-dropdown.navbar-item-footer:focus .navbar-link, .has-dropdown.navbar-item-section:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .has-dropdown.navbar-item-logo:hover .navbar-link, .has-dropdown.navbar-item-footer:hover .navbar-link, .has-dropdown.navbar-item-section:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link, .has-dropdown.is-active.navbar-item-logo .navbar-link, .has-dropdown.is-active.navbar-item-footer .navbar-link, .has-dropdown.is-active.navbar-item-section .navbar-link {
     background-color: #fafafa; } }
 .hero.is-fullheight-with-navbar, .is-fullheight-with-navbar.hero-home {
   min-height: calc(100vh - 3.25rem); }
@@ -6578,11 +6639,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-white .navbar-menu, .is-white.hero-home .navbar-menu {
         background-color: white; } }
-    .hero.is-white .navbar-item, .is-white.hero-home .navbar-item, .hero.is-white .navbar-item-logo, .is-white.hero-home .navbar-item-logo, .hero.is-white .navbar-item-section, .is-white.hero-home .navbar-item-section,
+    .hero.is-white .navbar-item, .is-white.hero-home .navbar-item, .hero.is-white .navbar-item-logo, .is-white.hero-home .navbar-item-logo, .hero.is-white .navbar-item-footer, .is-white.hero-home .navbar-item-footer, .hero.is-white .navbar-item-section, .is-white.hero-home .navbar-item-section,
     .hero.is-white .navbar-link,
     .is-white.hero-home .navbar-link {
       color: rgba(10, 10, 10, 0.7); }
-    .hero.is-white a.navbar-item:hover, .is-white.hero-home a.navbar-item:hover, .hero.is-white a.navbar-item-logo:hover, .is-white.hero-home a.navbar-item-logo:hover, .hero.is-white a.navbar-item-section:hover, .is-white.hero-home a.navbar-item-section:hover, .hero.is-white a.navbar-item.is-active, .is-white.hero-home a.navbar-item.is-active, .hero.is-white a.is-active.navbar-item-logo, .is-white.hero-home a.is-active.navbar-item-logo, .hero.is-white a.is-active.navbar-item-section, .is-white.hero-home a.is-active.navbar-item-section,
+    .hero.is-white a.navbar-item:hover, .is-white.hero-home a.navbar-item:hover, .hero.is-white a.navbar-item-logo:hover, .is-white.hero-home a.navbar-item-logo:hover, .hero.is-white a.navbar-item-footer:hover, .is-white.hero-home a.navbar-item-footer:hover, .hero.is-white a.navbar-item-section:hover, .is-white.hero-home a.navbar-item-section:hover, .hero.is-white a.navbar-item.is-active, .is-white.hero-home a.navbar-item.is-active, .hero.is-white a.is-active.navbar-item-logo, .is-white.hero-home a.is-active.navbar-item-logo, .hero.is-white a.is-active.navbar-item-footer, .is-white.hero-home a.is-active.navbar-item-footer, .hero.is-white a.is-active.navbar-item-section, .is-white.hero-home a.is-active.navbar-item-section,
     .hero.is-white .navbar-link:hover,
     .is-white.hero-home .navbar-link:hover,
     .hero.is-white .navbar-link.is-active,
@@ -6627,11 +6688,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-black .navbar-menu, .is-black.hero-home .navbar-menu {
         background-color: #0a0a0a; } }
-    .hero.is-black .navbar-item, .is-black.hero-home .navbar-item, .hero.is-black .navbar-item-logo, .is-black.hero-home .navbar-item-logo, .hero.is-black .navbar-item-section, .is-black.hero-home .navbar-item-section,
+    .hero.is-black .navbar-item, .is-black.hero-home .navbar-item, .hero.is-black .navbar-item-logo, .is-black.hero-home .navbar-item-logo, .hero.is-black .navbar-item-footer, .is-black.hero-home .navbar-item-footer, .hero.is-black .navbar-item-section, .is-black.hero-home .navbar-item-section,
     .hero.is-black .navbar-link,
     .is-black.hero-home .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-black a.navbar-item:hover, .is-black.hero-home a.navbar-item:hover, .hero.is-black a.navbar-item-logo:hover, .is-black.hero-home a.navbar-item-logo:hover, .hero.is-black a.navbar-item-section:hover, .is-black.hero-home a.navbar-item-section:hover, .hero.is-black a.navbar-item.is-active, .is-black.hero-home a.navbar-item.is-active, .hero.is-black a.is-active.navbar-item-logo, .is-black.hero-home a.is-active.navbar-item-logo, .hero.is-black a.is-active.navbar-item-section, .is-black.hero-home a.is-active.navbar-item-section,
+    .hero.is-black a.navbar-item:hover, .is-black.hero-home a.navbar-item:hover, .hero.is-black a.navbar-item-logo:hover, .is-black.hero-home a.navbar-item-logo:hover, .hero.is-black a.navbar-item-footer:hover, .is-black.hero-home a.navbar-item-footer:hover, .hero.is-black a.navbar-item-section:hover, .is-black.hero-home a.navbar-item-section:hover, .hero.is-black a.navbar-item.is-active, .is-black.hero-home a.navbar-item.is-active, .hero.is-black a.is-active.navbar-item-logo, .is-black.hero-home a.is-active.navbar-item-logo, .hero.is-black a.is-active.navbar-item-footer, .is-black.hero-home a.is-active.navbar-item-footer, .hero.is-black a.is-active.navbar-item-section, .is-black.hero-home a.is-active.navbar-item-section,
     .hero.is-black .navbar-link:hover,
     .is-black.hero-home .navbar-link:hover,
     .hero.is-black .navbar-link.is-active,
@@ -6676,11 +6737,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-light .navbar-menu, .is-light.hero-home .navbar-menu {
         background-color: whitesmoke; } }
-    .hero.is-light .navbar-item, .is-light.hero-home .navbar-item, .hero.is-light .navbar-item-logo, .is-light.hero-home .navbar-item-logo, .hero.is-light .navbar-item-section, .is-light.hero-home .navbar-item-section,
+    .hero.is-light .navbar-item, .is-light.hero-home .navbar-item, .hero.is-light .navbar-item-logo, .is-light.hero-home .navbar-item-logo, .hero.is-light .navbar-item-footer, .is-light.hero-home .navbar-item-footer, .hero.is-light .navbar-item-section, .is-light.hero-home .navbar-item-section,
     .hero.is-light .navbar-link,
     .is-light.hero-home .navbar-link {
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-light a.navbar-item:hover, .is-light.hero-home a.navbar-item:hover, .hero.is-light a.navbar-item-logo:hover, .is-light.hero-home a.navbar-item-logo:hover, .hero.is-light a.navbar-item-section:hover, .is-light.hero-home a.navbar-item-section:hover, .hero.is-light a.navbar-item.is-active, .is-light.hero-home a.navbar-item.is-active, .hero.is-light a.is-active.navbar-item-logo, .is-light.hero-home a.is-active.navbar-item-logo, .hero.is-light a.is-active.navbar-item-section, .is-light.hero-home a.is-active.navbar-item-section,
+    .hero.is-light a.navbar-item:hover, .is-light.hero-home a.navbar-item:hover, .hero.is-light a.navbar-item-logo:hover, .is-light.hero-home a.navbar-item-logo:hover, .hero.is-light a.navbar-item-footer:hover, .is-light.hero-home a.navbar-item-footer:hover, .hero.is-light a.navbar-item-section:hover, .is-light.hero-home a.navbar-item-section:hover, .hero.is-light a.navbar-item.is-active, .is-light.hero-home a.navbar-item.is-active, .hero.is-light a.is-active.navbar-item-logo, .is-light.hero-home a.is-active.navbar-item-logo, .hero.is-light a.is-active.navbar-item-footer, .is-light.hero-home a.is-active.navbar-item-footer, .hero.is-light a.is-active.navbar-item-section, .is-light.hero-home a.is-active.navbar-item-section,
     .hero.is-light .navbar-link:hover,
     .is-light.hero-home .navbar-link:hover,
     .hero.is-light .navbar-link.is-active,
@@ -6725,11 +6786,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-dark .navbar-menu, .is-dark.hero-home .navbar-menu {
         background-color: #363636; } }
-    .hero.is-dark .navbar-item, .is-dark.hero-home .navbar-item, .hero.is-dark .navbar-item-logo, .is-dark.hero-home .navbar-item-logo, .hero.is-dark .navbar-item-section, .is-dark.hero-home .navbar-item-section,
+    .hero.is-dark .navbar-item, .is-dark.hero-home .navbar-item, .hero.is-dark .navbar-item-logo, .is-dark.hero-home .navbar-item-logo, .hero.is-dark .navbar-item-footer, .is-dark.hero-home .navbar-item-footer, .hero.is-dark .navbar-item-section, .is-dark.hero-home .navbar-item-section,
     .hero.is-dark .navbar-link,
     .is-dark.hero-home .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-dark a.navbar-item:hover, .is-dark.hero-home a.navbar-item:hover, .hero.is-dark a.navbar-item-logo:hover, .is-dark.hero-home a.navbar-item-logo:hover, .hero.is-dark a.navbar-item-section:hover, .is-dark.hero-home a.navbar-item-section:hover, .hero.is-dark a.navbar-item.is-active, .is-dark.hero-home a.navbar-item.is-active, .hero.is-dark a.is-active.navbar-item-logo, .is-dark.hero-home a.is-active.navbar-item-logo, .hero.is-dark a.is-active.navbar-item-section, .is-dark.hero-home a.is-active.navbar-item-section,
+    .hero.is-dark a.navbar-item:hover, .is-dark.hero-home a.navbar-item:hover, .hero.is-dark a.navbar-item-logo:hover, .is-dark.hero-home a.navbar-item-logo:hover, .hero.is-dark a.navbar-item-footer:hover, .is-dark.hero-home a.navbar-item-footer:hover, .hero.is-dark a.navbar-item-section:hover, .is-dark.hero-home a.navbar-item-section:hover, .hero.is-dark a.navbar-item.is-active, .is-dark.hero-home a.navbar-item.is-active, .hero.is-dark a.is-active.navbar-item-logo, .is-dark.hero-home a.is-active.navbar-item-logo, .hero.is-dark a.is-active.navbar-item-footer, .is-dark.hero-home a.is-active.navbar-item-footer, .hero.is-dark a.is-active.navbar-item-section, .is-dark.hero-home a.is-active.navbar-item-section,
     .hero.is-dark .navbar-link:hover,
     .is-dark.hero-home .navbar-link:hover,
     .hero.is-dark .navbar-link.is-active,
@@ -6774,11 +6835,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-primary .navbar-menu, .is-primary.hero-home .navbar-menu {
         background-color: #00d1b2; } }
-    .hero.is-primary .navbar-item, .is-primary.hero-home .navbar-item, .hero.is-primary .navbar-item-logo, .is-primary.hero-home .navbar-item-logo, .hero.is-primary .navbar-item-section, .is-primary.hero-home .navbar-item-section,
+    .hero.is-primary .navbar-item, .is-primary.hero-home .navbar-item, .hero.is-primary .navbar-item-logo, .is-primary.hero-home .navbar-item-logo, .hero.is-primary .navbar-item-footer, .is-primary.hero-home .navbar-item-footer, .hero.is-primary .navbar-item-section, .is-primary.hero-home .navbar-item-section,
     .hero.is-primary .navbar-link,
     .is-primary.hero-home .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-primary a.navbar-item:hover, .is-primary.hero-home a.navbar-item:hover, .hero.is-primary a.navbar-item-logo:hover, .is-primary.hero-home a.navbar-item-logo:hover, .hero.is-primary a.navbar-item-section:hover, .is-primary.hero-home a.navbar-item-section:hover, .hero.is-primary a.navbar-item.is-active, .is-primary.hero-home a.navbar-item.is-active, .hero.is-primary a.is-active.navbar-item-logo, .is-primary.hero-home a.is-active.navbar-item-logo, .hero.is-primary a.is-active.navbar-item-section, .is-primary.hero-home a.is-active.navbar-item-section,
+    .hero.is-primary a.navbar-item:hover, .is-primary.hero-home a.navbar-item:hover, .hero.is-primary a.navbar-item-logo:hover, .is-primary.hero-home a.navbar-item-logo:hover, .hero.is-primary a.navbar-item-footer:hover, .is-primary.hero-home a.navbar-item-footer:hover, .hero.is-primary a.navbar-item-section:hover, .is-primary.hero-home a.navbar-item-section:hover, .hero.is-primary a.navbar-item.is-active, .is-primary.hero-home a.navbar-item.is-active, .hero.is-primary a.is-active.navbar-item-logo, .is-primary.hero-home a.is-active.navbar-item-logo, .hero.is-primary a.is-active.navbar-item-footer, .is-primary.hero-home a.is-active.navbar-item-footer, .hero.is-primary a.is-active.navbar-item-section, .is-primary.hero-home a.is-active.navbar-item-section,
     .hero.is-primary .navbar-link:hover,
     .is-primary.hero-home .navbar-link:hover,
     .hero.is-primary .navbar-link.is-active,
@@ -6823,11 +6884,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-link .navbar-menu, .is-link.hero-home .navbar-menu {
         background-color: #3273dc; } }
-    .hero.is-link .navbar-item, .is-link.hero-home .navbar-item, .hero.is-link .navbar-item-logo, .is-link.hero-home .navbar-item-logo, .hero.is-link .navbar-item-section, .is-link.hero-home .navbar-item-section,
+    .hero.is-link .navbar-item, .is-link.hero-home .navbar-item, .hero.is-link .navbar-item-logo, .is-link.hero-home .navbar-item-logo, .hero.is-link .navbar-item-footer, .is-link.hero-home .navbar-item-footer, .hero.is-link .navbar-item-section, .is-link.hero-home .navbar-item-section,
     .hero.is-link .navbar-link,
     .is-link.hero-home .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-link a.navbar-item:hover, .is-link.hero-home a.navbar-item:hover, .hero.is-link a.navbar-item-logo:hover, .is-link.hero-home a.navbar-item-logo:hover, .hero.is-link a.navbar-item-section:hover, .is-link.hero-home a.navbar-item-section:hover, .hero.is-link a.navbar-item.is-active, .is-link.hero-home a.navbar-item.is-active, .hero.is-link a.is-active.navbar-item-logo, .is-link.hero-home a.is-active.navbar-item-logo, .hero.is-link a.is-active.navbar-item-section, .is-link.hero-home a.is-active.navbar-item-section,
+    .hero.is-link a.navbar-item:hover, .is-link.hero-home a.navbar-item:hover, .hero.is-link a.navbar-item-logo:hover, .is-link.hero-home a.navbar-item-logo:hover, .hero.is-link a.navbar-item-footer:hover, .is-link.hero-home a.navbar-item-footer:hover, .hero.is-link a.navbar-item-section:hover, .is-link.hero-home a.navbar-item-section:hover, .hero.is-link a.navbar-item.is-active, .is-link.hero-home a.navbar-item.is-active, .hero.is-link a.is-active.navbar-item-logo, .is-link.hero-home a.is-active.navbar-item-logo, .hero.is-link a.is-active.navbar-item-footer, .is-link.hero-home a.is-active.navbar-item-footer, .hero.is-link a.is-active.navbar-item-section, .is-link.hero-home a.is-active.navbar-item-section,
     .hero.is-link .navbar-link:hover,
     .is-link.hero-home .navbar-link:hover,
     .hero.is-link .navbar-link.is-active,
@@ -6872,11 +6933,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-info .navbar-menu, .is-info.hero-home .navbar-menu {
         background-color: #3298dc; } }
-    .hero.is-info .navbar-item, .is-info.hero-home .navbar-item, .hero.is-info .navbar-item-logo, .is-info.hero-home .navbar-item-logo, .hero.is-info .navbar-item-section, .is-info.hero-home .navbar-item-section,
+    .hero.is-info .navbar-item, .is-info.hero-home .navbar-item, .hero.is-info .navbar-item-logo, .is-info.hero-home .navbar-item-logo, .hero.is-info .navbar-item-footer, .is-info.hero-home .navbar-item-footer, .hero.is-info .navbar-item-section, .is-info.hero-home .navbar-item-section,
     .hero.is-info .navbar-link,
     .is-info.hero-home .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-info a.navbar-item:hover, .is-info.hero-home a.navbar-item:hover, .hero.is-info a.navbar-item-logo:hover, .is-info.hero-home a.navbar-item-logo:hover, .hero.is-info a.navbar-item-section:hover, .is-info.hero-home a.navbar-item-section:hover, .hero.is-info a.navbar-item.is-active, .is-info.hero-home a.navbar-item.is-active, .hero.is-info a.is-active.navbar-item-logo, .is-info.hero-home a.is-active.navbar-item-logo, .hero.is-info a.is-active.navbar-item-section, .is-info.hero-home a.is-active.navbar-item-section,
+    .hero.is-info a.navbar-item:hover, .is-info.hero-home a.navbar-item:hover, .hero.is-info a.navbar-item-logo:hover, .is-info.hero-home a.navbar-item-logo:hover, .hero.is-info a.navbar-item-footer:hover, .is-info.hero-home a.navbar-item-footer:hover, .hero.is-info a.navbar-item-section:hover, .is-info.hero-home a.navbar-item-section:hover, .hero.is-info a.navbar-item.is-active, .is-info.hero-home a.navbar-item.is-active, .hero.is-info a.is-active.navbar-item-logo, .is-info.hero-home a.is-active.navbar-item-logo, .hero.is-info a.is-active.navbar-item-footer, .is-info.hero-home a.is-active.navbar-item-footer, .hero.is-info a.is-active.navbar-item-section, .is-info.hero-home a.is-active.navbar-item-section,
     .hero.is-info .navbar-link:hover,
     .is-info.hero-home .navbar-link:hover,
     .hero.is-info .navbar-link.is-active,
@@ -6921,11 +6982,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-success .navbar-menu, .is-success.hero-home .navbar-menu {
         background-color: #48c774; } }
-    .hero.is-success .navbar-item, .is-success.hero-home .navbar-item, .hero.is-success .navbar-item-logo, .is-success.hero-home .navbar-item-logo, .hero.is-success .navbar-item-section, .is-success.hero-home .navbar-item-section,
+    .hero.is-success .navbar-item, .is-success.hero-home .navbar-item, .hero.is-success .navbar-item-logo, .is-success.hero-home .navbar-item-logo, .hero.is-success .navbar-item-footer, .is-success.hero-home .navbar-item-footer, .hero.is-success .navbar-item-section, .is-success.hero-home .navbar-item-section,
     .hero.is-success .navbar-link,
     .is-success.hero-home .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-success a.navbar-item:hover, .is-success.hero-home a.navbar-item:hover, .hero.is-success a.navbar-item-logo:hover, .is-success.hero-home a.navbar-item-logo:hover, .hero.is-success a.navbar-item-section:hover, .is-success.hero-home a.navbar-item-section:hover, .hero.is-success a.navbar-item.is-active, .is-success.hero-home a.navbar-item.is-active, .hero.is-success a.is-active.navbar-item-logo, .is-success.hero-home a.is-active.navbar-item-logo, .hero.is-success a.is-active.navbar-item-section, .is-success.hero-home a.is-active.navbar-item-section,
+    .hero.is-success a.navbar-item:hover, .is-success.hero-home a.navbar-item:hover, .hero.is-success a.navbar-item-logo:hover, .is-success.hero-home a.navbar-item-logo:hover, .hero.is-success a.navbar-item-footer:hover, .is-success.hero-home a.navbar-item-footer:hover, .hero.is-success a.navbar-item-section:hover, .is-success.hero-home a.navbar-item-section:hover, .hero.is-success a.navbar-item.is-active, .is-success.hero-home a.navbar-item.is-active, .hero.is-success a.is-active.navbar-item-logo, .is-success.hero-home a.is-active.navbar-item-logo, .hero.is-success a.is-active.navbar-item-footer, .is-success.hero-home a.is-active.navbar-item-footer, .hero.is-success a.is-active.navbar-item-section, .is-success.hero-home a.is-active.navbar-item-section,
     .hero.is-success .navbar-link:hover,
     .is-success.hero-home .navbar-link:hover,
     .hero.is-success .navbar-link.is-active,
@@ -6970,11 +7031,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-warning .navbar-menu, .is-warning.hero-home .navbar-menu {
         background-color: #ffdd57; } }
-    .hero.is-warning .navbar-item, .is-warning.hero-home .navbar-item, .hero.is-warning .navbar-item-logo, .is-warning.hero-home .navbar-item-logo, .hero.is-warning .navbar-item-section, .is-warning.hero-home .navbar-item-section,
+    .hero.is-warning .navbar-item, .is-warning.hero-home .navbar-item, .hero.is-warning .navbar-item-logo, .is-warning.hero-home .navbar-item-logo, .hero.is-warning .navbar-item-footer, .is-warning.hero-home .navbar-item-footer, .hero.is-warning .navbar-item-section, .is-warning.hero-home .navbar-item-section,
     .hero.is-warning .navbar-link,
     .is-warning.hero-home .navbar-link {
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning a.navbar-item:hover, .is-warning.hero-home a.navbar-item:hover, .hero.is-warning a.navbar-item-logo:hover, .is-warning.hero-home a.navbar-item-logo:hover, .hero.is-warning a.navbar-item-section:hover, .is-warning.hero-home a.navbar-item-section:hover, .hero.is-warning a.navbar-item.is-active, .is-warning.hero-home a.navbar-item.is-active, .hero.is-warning a.is-active.navbar-item-logo, .is-warning.hero-home a.is-active.navbar-item-logo, .hero.is-warning a.is-active.navbar-item-section, .is-warning.hero-home a.is-active.navbar-item-section,
+    .hero.is-warning a.navbar-item:hover, .is-warning.hero-home a.navbar-item:hover, .hero.is-warning a.navbar-item-logo:hover, .is-warning.hero-home a.navbar-item-logo:hover, .hero.is-warning a.navbar-item-footer:hover, .is-warning.hero-home a.navbar-item-footer:hover, .hero.is-warning a.navbar-item-section:hover, .is-warning.hero-home a.navbar-item-section:hover, .hero.is-warning a.navbar-item.is-active, .is-warning.hero-home a.navbar-item.is-active, .hero.is-warning a.is-active.navbar-item-logo, .is-warning.hero-home a.is-active.navbar-item-logo, .hero.is-warning a.is-active.navbar-item-footer, .is-warning.hero-home a.is-active.navbar-item-footer, .hero.is-warning a.is-active.navbar-item-section, .is-warning.hero-home a.is-active.navbar-item-section,
     .hero.is-warning .navbar-link:hover,
     .is-warning.hero-home .navbar-link:hover,
     .hero.is-warning .navbar-link.is-active,
@@ -7019,11 +7080,11 @@ label.panel-block {
     @media screen and (max-width: 1023px) {
       .hero.is-danger .navbar-menu, .is-danger.hero-home .navbar-menu {
         background-color: #f14668; } }
-    .hero.is-danger .navbar-item, .is-danger.hero-home .navbar-item, .hero.is-danger .navbar-item-logo, .is-danger.hero-home .navbar-item-logo, .hero.is-danger .navbar-item-section, .is-danger.hero-home .navbar-item-section,
+    .hero.is-danger .navbar-item, .is-danger.hero-home .navbar-item, .hero.is-danger .navbar-item-logo, .is-danger.hero-home .navbar-item-logo, .hero.is-danger .navbar-item-footer, .is-danger.hero-home .navbar-item-footer, .hero.is-danger .navbar-item-section, .is-danger.hero-home .navbar-item-section,
     .hero.is-danger .navbar-link,
     .is-danger.hero-home .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-danger a.navbar-item:hover, .is-danger.hero-home a.navbar-item:hover, .hero.is-danger a.navbar-item-logo:hover, .is-danger.hero-home a.navbar-item-logo:hover, .hero.is-danger a.navbar-item-section:hover, .is-danger.hero-home a.navbar-item-section:hover, .hero.is-danger a.navbar-item.is-active, .is-danger.hero-home a.navbar-item.is-active, .hero.is-danger a.is-active.navbar-item-logo, .is-danger.hero-home a.is-active.navbar-item-logo, .hero.is-danger a.is-active.navbar-item-section, .is-danger.hero-home a.is-active.navbar-item-section,
+    .hero.is-danger a.navbar-item:hover, .is-danger.hero-home a.navbar-item:hover, .hero.is-danger a.navbar-item-logo:hover, .is-danger.hero-home a.navbar-item-logo:hover, .hero.is-danger a.navbar-item-footer:hover, .is-danger.hero-home a.navbar-item-footer:hover, .hero.is-danger a.navbar-item-section:hover, .is-danger.hero-home a.navbar-item-section:hover, .hero.is-danger a.navbar-item.is-active, .is-danger.hero-home a.navbar-item.is-active, .hero.is-danger a.is-active.navbar-item-logo, .is-danger.hero-home a.is-active.navbar-item-logo, .hero.is-danger a.is-active.navbar-item-footer, .is-danger.hero-home a.is-active.navbar-item-footer, .hero.is-danger a.is-active.navbar-item-section, .is-danger.hero-home a.is-active.navbar-item-section,
     .hero.is-danger .navbar-link:hover,
     .is-danger.hero-home .navbar-link:hover,
     .hero.is-danger .navbar-link.is-active,
@@ -7121,7 +7182,7 @@ label.panel-block {
 
 .footer {
   background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem; }
+  padding: 3rem 1rem 1rem; }
 
 .hero-home {
   background-image: url("../image/i1.jpg");
