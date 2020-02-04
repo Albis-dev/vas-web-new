@@ -46,6 +46,10 @@ class BulmaModal {
 	}
 }
 
+window.onload = function() {
+	scrolly();
+}; 
+
 var btn0 = document.querySelector("#popmodal0")
 var mdl0 = new BulmaModal("#modal0")
 
