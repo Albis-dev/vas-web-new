@@ -7190,7 +7190,7 @@ label.panel-block {
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards; }
 
 @keyframes fadeIn {
