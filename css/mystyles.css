@@ -7186,8 +7186,18 @@ label.panel-block {
 
 .hero-home {
   background-image: url("../image/i1.jpg");
-  background-size: cover; }
+  background-size: cover;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .navbar-item-section {
   margin-left: 3rem; }
 
