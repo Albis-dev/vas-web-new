@@ -32,7 +32,7 @@
   transform-origin: center;
   width: 0.625em; }
 
-.box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .section-title:not(:last-child), .logo-title:not(:last-child),
+.box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .title-main:not(:last-child), .section-title:not(:last-child), .logo-title:not(:last-child),
 .subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .list:not(:last-child), .message:not(:last-child), .pagination:not(:last-child), .tabs:not(:last-child) {
   margin-bottom: 1.5rem; }
 
@@ -2189,7 +2189,7 @@ a.box:active {
     position: absolute;
     right: 0.5rem;
     top: 0.5rem; }
-  .notification .title, .notification .section-title, .notification .logo-title,
+  .notification .title, .notification .title-main, .notification .section-title, .notification .logo-title,
   .notification .subtitle,
   .notification .content {
     color: currentColor; }
@@ -2625,51 +2625,52 @@ a.box:active {
 a.tag:hover {
   text-decoration: underline; }
 
-.title, .section-title, .logo-title,
+.title, .title-main, .section-title, .logo-title,
 .subtitle {
   word-break: break-word; }
-  .title em, .section-title em, .logo-title em,
+  .title em, .title-main em, .section-title em, .logo-title em,
   .title span,
+  .title-main span,
   .section-title span,
   .logo-title span,
   .subtitle em,
   .subtitle span {
     font-weight: inherit; }
-  .title sub, .section-title sub, .logo-title sub,
+  .title sub, .title-main sub, .section-title sub, .logo-title sub,
   .subtitle sub {
     font-size: 0.75em; }
-  .title sup, .section-title sup, .logo-title sup,
+  .title sup, .title-main sup, .section-title sup, .logo-title sup,
   .subtitle sup {
     font-size: 0.75em; }
-  .title .tag, .section-title .tag, .logo-title .tag,
+  .title .tag, .title-main .tag, .section-title .tag, .logo-title .tag,
   .subtitle .tag {
     vertical-align: middle; }
 
-.title, .section-title, .logo-title {
+.title, .title-main, .section-title, .logo-title {
   color: #363636;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125; }
-  .title strong, .section-title strong, .logo-title strong {
+  .title strong, .title-main strong, .section-title strong, .logo-title strong {
     color: inherit;
     font-weight: inherit; }
-  .title + .highlight, .section-title + .highlight, .logo-title + .highlight {
+  .title + .highlight, .title-main + .highlight, .section-title + .highlight, .logo-title + .highlight {
     margin-top: -0.75rem; }
-  .title:not(.is-spaced) + .subtitle, .section-title:not(.is-spaced) + .subtitle, .logo-title:not(.is-spaced) + .subtitle {
+  .title:not(.is-spaced) + .subtitle, .title-main:not(.is-spaced) + .subtitle, .section-title:not(.is-spaced) + .subtitle, .logo-title:not(.is-spaced) + .subtitle {
     margin-top: -1.25rem; }
-  .title.is-1, .is-1.section-title, .is-1.logo-title {
+  .title.is-1, .is-1.title-main, .is-1.section-title, .is-1.logo-title {
     font-size: 3rem; }
-  .title.is-2, .is-2.section-title, .is-2.logo-title {
+  .title.is-2, .is-2.title-main, .is-2.section-title, .is-2.logo-title {
     font-size: 2.5rem; }
-  .title.is-3, .is-3.section-title, .is-3.logo-title {
+  .title.is-3, .is-3.title-main, .is-3.section-title, .is-3.logo-title {
     font-size: 2rem; }
-  .title.is-4, .is-4.section-title, .is-4.logo-title {
+  .title.is-4, .is-4.title-main, .is-4.section-title, .is-4.logo-title {
     font-size: 1.5rem; }
-  .title.is-5, .is-5.section-title, .is-5.logo-title {
+  .title.is-5, .is-5.title-main, .is-5.section-title, .is-5.logo-title {
     font-size: 1.25rem; }
-  .title.is-6, .is-6.section-title, .is-6.logo-title {
+  .title.is-6, .is-6.title-main, .is-6.section-title, .is-6.logo-title {
     font-size: 1rem; }
-  .title.is-7, .is-7.section-title, .is-7.logo-title {
+  .title.is-7, .is-7.title-main, .is-7.section-title, .is-7.logo-title {
     font-size: 0.75rem; }
 
 .subtitle {
@@ -2680,7 +2681,7 @@ a.tag:hover {
   .subtitle strong {
     color: #363636;
     font-weight: 600; }
-  .subtitle:not(.is-spaced) + .title, .subtitle:not(.is-spaced) + .section-title, .subtitle:not(.is-spaced) + .logo-title {
+  .subtitle:not(.is-spaced) + .title, .subtitle:not(.is-spaced) + .title-main, .subtitle:not(.is-spaced) + .section-title, .subtitle:not(.is-spaced) + .logo-title {
     margin-top: -1.25rem; }
   .subtitle.is-1 {
     font-size: 3rem; }
@@ -3706,7 +3707,7 @@ button.dropdown-item {
   flex-grow: 0;
   flex-shrink: 0;
   justify-content: center; }
-  .level-item .title, .level-item .section-title, .level-item .logo-title,
+  .level-item .title, .level-item .title-main, .level-item .section-title, .level-item .logo-title,
   .level-item .subtitle {
     margin-bottom: 0; }
   @media screen and (max-width: 768px) {
@@ -6628,7 +6629,7 @@ label.panel-block {
     .hero.is-white strong,
     .is-white.hero-home strong {
       color: inherit; }
-    .hero.is-white .title, .is-white.hero-home .title, .hero.is-white .section-title, .is-white.hero-home .section-title, .hero.is-white .logo-title, .is-white.hero-home .logo-title {
+    .hero.is-white .title, .is-white.hero-home .title, .hero.is-white .title-main, .is-white.hero-home .title-main, .hero.is-white .section-title, .is-white.hero-home .section-title, .hero.is-white .logo-title, .is-white.hero-home .logo-title {
       color: #0a0a0a; }
     .hero.is-white .subtitle, .is-white.hero-home .subtitle {
       color: rgba(10, 10, 10, 0.9); }
@@ -6677,7 +6678,7 @@ label.panel-block {
     .hero.is-black strong,
     .is-black.hero-home strong {
       color: inherit; }
-    .hero.is-black .title, .is-black.hero-home .title, .hero.is-black .section-title, .is-black.hero-home .section-title, .hero.is-black .logo-title, .is-black.hero-home .logo-title {
+    .hero.is-black .title, .is-black.hero-home .title, .hero.is-black .title-main, .is-black.hero-home .title-main, .hero.is-black .section-title, .is-black.hero-home .section-title, .hero.is-black .logo-title, .is-black.hero-home .logo-title {
       color: white; }
     .hero.is-black .subtitle, .is-black.hero-home .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6726,7 +6727,7 @@ label.panel-block {
     .hero.is-light strong,
     .is-light.hero-home strong {
       color: inherit; }
-    .hero.is-light .title, .is-light.hero-home .title, .hero.is-light .section-title, .is-light.hero-home .section-title, .hero.is-light .logo-title, .is-light.hero-home .logo-title {
+    .hero.is-light .title, .is-light.hero-home .title, .hero.is-light .title-main, .is-light.hero-home .title-main, .hero.is-light .section-title, .is-light.hero-home .section-title, .hero.is-light .logo-title, .is-light.hero-home .logo-title {
       color: rgba(0, 0, 0, 0.7); }
     .hero.is-light .subtitle, .is-light.hero-home .subtitle {
       color: rgba(0, 0, 0, 0.9); }
@@ -6775,7 +6776,7 @@ label.panel-block {
     .hero.is-dark strong,
     .is-dark.hero-home strong {
       color: inherit; }
-    .hero.is-dark .title, .is-dark.hero-home .title, .hero.is-dark .section-title, .is-dark.hero-home .section-title, .hero.is-dark .logo-title, .is-dark.hero-home .logo-title {
+    .hero.is-dark .title, .is-dark.hero-home .title, .hero.is-dark .title-main, .is-dark.hero-home .title-main, .hero.is-dark .section-title, .is-dark.hero-home .section-title, .hero.is-dark .logo-title, .is-dark.hero-home .logo-title {
       color: #fff; }
     .hero.is-dark .subtitle, .is-dark.hero-home .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6824,7 +6825,7 @@ label.panel-block {
     .hero.is-primary strong,
     .is-primary.hero-home strong {
       color: inherit; }
-    .hero.is-primary .title, .is-primary.hero-home .title, .hero.is-primary .section-title, .is-primary.hero-home .section-title, .hero.is-primary .logo-title, .is-primary.hero-home .logo-title {
+    .hero.is-primary .title, .is-primary.hero-home .title, .hero.is-primary .title-main, .is-primary.hero-home .title-main, .hero.is-primary .section-title, .is-primary.hero-home .section-title, .hero.is-primary .logo-title, .is-primary.hero-home .logo-title {
       color: #fff; }
     .hero.is-primary .subtitle, .is-primary.hero-home .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6873,7 +6874,7 @@ label.panel-block {
     .hero.is-link strong,
     .is-link.hero-home strong {
       color: inherit; }
-    .hero.is-link .title, .is-link.hero-home .title, .hero.is-link .section-title, .is-link.hero-home .section-title, .hero.is-link .logo-title, .is-link.hero-home .logo-title {
+    .hero.is-link .title, .is-link.hero-home .title, .hero.is-link .title-main, .is-link.hero-home .title-main, .hero.is-link .section-title, .is-link.hero-home .section-title, .hero.is-link .logo-title, .is-link.hero-home .logo-title {
       color: #fff; }
     .hero.is-link .subtitle, .is-link.hero-home .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6922,7 +6923,7 @@ label.panel-block {
     .hero.is-info strong,
     .is-info.hero-home strong {
       color: inherit; }
-    .hero.is-info .title, .is-info.hero-home .title, .hero.is-info .section-title, .is-info.hero-home .section-title, .hero.is-info .logo-title, .is-info.hero-home .logo-title {
+    .hero.is-info .title, .is-info.hero-home .title, .hero.is-info .title-main, .is-info.hero-home .title-main, .hero.is-info .section-title, .is-info.hero-home .section-title, .hero.is-info .logo-title, .is-info.hero-home .logo-title {
       color: #fff; }
     .hero.is-info .subtitle, .is-info.hero-home .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6971,7 +6972,7 @@ label.panel-block {
     .hero.is-success strong,
     .is-success.hero-home strong {
       color: inherit; }
-    .hero.is-success .title, .is-success.hero-home .title, .hero.is-success .section-title, .is-success.hero-home .section-title, .hero.is-success .logo-title, .is-success.hero-home .logo-title {
+    .hero.is-success .title, .is-success.hero-home .title, .hero.is-success .title-main, .is-success.hero-home .title-main, .hero.is-success .section-title, .is-success.hero-home .section-title, .hero.is-success .logo-title, .is-success.hero-home .logo-title {
       color: #fff; }
     .hero.is-success .subtitle, .is-success.hero-home .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -7020,7 +7021,7 @@ label.panel-block {
     .hero.is-warning strong,
     .is-warning.hero-home strong {
       color: inherit; }
-    .hero.is-warning .title, .is-warning.hero-home .title, .hero.is-warning .section-title, .is-warning.hero-home .section-title, .hero.is-warning .logo-title, .is-warning.hero-home .logo-title {
+    .hero.is-warning .title, .is-warning.hero-home .title, .hero.is-warning .title-main, .is-warning.hero-home .title-main, .hero.is-warning .section-title, .is-warning.hero-home .section-title, .hero.is-warning .logo-title, .is-warning.hero-home .logo-title {
       color: rgba(0, 0, 0, 0.7); }
     .hero.is-warning .subtitle, .is-warning.hero-home .subtitle {
       color: rgba(0, 0, 0, 0.9); }
@@ -7069,7 +7070,7 @@ label.panel-block {
     .hero.is-danger strong,
     .is-danger.hero-home strong {
       color: inherit; }
-    .hero.is-danger .title, .is-danger.hero-home .title, .hero.is-danger .section-title, .is-danger.hero-home .section-title, .hero.is-danger .logo-title, .is-danger.hero-home .logo-title {
+    .hero.is-danger .title, .is-danger.hero-home .title, .hero.is-danger .title-main, .is-danger.hero-home .title-main, .hero.is-danger .section-title, .is-danger.hero-home .section-title, .hero.is-danger .logo-title, .is-danger.hero-home .logo-title {
       color: #fff; }
     .hero.is-danger .subtitle, .is-danger.hero-home .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -7192,6 +7193,9 @@ label.panel-block {
   animation-timing-function: ease-in-out;
   animation-duration: 2s;
   animation-fill-mode: forwards; }
+
+.title-main {
+  font-size: 4rem; }
 
 @keyframes fadeIn {
   0% {
