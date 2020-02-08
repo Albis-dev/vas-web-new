@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
-  <nav id="home" class="navbar has-shadow is-transparent is-fixed-top is-light is-spaced" role="navigation" aria-label="main navigation">
+  <nav id="home" class="navbar has-shadow is-fixed-top is-light is-spaced" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item-logo">
       <h1 class="logo-title is-size-4 is-size-5-mobile">
@@ -76,10 +76,32 @@
     <div class="hero-body">
         <div class="container">
             <p data-scrolly-down="blurInTop, duration:0.3s" class="section-title is-1 is-size-2-mobile">CONTACT</p><br>
-            <p data-scrolly-down="blurInTop, duration:0.4s" class="title">Address</p><br>
-            <p data-scrolly-down="blurInTop, duration:0.5s" class="subtitle"><a href="http://kko.to/XoHmMjI0B" target="_blank">1302, 18, Mapo-daero 4da-gil, Mapo-gu, Seoul, 04177, Republic of Korea <i class="fas fa-external-link-alt"></i></a></p><br>
-            <p data-scrolly-down="blurInTop, duration:0.4s" class="title">Reach Us</p><br>
-            <p data-scrolly-down="blurInTop, duration:0.5s" class="subtitle">Tel : <a href="tel:+8227047111">+82-2-704-7211</a> / Fax. <a href="tel:+8227047211">+82-2-704-7211</a> / Email : <a href="mailto:sales@vas.co.kr">sales@vas.co.kr</a></p><br>
+            <div class="columns">
+              <div class="column">
+                <p data-scrolly-down="blurInTop, duration:0.4s" class="title">Address</p><br>
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1581157425666" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div><br>
+
+                <!--
+                  2. 설치 스크립트
+                  * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                  new daum.roughmap.Lander({
+                    "timestamp" : "1581157425666",
+                    "key" : "wxct",
+                    "mapHeight" : "360"
+                  }).render();
+                </script>
+                <p data-scrolly-down="blurInTop, duration:0.5s" class="subtitle"><a href="http://kko.to/XoHmMjI0B" target="_blank">1302, 18, Mapo-daero 4da-gil, Mapo-gu, Seoul, 04177, Republic of Korea <i class="fas fa-external-link-alt"></i></a></p><br>
+                <p data-scrolly-down="blurInTop, duration:0.4s" class="title">Reach Us</p><br>
+                <p data-scrolly-down="blurInTop, duration:0.5s" class="subtitle">Tel : <a href="tel:+8227047111">+82-2-704-7211</a> / Fax. <a href="tel:+8227047211">+82-2-704-7211</a> / Email : <a href="mailto:sales@vas.co.kr">sales@vas.co.kr</a></p><br>
+              </div>
+            </div>
         </div>
     </div>
   </section>
