@@ -1,49 +1,34 @@
-class BulmaModal {
-	constructor(selector) {
-		this.elem = document.querySelector(selector)
-		this.close_data()
-	}
-	
-	show() {
-		this.elem.classList.toggle('is-active')
-		this.on_show()
-	}
-	
-	close() {
-		this.elem.classList.toggle('is-active')
-		this.on_close()
-	}
-	
-	close_data() {
-		var modalClose = this.elem.querySelectorAll("[data-bulma-modal='close'], .modal-background")
-		var that = this
-		modalClose.forEach(function(e) {
-			e.addEventListener("click", function() {
-				
-				that.elem.classList.toggle('is-active')
+// NAVBAR
+document.addEventListener('DOMContentLoaded', () => {
 
-				var event = new Event('modal:close')
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-				that.elem.dispatchEvent(event);
-			})
-		})
-	}
-	
-	on_show() {
-		var event = new Event('modal:show')
-	
-		this.elem.dispatchEvent(event);
-	}
-	
-	on_close() {
-		var event = new Event('modal:close')
-	
-		this.elem.dispatchEvent(event);
-	}
-	
-	addEventListener(event, callback) {
-		this.elem.addEventListener(event, callback)
-	}
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {	
+
+        // Get the target from the "data-target" attribute
+        burgerMenu = document.querySelector('.navbar-menu');
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        burgerMenu.classList.toggle('is-active');
+      });
+    });
+  }
+});
+
+// MOBILE NAVBAR BURGER
+const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+if (vw<=1024) {
+	document.getElementById("hide-on-mobile1").remove();
+	document.getElementById("hide-on-mobile2").remove();
+	document.getElementById("hide-on-mobile3").remove();
+	document.getElementById("hide-on-mobile4").remove();
 }
 
 window.onload = function() {
