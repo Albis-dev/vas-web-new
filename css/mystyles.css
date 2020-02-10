@@ -7206,14 +7206,21 @@ label.panel-block {
 .programming-title {
   padding-top: 4rem; }
 
+.card {
+  border-radius: 30px; }
+
 .card-content-1 {
   background-color: #48c774;
   height: 10rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
 
 .card-image-1 {
   padding: 2rem;
-  background-color: #dbdbdb; }
+  background-color: #dbdbdb;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px; }
 
 .column-solution {
   margin: 1rem; }
