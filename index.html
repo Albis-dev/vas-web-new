@@ -10,6 +10,7 @@
     <script type="text/javascript" src="./scrolly/scrolly.js"></script>
     <script src="https://kit.fontawesome.com/9541a14f6b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=97099a17a6bce5161be54ed51bcd8c24"></script>
   </head>
   <body>
   <nav id="home" class="navbar has-shadow is-fixed-top is-light is-spaced" role="navigation" aria-label="main navigation">
@@ -134,24 +135,7 @@
             <div class="columns">
               <div class="column">
                 <p data-scrolly-down="blurInTop, duration:0.4s" class="title">Address</p><br>
-                <!-- * 카카오맵 - 지도퍼가기 -->
-                <!-- 1. 지도 노드 -->
-                <div data-scrolly-down="blurInTop, duration:0.5s" id="daumRoughmapContainer1581157425666" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div><br>
-
-                <!--
-                  2. 설치 스크립트
-                  * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                -->
-                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-                <!-- 3. 실행 스크립트 -->
-                <script charset="UTF-8">
-                  new daum.roughmap.Lander({
-                    "timestamp" : "1581157425666",
-                    "key" : "wxct",
-                    "mapHeight" : "360"
-                  }).render();
-                </script>
+                <div id="map" style="width:100%;height:400px;"></div><br>
                 <p data-scrolly-down="blurInTop, duration:0.5s" class="subtitle"><a href="http://kko.to/XoHmMjI0B" target="_blank">1302, 18, Mapo-daero 4da-gil, Mapo-gu, Seoul, 04177, Republic of Korea <i class="fas fa-external-link-alt"></i></a></p><br>
                 <p data-scrolly-down="blurInTop, duration:0.4s" class="title">Reach Us</p><br>
                 <p data-scrolly-down="blurInTop, duration:0.5s" class="subtitle">Tel : <a href="tel:+8227047111">+82-2-704-7211</a> / Fax. <a href="tel:+8227047211">+82-2-704-7211</a> / Email : <a href="mailto:sales@vas.co.kr">sales@vas.co.kr</a></p><br>
