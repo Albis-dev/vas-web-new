@@ -7248,3 +7248,7 @@ a {
 
 .fa-external-link-alt {
   font-size: 0.5em; }
+
+#map {
+  width: 100%;
+  height: 300px; }
