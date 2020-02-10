@@ -7208,7 +7208,8 @@ label.panel-block {
 
 .card-content-1 {
   background-color: #48c774;
-  margin-bottom: 10rem; }
+  height: 10rem;
+  margin-bottom: 2rem; }
 
 .card-image-1 {
   padding: 2rem;
