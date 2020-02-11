@@ -1,3 +1,7 @@
+window.onload = function() {
+	scrolly();
+}; 
+
 // NAVBAR
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -52,7 +56,3 @@ if (vw<=1024) {
 	document.getElementById("hide-on-mobile3").remove();
 	document.getElementById("hide-on-mobile4").remove();
 }
-
-window.onload = function() {
-	scrolly();
-}; 
