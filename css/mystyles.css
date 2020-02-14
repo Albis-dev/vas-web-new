@@ -1921,30 +1921,30 @@ a.box:active {
       margin-left: 0.25rem;
       margin-right: 0.25rem; }
 
-.container {
+.container, .container-knowledge {
   flex-grow: 1;
   margin: 0 auto;
   position: relative;
   width: auto; }
-  .container.is-fluid {
+  .container.is-fluid, .is-fluid.container-knowledge {
     max-width: none;
     padding-left: 32px;
     padding-right: 32px;
     width: 100%; }
   @media screen and (min-width: 1024px) {
-    .container {
+    .container, .container-knowledge {
       max-width: 960px; } }
   @media screen and (max-width: 1215px) {
-    .container.is-widescreen {
+    .container.is-widescreen, .is-widescreen.container-knowledge {
       max-width: 1152px; } }
   @media screen and (max-width: 1407px) {
-    .container.is-fullhd {
+    .container.is-fullhd, .is-fullhd.container-knowledge {
       max-width: 1344px; } }
   @media screen and (min-width: 1216px) {
-    .container {
+    .container, .container-knowledge {
       max-width: 1152px; } }
   @media screen and (min-width: 1408px) {
-    .container {
+    .container, .container-knowledge {
       max-width: 1344px; } }
 
 .content li + li {
@@ -3556,7 +3556,7 @@ a.tag:hover {
   .breadcrumb.has-succeeds-separator li + li::before {
     content: "≻"; }
 
-.card {
+.card, .card-software, .card-hardware, .card-design {
   background-color: white;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   color: #4a4a4a;
@@ -3611,7 +3611,7 @@ a.tag:hover {
   .card-footer-item:not(:last-child) {
     border-right: 1px solid #ededed; }
 
-.card .media:not(:last-child) {
+.card .media:not(:last-child), .card-software .media:not(:last-child), .card-hardware .media:not(:last-child), .card-design .media:not(:last-child) {
   margin-bottom: 1.5rem; }
 
 .dropdown {
@@ -4694,7 +4694,7 @@ a.list-item {
       .navbar.is-danger .navbar-dropdown a.navbar-item.is-active, .navbar.is-danger .navbar-dropdown a.is-active.navbar-item-logo, .navbar.is-danger .navbar-dropdown a.is-active.navbar-item-footer, .navbar.is-danger .navbar-dropdown a.is-active.navbar-item-section {
         background-color: #f14668;
         color: #fff; } }
-  .navbar > .container {
+  .navbar > .container, .navbar > .container-knowledge {
     align-items: stretch;
     display: flex;
     min-height: 3.25rem;
@@ -4849,7 +4849,7 @@ a.navbar-item, a.navbar-item-logo, a.navbar-item-footer, a.navbar-item-section,
   margin: 0.5rem 0; }
 
 @media screen and (max-width: 1023px) {
-  .navbar > .container {
+  .navbar > .container, .navbar > .container-knowledge {
     display: block; }
 
   .navbar-brand .navbar-item, .navbar-brand .navbar-item-logo, .navbar-brand .navbar-item-footer, .navbar-brand .navbar-item-section,
@@ -5006,11 +5006,13 @@ a.navbar-item, a.navbar-item-logo, a.navbar-item-footer, a.navbar-item-section,
   .navbar-divider {
     display: block; }
 
-  .navbar > .container .navbar-brand,
-  .container > .navbar .navbar-brand {
+  .navbar > .container .navbar-brand, .navbar > .container-knowledge .navbar-brand,
+  .container > .navbar .navbar-brand,
+  .container-knowledge > .navbar .navbar-brand {
     margin-left: -0.75rem; }
-  .navbar > .container .navbar-menu,
-  .container > .navbar .navbar-menu {
+  .navbar > .container .navbar-menu, .navbar > .container-knowledge .navbar-menu,
+  .container > .navbar .navbar-menu,
+  .container-knowledge > .navbar .navbar-menu {
     margin-right: -0.75rem; }
 
   .navbar.is-fixed-bottom-desktop, .navbar.is-fixed-top-desktop {
@@ -7177,7 +7179,7 @@ label.panel-block {
   .hero.is-halfheight .hero-body, .is-halfheight.hero-home .hero-body, .is-halfheight.hero-company .hero-body, .hero.is-fullheight .hero-body, .is-fullheight.hero-home .hero-body, .is-fullheight.hero-company .hero-body, .hero.is-fullheight-with-navbar .hero-body, .is-fullheight-with-navbar.hero-home .hero-body, .is-fullheight-with-navbar.hero-company .hero-body {
     align-items: center;
     display: flex; }
-    .hero.is-halfheight .hero-body > .container, .is-halfheight.hero-home .hero-body > .container, .is-halfheight.hero-company .hero-body > .container, .hero.is-fullheight .hero-body > .container, .is-fullheight.hero-home .hero-body > .container, .is-fullheight.hero-company .hero-body > .container, .hero.is-fullheight-with-navbar .hero-body > .container, .is-fullheight-with-navbar.hero-home .hero-body > .container, .is-fullheight-with-navbar.hero-company .hero-body > .container {
+    .hero.is-halfheight .hero-body > .container, .is-halfheight.hero-home .hero-body > .container, .is-halfheight.hero-company .hero-body > .container, .hero.is-halfheight .hero-body > .container-knowledge, .is-halfheight.hero-home .hero-body > .container-knowledge, .is-halfheight.hero-company .hero-body > .container-knowledge, .hero.is-fullheight .hero-body > .container, .is-fullheight.hero-home .hero-body > .container, .is-fullheight.hero-company .hero-body > .container, .hero.is-fullheight .hero-body > .container-knowledge, .is-fullheight.hero-home .hero-body > .container-knowledge, .is-fullheight.hero-company .hero-body > .container-knowledge, .hero.is-fullheight-with-navbar .hero-body > .container, .is-fullheight-with-navbar.hero-home .hero-body > .container, .is-fullheight-with-navbar.hero-company .hero-body > .container, .hero.is-fullheight-with-navbar .hero-body > .container-knowledge, .is-fullheight-with-navbar.hero-home .hero-body > .container-knowledge, .is-fullheight-with-navbar.hero-company .hero-body > .container-knowledge {
       flex-grow: 1;
       flex-shrink: 1; }
   .hero.is-halfheight, .is-halfheight.hero-home, .is-halfheight.hero-company {
@@ -7265,7 +7267,7 @@ label.panel-block {
 .programming-title {
   padding-top: 4rem; }
 
-.card {
+.card, .card-software, .card-hardware, .card-design {
   border-radius: 30px; }
 
 .card-content-1 {
@@ -7309,15 +7311,43 @@ label.panel-block {
 .no-hover {
   pointer-events: none; }
 
+.column-worklist {
+  padding-top: 2rem; }
+
 a {
   color: inherit; }
 
 .fa-external-link-alt {
   font-size: 0.5em; }
 
+.fa-brain {
+  font-size: 3rem;
+  padding-right: 0.25rem; }
+
+.fa-signal {
+  font-size: 3rem; }
+
+.fa-network-wired {
+  font-size: 3rem; }
+
+.card-software {
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
+
+.card-hardware {
+  background-color: #dbdbdb;
+  margin-bottom: 1rem; }
+
+.card-design {
+  margin-bottom: 2rem;
+  background-color: #b5b5b5; }
+
 @media (width: 1280px) {
   .map-column {
-    padding-right: 3rem; } }
+    padding-right: 3rem; }
+
+  .container-knowledge {
+    width: 50%; } }
 #map {
   width: 100%;
   height: 350px; }
