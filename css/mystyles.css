@@ -5047,7 +5047,7 @@ a.navbar-item, a.navbar-item-logo, a.navbar-item-footer, a.navbar-item-section,
 
   .navbar-item.has-dropdown:focus .navbar-link, .has-dropdown.navbar-item-logo:focus .navbar-link, .has-dropdown.navbar-item-footer:focus .navbar-link, .has-dropdown.navbar-item-section:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .has-dropdown.navbar-item-logo:hover .navbar-link, .has-dropdown.navbar-item-footer:hover .navbar-link, .has-dropdown.navbar-item-section:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link, .has-dropdown.is-active.navbar-item-logo .navbar-link, .has-dropdown.is-active.navbar-item-footer .navbar-link, .has-dropdown.is-active.navbar-item-section .navbar-link {
     background-color: #fafafa; } }
-.hero.is-fullheight-with-navbar, .is-fullheight-with-navbar.hero-home {
+.hero.is-fullheight-with-navbar, .is-fullheight-with-navbar.hero-home, .is-fullheight-with-navbar.hero-company {
   min-height: calc(100vh - 3.25rem); }
 
 .pagination {
@@ -6614,525 +6614,575 @@ label.panel-block {
       flex: none;
       width: 100%; } }
 
-.hero, .hero-home {
+.hero, .hero-home, .hero-company {
   align-items: stretch;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .hero .navbar, .hero-home .navbar {
+  .hero .navbar, .hero-home .navbar, .hero-company .navbar {
     background: none; }
-  .hero .tabs ul, .hero-home .tabs ul {
+  .hero .tabs ul, .hero-home .tabs ul, .hero-company .tabs ul {
     border-bottom: none; }
-  .hero.is-white, .is-white.hero-home {
+  .hero.is-white, .is-white.hero-home, .is-white.hero-company {
     background-color: white;
     color: #0a0a0a; }
-    .hero.is-white a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-white.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-white a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-white.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-white.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-white strong,
-    .is-white.hero-home strong {
+    .is-white.hero-home strong,
+    .is-white.hero-company strong {
       color: inherit; }
-    .hero.is-white .title, .is-white.hero-home .title, .hero.is-white .title-main, .is-white.hero-home .title-main, .hero.is-white .programming-title, .is-white.hero-home .programming-title, .hero.is-white .section-title, .is-white.hero-home .section-title, .hero.is-white .logo-title, .is-white.hero-home .logo-title {
+    .hero.is-white .title, .is-white.hero-home .title, .is-white.hero-company .title, .hero.is-white .title-main, .is-white.hero-home .title-main, .is-white.hero-company .title-main, .hero.is-white .programming-title, .is-white.hero-home .programming-title, .is-white.hero-company .programming-title, .hero.is-white .section-title, .is-white.hero-home .section-title, .is-white.hero-company .section-title, .hero.is-white .logo-title, .is-white.hero-home .logo-title, .is-white.hero-company .logo-title {
       color: #0a0a0a; }
-    .hero.is-white .subtitle, .is-white.hero-home .subtitle {
+    .hero.is-white .subtitle, .is-white.hero-home .subtitle, .is-white.hero-company .subtitle {
       color: rgba(10, 10, 10, 0.9); }
-      .hero.is-white .subtitle a:not(.button), .is-white.hero-home .subtitle a:not(.button),
+      .hero.is-white .subtitle a:not(.button), .is-white.hero-home .subtitle a:not(.button), .is-white.hero-company .subtitle a:not(.button),
       .hero.is-white .subtitle strong,
-      .is-white.hero-home .subtitle strong {
+      .is-white.hero-home .subtitle strong,
+      .is-white.hero-company .subtitle strong {
         color: #0a0a0a; }
     @media screen and (max-width: 1023px) {
-      .hero.is-white .navbar-menu, .is-white.hero-home .navbar-menu {
+      .hero.is-white .navbar-menu, .is-white.hero-home .navbar-menu, .is-white.hero-company .navbar-menu {
         background-color: white; } }
-    .hero.is-white .navbar-item, .is-white.hero-home .navbar-item, .hero.is-white .navbar-item-logo, .is-white.hero-home .navbar-item-logo, .hero.is-white .navbar-item-footer, .is-white.hero-home .navbar-item-footer, .hero.is-white .navbar-item-section, .is-white.hero-home .navbar-item-section,
+    .hero.is-white .navbar-item, .is-white.hero-home .navbar-item, .is-white.hero-company .navbar-item, .hero.is-white .navbar-item-logo, .is-white.hero-home .navbar-item-logo, .is-white.hero-company .navbar-item-logo, .hero.is-white .navbar-item-footer, .is-white.hero-home .navbar-item-footer, .is-white.hero-company .navbar-item-footer, .hero.is-white .navbar-item-section, .is-white.hero-home .navbar-item-section, .is-white.hero-company .navbar-item-section,
     .hero.is-white .navbar-link,
-    .is-white.hero-home .navbar-link {
+    .is-white.hero-home .navbar-link,
+    .is-white.hero-company .navbar-link {
       color: rgba(10, 10, 10, 0.7); }
-    .hero.is-white a.navbar-item:hover, .is-white.hero-home a.navbar-item:hover, .hero.is-white a.navbar-item-logo:hover, .is-white.hero-home a.navbar-item-logo:hover, .hero.is-white a.navbar-item-footer:hover, .is-white.hero-home a.navbar-item-footer:hover, .hero.is-white a.navbar-item-section:hover, .is-white.hero-home a.navbar-item-section:hover, .hero.is-white a.navbar-item.is-active, .is-white.hero-home a.navbar-item.is-active, .hero.is-white a.is-active.navbar-item-logo, .is-white.hero-home a.is-active.navbar-item-logo, .hero.is-white a.is-active.navbar-item-footer, .is-white.hero-home a.is-active.navbar-item-footer, .hero.is-white a.is-active.navbar-item-section, .is-white.hero-home a.is-active.navbar-item-section,
+    .hero.is-white a.navbar-item:hover, .is-white.hero-home a.navbar-item:hover, .is-white.hero-company a.navbar-item:hover, .hero.is-white a.navbar-item-logo:hover, .is-white.hero-home a.navbar-item-logo:hover, .is-white.hero-company a.navbar-item-logo:hover, .hero.is-white a.navbar-item-footer:hover, .is-white.hero-home a.navbar-item-footer:hover, .is-white.hero-company a.navbar-item-footer:hover, .hero.is-white a.navbar-item-section:hover, .is-white.hero-home a.navbar-item-section:hover, .is-white.hero-company a.navbar-item-section:hover, .hero.is-white a.navbar-item.is-active, .is-white.hero-home a.navbar-item.is-active, .is-white.hero-company a.navbar-item.is-active, .hero.is-white a.is-active.navbar-item-logo, .is-white.hero-home a.is-active.navbar-item-logo, .is-white.hero-company a.is-active.navbar-item-logo, .hero.is-white a.is-active.navbar-item-footer, .is-white.hero-home a.is-active.navbar-item-footer, .is-white.hero-company a.is-active.navbar-item-footer, .hero.is-white a.is-active.navbar-item-section, .is-white.hero-home a.is-active.navbar-item-section, .is-white.hero-company a.is-active.navbar-item-section,
     .hero.is-white .navbar-link:hover,
     .is-white.hero-home .navbar-link:hover,
+    .is-white.hero-company .navbar-link:hover,
     .hero.is-white .navbar-link.is-active,
-    .is-white.hero-home .navbar-link.is-active {
+    .is-white.hero-home .navbar-link.is-active,
+    .is-white.hero-company .navbar-link.is-active {
       background-color: #f2f2f2;
       color: #0a0a0a; }
-    .hero.is-white .tabs a, .is-white.hero-home .tabs a {
+    .hero.is-white .tabs a, .is-white.hero-home .tabs a, .is-white.hero-company .tabs a {
       color: #0a0a0a;
       opacity: 0.9; }
-      .hero.is-white .tabs a:hover, .is-white.hero-home .tabs a:hover {
+      .hero.is-white .tabs a:hover, .is-white.hero-home .tabs a:hover, .is-white.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-white .tabs li.is-active a, .is-white.hero-home .tabs li.is-active a {
+    .hero.is-white .tabs li.is-active a, .is-white.hero-home .tabs li.is-active a, .is-white.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-white .tabs.is-boxed a, .is-white.hero-home .tabs.is-boxed a, .hero.is-white .tabs.is-toggle a, .is-white.hero-home .tabs.is-toggle a {
+    .hero.is-white .tabs.is-boxed a, .is-white.hero-home .tabs.is-boxed a, .is-white.hero-company .tabs.is-boxed a, .hero.is-white .tabs.is-toggle a, .is-white.hero-home .tabs.is-toggle a, .is-white.hero-company .tabs.is-toggle a {
       color: #0a0a0a; }
-      .hero.is-white .tabs.is-boxed a:hover, .is-white.hero-home .tabs.is-boxed a:hover, .hero.is-white .tabs.is-toggle a:hover, .is-white.hero-home .tabs.is-toggle a:hover {
+      .hero.is-white .tabs.is-boxed a:hover, .is-white.hero-home .tabs.is-boxed a:hover, .is-white.hero-company .tabs.is-boxed a:hover, .hero.is-white .tabs.is-toggle a:hover, .is-white.hero-home .tabs.is-toggle a:hover, .is-white.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-white .tabs.is-boxed li.is-active a, .is-white.hero-home .tabs.is-boxed li.is-active a, .hero.is-white .tabs.is-boxed li.is-active a:hover, .is-white.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-white .tabs.is-toggle li.is-active a, .is-white.hero-home .tabs.is-toggle li.is-active a, .hero.is-white .tabs.is-toggle li.is-active a:hover, .is-white.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-white .tabs.is-boxed li.is-active a, .is-white.hero-home .tabs.is-boxed li.is-active a, .is-white.hero-company .tabs.is-boxed li.is-active a, .hero.is-white .tabs.is-boxed li.is-active a:hover, .is-white.hero-home .tabs.is-boxed li.is-active a:hover, .is-white.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-white .tabs.is-toggle li.is-active a, .is-white.hero-home .tabs.is-toggle li.is-active a, .is-white.hero-company .tabs.is-toggle li.is-active a, .hero.is-white .tabs.is-toggle li.is-active a:hover, .is-white.hero-home .tabs.is-toggle li.is-active a:hover, .is-white.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: #0a0a0a;
       border-color: #0a0a0a;
       color: white; }
-    .hero.is-white.is-bold, .is-white.is-bold.hero-home {
+    .hero.is-white.is-bold, .is-white.is-bold.hero-home, .is-white.is-bold.hero-company {
       background-image: linear-gradient(141deg, #e8e3e4 0%, white 71%, white 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-white.is-bold .navbar-menu, .is-white.is-bold.hero-home .navbar-menu {
+        .hero.is-white.is-bold .navbar-menu, .is-white.is-bold.hero-home .navbar-menu, .is-white.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, #e8e3e4 0%, white 71%, white 100%); } }
-  .hero.is-black, .is-black.hero-home {
+  .hero.is-black, .is-black.hero-home, .is-black.hero-company {
     background-color: #0a0a0a;
     color: white; }
-    .hero.is-black a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-black.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-black a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-black.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-black.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-black strong,
-    .is-black.hero-home strong {
+    .is-black.hero-home strong,
+    .is-black.hero-company strong {
       color: inherit; }
-    .hero.is-black .title, .is-black.hero-home .title, .hero.is-black .title-main, .is-black.hero-home .title-main, .hero.is-black .programming-title, .is-black.hero-home .programming-title, .hero.is-black .section-title, .is-black.hero-home .section-title, .hero.is-black .logo-title, .is-black.hero-home .logo-title {
+    .hero.is-black .title, .is-black.hero-home .title, .is-black.hero-company .title, .hero.is-black .title-main, .is-black.hero-home .title-main, .is-black.hero-company .title-main, .hero.is-black .programming-title, .is-black.hero-home .programming-title, .is-black.hero-company .programming-title, .hero.is-black .section-title, .is-black.hero-home .section-title, .is-black.hero-company .section-title, .hero.is-black .logo-title, .is-black.hero-home .logo-title, .is-black.hero-company .logo-title {
       color: white; }
-    .hero.is-black .subtitle, .is-black.hero-home .subtitle {
+    .hero.is-black .subtitle, .is-black.hero-home .subtitle, .is-black.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-black .subtitle a:not(.button), .is-black.hero-home .subtitle a:not(.button),
+      .hero.is-black .subtitle a:not(.button), .is-black.hero-home .subtitle a:not(.button), .is-black.hero-company .subtitle a:not(.button),
       .hero.is-black .subtitle strong,
-      .is-black.hero-home .subtitle strong {
+      .is-black.hero-home .subtitle strong,
+      .is-black.hero-company .subtitle strong {
         color: white; }
     @media screen and (max-width: 1023px) {
-      .hero.is-black .navbar-menu, .is-black.hero-home .navbar-menu {
+      .hero.is-black .navbar-menu, .is-black.hero-home .navbar-menu, .is-black.hero-company .navbar-menu {
         background-color: #0a0a0a; } }
-    .hero.is-black .navbar-item, .is-black.hero-home .navbar-item, .hero.is-black .navbar-item-logo, .is-black.hero-home .navbar-item-logo, .hero.is-black .navbar-item-footer, .is-black.hero-home .navbar-item-footer, .hero.is-black .navbar-item-section, .is-black.hero-home .navbar-item-section,
+    .hero.is-black .navbar-item, .is-black.hero-home .navbar-item, .is-black.hero-company .navbar-item, .hero.is-black .navbar-item-logo, .is-black.hero-home .navbar-item-logo, .is-black.hero-company .navbar-item-logo, .hero.is-black .navbar-item-footer, .is-black.hero-home .navbar-item-footer, .is-black.hero-company .navbar-item-footer, .hero.is-black .navbar-item-section, .is-black.hero-home .navbar-item-section, .is-black.hero-company .navbar-item-section,
     .hero.is-black .navbar-link,
-    .is-black.hero-home .navbar-link {
+    .is-black.hero-home .navbar-link,
+    .is-black.hero-company .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-black a.navbar-item:hover, .is-black.hero-home a.navbar-item:hover, .hero.is-black a.navbar-item-logo:hover, .is-black.hero-home a.navbar-item-logo:hover, .hero.is-black a.navbar-item-footer:hover, .is-black.hero-home a.navbar-item-footer:hover, .hero.is-black a.navbar-item-section:hover, .is-black.hero-home a.navbar-item-section:hover, .hero.is-black a.navbar-item.is-active, .is-black.hero-home a.navbar-item.is-active, .hero.is-black a.is-active.navbar-item-logo, .is-black.hero-home a.is-active.navbar-item-logo, .hero.is-black a.is-active.navbar-item-footer, .is-black.hero-home a.is-active.navbar-item-footer, .hero.is-black a.is-active.navbar-item-section, .is-black.hero-home a.is-active.navbar-item-section,
+    .hero.is-black a.navbar-item:hover, .is-black.hero-home a.navbar-item:hover, .is-black.hero-company a.navbar-item:hover, .hero.is-black a.navbar-item-logo:hover, .is-black.hero-home a.navbar-item-logo:hover, .is-black.hero-company a.navbar-item-logo:hover, .hero.is-black a.navbar-item-footer:hover, .is-black.hero-home a.navbar-item-footer:hover, .is-black.hero-company a.navbar-item-footer:hover, .hero.is-black a.navbar-item-section:hover, .is-black.hero-home a.navbar-item-section:hover, .is-black.hero-company a.navbar-item-section:hover, .hero.is-black a.navbar-item.is-active, .is-black.hero-home a.navbar-item.is-active, .is-black.hero-company a.navbar-item.is-active, .hero.is-black a.is-active.navbar-item-logo, .is-black.hero-home a.is-active.navbar-item-logo, .is-black.hero-company a.is-active.navbar-item-logo, .hero.is-black a.is-active.navbar-item-footer, .is-black.hero-home a.is-active.navbar-item-footer, .is-black.hero-company a.is-active.navbar-item-footer, .hero.is-black a.is-active.navbar-item-section, .is-black.hero-home a.is-active.navbar-item-section, .is-black.hero-company a.is-active.navbar-item-section,
     .hero.is-black .navbar-link:hover,
     .is-black.hero-home .navbar-link:hover,
+    .is-black.hero-company .navbar-link:hover,
     .hero.is-black .navbar-link.is-active,
-    .is-black.hero-home .navbar-link.is-active {
+    .is-black.hero-home .navbar-link.is-active,
+    .is-black.hero-company .navbar-link.is-active {
       background-color: black;
       color: white; }
-    .hero.is-black .tabs a, .is-black.hero-home .tabs a {
+    .hero.is-black .tabs a, .is-black.hero-home .tabs a, .is-black.hero-company .tabs a {
       color: white;
       opacity: 0.9; }
-      .hero.is-black .tabs a:hover, .is-black.hero-home .tabs a:hover {
+      .hero.is-black .tabs a:hover, .is-black.hero-home .tabs a:hover, .is-black.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-black .tabs li.is-active a, .is-black.hero-home .tabs li.is-active a {
+    .hero.is-black .tabs li.is-active a, .is-black.hero-home .tabs li.is-active a, .is-black.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-black .tabs.is-boxed a, .is-black.hero-home .tabs.is-boxed a, .hero.is-black .tabs.is-toggle a, .is-black.hero-home .tabs.is-toggle a {
+    .hero.is-black .tabs.is-boxed a, .is-black.hero-home .tabs.is-boxed a, .is-black.hero-company .tabs.is-boxed a, .hero.is-black .tabs.is-toggle a, .is-black.hero-home .tabs.is-toggle a, .is-black.hero-company .tabs.is-toggle a {
       color: white; }
-      .hero.is-black .tabs.is-boxed a:hover, .is-black.hero-home .tabs.is-boxed a:hover, .hero.is-black .tabs.is-toggle a:hover, .is-black.hero-home .tabs.is-toggle a:hover {
+      .hero.is-black .tabs.is-boxed a:hover, .is-black.hero-home .tabs.is-boxed a:hover, .is-black.hero-company .tabs.is-boxed a:hover, .hero.is-black .tabs.is-toggle a:hover, .is-black.hero-home .tabs.is-toggle a:hover, .is-black.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-black .tabs.is-boxed li.is-active a, .is-black.hero-home .tabs.is-boxed li.is-active a, .hero.is-black .tabs.is-boxed li.is-active a:hover, .is-black.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-black .tabs.is-toggle li.is-active a, .is-black.hero-home .tabs.is-toggle li.is-active a, .hero.is-black .tabs.is-toggle li.is-active a:hover, .is-black.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-black .tabs.is-boxed li.is-active a, .is-black.hero-home .tabs.is-boxed li.is-active a, .is-black.hero-company .tabs.is-boxed li.is-active a, .hero.is-black .tabs.is-boxed li.is-active a:hover, .is-black.hero-home .tabs.is-boxed li.is-active a:hover, .is-black.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-black .tabs.is-toggle li.is-active a, .is-black.hero-home .tabs.is-toggle li.is-active a, .is-black.hero-company .tabs.is-toggle li.is-active a, .hero.is-black .tabs.is-toggle li.is-active a:hover, .is-black.hero-home .tabs.is-toggle li.is-active a:hover, .is-black.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: white;
       border-color: white;
       color: #0a0a0a; }
-    .hero.is-black.is-bold, .is-black.is-bold.hero-home {
+    .hero.is-black.is-bold, .is-black.is-bold.hero-home, .is-black.is-bold.hero-company {
       background-image: linear-gradient(141deg, black 0%, #0a0a0a 71%, #181616 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-black.is-bold .navbar-menu, .is-black.is-bold.hero-home .navbar-menu {
+        .hero.is-black.is-bold .navbar-menu, .is-black.is-bold.hero-home .navbar-menu, .is-black.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, black 0%, #0a0a0a 71%, #181616 100%); } }
-  .hero.is-light, .is-light.hero-home {
+  .hero.is-light, .is-light.hero-home, .is-light.hero-company {
     background-color: whitesmoke;
     color: rgba(0, 0, 0, 0.7); }
-    .hero.is-light a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-light.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-light a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-light.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-light.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-light strong,
-    .is-light.hero-home strong {
+    .is-light.hero-home strong,
+    .is-light.hero-company strong {
       color: inherit; }
-    .hero.is-light .title, .is-light.hero-home .title, .hero.is-light .title-main, .is-light.hero-home .title-main, .hero.is-light .programming-title, .is-light.hero-home .programming-title, .hero.is-light .section-title, .is-light.hero-home .section-title, .hero.is-light .logo-title, .is-light.hero-home .logo-title {
+    .hero.is-light .title, .is-light.hero-home .title, .is-light.hero-company .title, .hero.is-light .title-main, .is-light.hero-home .title-main, .is-light.hero-company .title-main, .hero.is-light .programming-title, .is-light.hero-home .programming-title, .is-light.hero-company .programming-title, .hero.is-light .section-title, .is-light.hero-home .section-title, .is-light.hero-company .section-title, .hero.is-light .logo-title, .is-light.hero-home .logo-title, .is-light.hero-company .logo-title {
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-light .subtitle, .is-light.hero-home .subtitle {
+    .hero.is-light .subtitle, .is-light.hero-home .subtitle, .is-light.hero-company .subtitle {
       color: rgba(0, 0, 0, 0.9); }
-      .hero.is-light .subtitle a:not(.button), .is-light.hero-home .subtitle a:not(.button),
+      .hero.is-light .subtitle a:not(.button), .is-light.hero-home .subtitle a:not(.button), .is-light.hero-company .subtitle a:not(.button),
       .hero.is-light .subtitle strong,
-      .is-light.hero-home .subtitle strong {
+      .is-light.hero-home .subtitle strong,
+      .is-light.hero-company .subtitle strong {
         color: rgba(0, 0, 0, 0.7); }
     @media screen and (max-width: 1023px) {
-      .hero.is-light .navbar-menu, .is-light.hero-home .navbar-menu {
+      .hero.is-light .navbar-menu, .is-light.hero-home .navbar-menu, .is-light.hero-company .navbar-menu {
         background-color: whitesmoke; } }
-    .hero.is-light .navbar-item, .is-light.hero-home .navbar-item, .hero.is-light .navbar-item-logo, .is-light.hero-home .navbar-item-logo, .hero.is-light .navbar-item-footer, .is-light.hero-home .navbar-item-footer, .hero.is-light .navbar-item-section, .is-light.hero-home .navbar-item-section,
+    .hero.is-light .navbar-item, .is-light.hero-home .navbar-item, .is-light.hero-company .navbar-item, .hero.is-light .navbar-item-logo, .is-light.hero-home .navbar-item-logo, .is-light.hero-company .navbar-item-logo, .hero.is-light .navbar-item-footer, .is-light.hero-home .navbar-item-footer, .is-light.hero-company .navbar-item-footer, .hero.is-light .navbar-item-section, .is-light.hero-home .navbar-item-section, .is-light.hero-company .navbar-item-section,
     .hero.is-light .navbar-link,
-    .is-light.hero-home .navbar-link {
+    .is-light.hero-home .navbar-link,
+    .is-light.hero-company .navbar-link {
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-light a.navbar-item:hover, .is-light.hero-home a.navbar-item:hover, .hero.is-light a.navbar-item-logo:hover, .is-light.hero-home a.navbar-item-logo:hover, .hero.is-light a.navbar-item-footer:hover, .is-light.hero-home a.navbar-item-footer:hover, .hero.is-light a.navbar-item-section:hover, .is-light.hero-home a.navbar-item-section:hover, .hero.is-light a.navbar-item.is-active, .is-light.hero-home a.navbar-item.is-active, .hero.is-light a.is-active.navbar-item-logo, .is-light.hero-home a.is-active.navbar-item-logo, .hero.is-light a.is-active.navbar-item-footer, .is-light.hero-home a.is-active.navbar-item-footer, .hero.is-light a.is-active.navbar-item-section, .is-light.hero-home a.is-active.navbar-item-section,
+    .hero.is-light a.navbar-item:hover, .is-light.hero-home a.navbar-item:hover, .is-light.hero-company a.navbar-item:hover, .hero.is-light a.navbar-item-logo:hover, .is-light.hero-home a.navbar-item-logo:hover, .is-light.hero-company a.navbar-item-logo:hover, .hero.is-light a.navbar-item-footer:hover, .is-light.hero-home a.navbar-item-footer:hover, .is-light.hero-company a.navbar-item-footer:hover, .hero.is-light a.navbar-item-section:hover, .is-light.hero-home a.navbar-item-section:hover, .is-light.hero-company a.navbar-item-section:hover, .hero.is-light a.navbar-item.is-active, .is-light.hero-home a.navbar-item.is-active, .is-light.hero-company a.navbar-item.is-active, .hero.is-light a.is-active.navbar-item-logo, .is-light.hero-home a.is-active.navbar-item-logo, .is-light.hero-company a.is-active.navbar-item-logo, .hero.is-light a.is-active.navbar-item-footer, .is-light.hero-home a.is-active.navbar-item-footer, .is-light.hero-company a.is-active.navbar-item-footer, .hero.is-light a.is-active.navbar-item-section, .is-light.hero-home a.is-active.navbar-item-section, .is-light.hero-company a.is-active.navbar-item-section,
     .hero.is-light .navbar-link:hover,
     .is-light.hero-home .navbar-link:hover,
+    .is-light.hero-company .navbar-link:hover,
     .hero.is-light .navbar-link.is-active,
-    .is-light.hero-home .navbar-link.is-active {
+    .is-light.hero-home .navbar-link.is-active,
+    .is-light.hero-company .navbar-link.is-active {
       background-color: #e8e8e8;
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-light .tabs a, .is-light.hero-home .tabs a {
+    .hero.is-light .tabs a, .is-light.hero-home .tabs a, .is-light.hero-company .tabs a {
       color: rgba(0, 0, 0, 0.7);
       opacity: 0.9; }
-      .hero.is-light .tabs a:hover, .is-light.hero-home .tabs a:hover {
+      .hero.is-light .tabs a:hover, .is-light.hero-home .tabs a:hover, .is-light.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-light .tabs li.is-active a, .is-light.hero-home .tabs li.is-active a {
+    .hero.is-light .tabs li.is-active a, .is-light.hero-home .tabs li.is-active a, .is-light.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-light .tabs.is-boxed a, .is-light.hero-home .tabs.is-boxed a, .hero.is-light .tabs.is-toggle a, .is-light.hero-home .tabs.is-toggle a {
+    .hero.is-light .tabs.is-boxed a, .is-light.hero-home .tabs.is-boxed a, .is-light.hero-company .tabs.is-boxed a, .hero.is-light .tabs.is-toggle a, .is-light.hero-home .tabs.is-toggle a, .is-light.hero-company .tabs.is-toggle a {
       color: rgba(0, 0, 0, 0.7); }
-      .hero.is-light .tabs.is-boxed a:hover, .is-light.hero-home .tabs.is-boxed a:hover, .hero.is-light .tabs.is-toggle a:hover, .is-light.hero-home .tabs.is-toggle a:hover {
+      .hero.is-light .tabs.is-boxed a:hover, .is-light.hero-home .tabs.is-boxed a:hover, .is-light.hero-company .tabs.is-boxed a:hover, .hero.is-light .tabs.is-toggle a:hover, .is-light.hero-home .tabs.is-toggle a:hover, .is-light.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-light .tabs.is-boxed li.is-active a, .is-light.hero-home .tabs.is-boxed li.is-active a, .hero.is-light .tabs.is-boxed li.is-active a:hover, .is-light.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-light .tabs.is-toggle li.is-active a, .is-light.hero-home .tabs.is-toggle li.is-active a, .hero.is-light .tabs.is-toggle li.is-active a:hover, .is-light.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-light .tabs.is-boxed li.is-active a, .is-light.hero-home .tabs.is-boxed li.is-active a, .is-light.hero-company .tabs.is-boxed li.is-active a, .hero.is-light .tabs.is-boxed li.is-active a:hover, .is-light.hero-home .tabs.is-boxed li.is-active a:hover, .is-light.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-light .tabs.is-toggle li.is-active a, .is-light.hero-home .tabs.is-toggle li.is-active a, .is-light.hero-company .tabs.is-toggle li.is-active a, .hero.is-light .tabs.is-toggle li.is-active a:hover, .is-light.hero-home .tabs.is-toggle li.is-active a:hover, .is-light.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: rgba(0, 0, 0, 0.7);
       border-color: rgba(0, 0, 0, 0.7);
       color: whitesmoke; }
-    .hero.is-light.is-bold, .is-light.is-bold.hero-home {
+    .hero.is-light.is-bold, .is-light.is-bold.hero-home, .is-light.is-bold.hero-company {
       background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-light.is-bold .navbar-menu, .is-light.is-bold.hero-home .navbar-menu {
+        .hero.is-light.is-bold .navbar-menu, .is-light.is-bold.hero-home .navbar-menu, .is-light.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%); } }
-  .hero.is-dark, .is-dark.hero-home {
+  .hero.is-dark, .is-dark.hero-home, .is-dark.hero-company {
     background-color: #363636;
     color: #fff; }
-    .hero.is-dark a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-dark.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-dark a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-dark.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-dark.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-dark strong,
-    .is-dark.hero-home strong {
+    .is-dark.hero-home strong,
+    .is-dark.hero-company strong {
       color: inherit; }
-    .hero.is-dark .title, .is-dark.hero-home .title, .hero.is-dark .title-main, .is-dark.hero-home .title-main, .hero.is-dark .programming-title, .is-dark.hero-home .programming-title, .hero.is-dark .section-title, .is-dark.hero-home .section-title, .hero.is-dark .logo-title, .is-dark.hero-home .logo-title {
+    .hero.is-dark .title, .is-dark.hero-home .title, .is-dark.hero-company .title, .hero.is-dark .title-main, .is-dark.hero-home .title-main, .is-dark.hero-company .title-main, .hero.is-dark .programming-title, .is-dark.hero-home .programming-title, .is-dark.hero-company .programming-title, .hero.is-dark .section-title, .is-dark.hero-home .section-title, .is-dark.hero-company .section-title, .hero.is-dark .logo-title, .is-dark.hero-home .logo-title, .is-dark.hero-company .logo-title {
       color: #fff; }
-    .hero.is-dark .subtitle, .is-dark.hero-home .subtitle {
+    .hero.is-dark .subtitle, .is-dark.hero-home .subtitle, .is-dark.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-dark .subtitle a:not(.button), .is-dark.hero-home .subtitle a:not(.button),
+      .hero.is-dark .subtitle a:not(.button), .is-dark.hero-home .subtitle a:not(.button), .is-dark.hero-company .subtitle a:not(.button),
       .hero.is-dark .subtitle strong,
-      .is-dark.hero-home .subtitle strong {
+      .is-dark.hero-home .subtitle strong,
+      .is-dark.hero-company .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-dark .navbar-menu, .is-dark.hero-home .navbar-menu {
+      .hero.is-dark .navbar-menu, .is-dark.hero-home .navbar-menu, .is-dark.hero-company .navbar-menu {
         background-color: #363636; } }
-    .hero.is-dark .navbar-item, .is-dark.hero-home .navbar-item, .hero.is-dark .navbar-item-logo, .is-dark.hero-home .navbar-item-logo, .hero.is-dark .navbar-item-footer, .is-dark.hero-home .navbar-item-footer, .hero.is-dark .navbar-item-section, .is-dark.hero-home .navbar-item-section,
+    .hero.is-dark .navbar-item, .is-dark.hero-home .navbar-item, .is-dark.hero-company .navbar-item, .hero.is-dark .navbar-item-logo, .is-dark.hero-home .navbar-item-logo, .is-dark.hero-company .navbar-item-logo, .hero.is-dark .navbar-item-footer, .is-dark.hero-home .navbar-item-footer, .is-dark.hero-company .navbar-item-footer, .hero.is-dark .navbar-item-section, .is-dark.hero-home .navbar-item-section, .is-dark.hero-company .navbar-item-section,
     .hero.is-dark .navbar-link,
-    .is-dark.hero-home .navbar-link {
+    .is-dark.hero-home .navbar-link,
+    .is-dark.hero-company .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-dark a.navbar-item:hover, .is-dark.hero-home a.navbar-item:hover, .hero.is-dark a.navbar-item-logo:hover, .is-dark.hero-home a.navbar-item-logo:hover, .hero.is-dark a.navbar-item-footer:hover, .is-dark.hero-home a.navbar-item-footer:hover, .hero.is-dark a.navbar-item-section:hover, .is-dark.hero-home a.navbar-item-section:hover, .hero.is-dark a.navbar-item.is-active, .is-dark.hero-home a.navbar-item.is-active, .hero.is-dark a.is-active.navbar-item-logo, .is-dark.hero-home a.is-active.navbar-item-logo, .hero.is-dark a.is-active.navbar-item-footer, .is-dark.hero-home a.is-active.navbar-item-footer, .hero.is-dark a.is-active.navbar-item-section, .is-dark.hero-home a.is-active.navbar-item-section,
+    .hero.is-dark a.navbar-item:hover, .is-dark.hero-home a.navbar-item:hover, .is-dark.hero-company a.navbar-item:hover, .hero.is-dark a.navbar-item-logo:hover, .is-dark.hero-home a.navbar-item-logo:hover, .is-dark.hero-company a.navbar-item-logo:hover, .hero.is-dark a.navbar-item-footer:hover, .is-dark.hero-home a.navbar-item-footer:hover, .is-dark.hero-company a.navbar-item-footer:hover, .hero.is-dark a.navbar-item-section:hover, .is-dark.hero-home a.navbar-item-section:hover, .is-dark.hero-company a.navbar-item-section:hover, .hero.is-dark a.navbar-item.is-active, .is-dark.hero-home a.navbar-item.is-active, .is-dark.hero-company a.navbar-item.is-active, .hero.is-dark a.is-active.navbar-item-logo, .is-dark.hero-home a.is-active.navbar-item-logo, .is-dark.hero-company a.is-active.navbar-item-logo, .hero.is-dark a.is-active.navbar-item-footer, .is-dark.hero-home a.is-active.navbar-item-footer, .is-dark.hero-company a.is-active.navbar-item-footer, .hero.is-dark a.is-active.navbar-item-section, .is-dark.hero-home a.is-active.navbar-item-section, .is-dark.hero-company a.is-active.navbar-item-section,
     .hero.is-dark .navbar-link:hover,
     .is-dark.hero-home .navbar-link:hover,
+    .is-dark.hero-company .navbar-link:hover,
     .hero.is-dark .navbar-link.is-active,
-    .is-dark.hero-home .navbar-link.is-active {
+    .is-dark.hero-home .navbar-link.is-active,
+    .is-dark.hero-company .navbar-link.is-active {
       background-color: #292929;
       color: #fff; }
-    .hero.is-dark .tabs a, .is-dark.hero-home .tabs a {
+    .hero.is-dark .tabs a, .is-dark.hero-home .tabs a, .is-dark.hero-company .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-dark .tabs a:hover, .is-dark.hero-home .tabs a:hover {
+      .hero.is-dark .tabs a:hover, .is-dark.hero-home .tabs a:hover, .is-dark.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-dark .tabs li.is-active a, .is-dark.hero-home .tabs li.is-active a {
+    .hero.is-dark .tabs li.is-active a, .is-dark.hero-home .tabs li.is-active a, .is-dark.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-dark .tabs.is-boxed a, .is-dark.hero-home .tabs.is-boxed a, .hero.is-dark .tabs.is-toggle a, .is-dark.hero-home .tabs.is-toggle a {
+    .hero.is-dark .tabs.is-boxed a, .is-dark.hero-home .tabs.is-boxed a, .is-dark.hero-company .tabs.is-boxed a, .hero.is-dark .tabs.is-toggle a, .is-dark.hero-home .tabs.is-toggle a, .is-dark.hero-company .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-dark .tabs.is-boxed a:hover, .is-dark.hero-home .tabs.is-boxed a:hover, .hero.is-dark .tabs.is-toggle a:hover, .is-dark.hero-home .tabs.is-toggle a:hover {
+      .hero.is-dark .tabs.is-boxed a:hover, .is-dark.hero-home .tabs.is-boxed a:hover, .is-dark.hero-company .tabs.is-boxed a:hover, .hero.is-dark .tabs.is-toggle a:hover, .is-dark.hero-home .tabs.is-toggle a:hover, .is-dark.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-dark .tabs.is-boxed li.is-active a, .is-dark.hero-home .tabs.is-boxed li.is-active a, .hero.is-dark .tabs.is-boxed li.is-active a:hover, .is-dark.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-dark .tabs.is-toggle li.is-active a, .is-dark.hero-home .tabs.is-toggle li.is-active a, .hero.is-dark .tabs.is-toggle li.is-active a:hover, .is-dark.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-dark .tabs.is-boxed li.is-active a, .is-dark.hero-home .tabs.is-boxed li.is-active a, .is-dark.hero-company .tabs.is-boxed li.is-active a, .hero.is-dark .tabs.is-boxed li.is-active a:hover, .is-dark.hero-home .tabs.is-boxed li.is-active a:hover, .is-dark.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-dark .tabs.is-toggle li.is-active a, .is-dark.hero-home .tabs.is-toggle li.is-active a, .is-dark.hero-company .tabs.is-toggle li.is-active a, .hero.is-dark .tabs.is-toggle li.is-active a:hover, .is-dark.hero-home .tabs.is-toggle li.is-active a:hover, .is-dark.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #363636; }
-    .hero.is-dark.is-bold, .is-dark.is-bold.hero-home {
+    .hero.is-dark.is-bold, .is-dark.is-bold.hero-home, .is-dark.is-bold.hero-company {
       background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-dark.is-bold .navbar-menu, .is-dark.is-bold.hero-home .navbar-menu {
+        .hero.is-dark.is-bold .navbar-menu, .is-dark.is-bold.hero-home .navbar-menu, .is-dark.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); } }
-  .hero.is-primary, .is-primary.hero-home {
+  .hero.is-primary, .is-primary.hero-home, .is-primary.hero-company {
     background-color: #00d1b2;
     color: #fff; }
-    .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-primary.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-primary.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-primary.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-primary strong,
-    .is-primary.hero-home strong {
+    .is-primary.hero-home strong,
+    .is-primary.hero-company strong {
       color: inherit; }
-    .hero.is-primary .title, .is-primary.hero-home .title, .hero.is-primary .title-main, .is-primary.hero-home .title-main, .hero.is-primary .programming-title, .is-primary.hero-home .programming-title, .hero.is-primary .section-title, .is-primary.hero-home .section-title, .hero.is-primary .logo-title, .is-primary.hero-home .logo-title {
+    .hero.is-primary .title, .is-primary.hero-home .title, .is-primary.hero-company .title, .hero.is-primary .title-main, .is-primary.hero-home .title-main, .is-primary.hero-company .title-main, .hero.is-primary .programming-title, .is-primary.hero-home .programming-title, .is-primary.hero-company .programming-title, .hero.is-primary .section-title, .is-primary.hero-home .section-title, .is-primary.hero-company .section-title, .hero.is-primary .logo-title, .is-primary.hero-home .logo-title, .is-primary.hero-company .logo-title {
       color: #fff; }
-    .hero.is-primary .subtitle, .is-primary.hero-home .subtitle {
+    .hero.is-primary .subtitle, .is-primary.hero-home .subtitle, .is-primary.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-primary .subtitle a:not(.button), .is-primary.hero-home .subtitle a:not(.button),
+      .hero.is-primary .subtitle a:not(.button), .is-primary.hero-home .subtitle a:not(.button), .is-primary.hero-company .subtitle a:not(.button),
       .hero.is-primary .subtitle strong,
-      .is-primary.hero-home .subtitle strong {
+      .is-primary.hero-home .subtitle strong,
+      .is-primary.hero-company .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-primary .navbar-menu, .is-primary.hero-home .navbar-menu {
+      .hero.is-primary .navbar-menu, .is-primary.hero-home .navbar-menu, .is-primary.hero-company .navbar-menu {
         background-color: #00d1b2; } }
-    .hero.is-primary .navbar-item, .is-primary.hero-home .navbar-item, .hero.is-primary .navbar-item-logo, .is-primary.hero-home .navbar-item-logo, .hero.is-primary .navbar-item-footer, .is-primary.hero-home .navbar-item-footer, .hero.is-primary .navbar-item-section, .is-primary.hero-home .navbar-item-section,
+    .hero.is-primary .navbar-item, .is-primary.hero-home .navbar-item, .is-primary.hero-company .navbar-item, .hero.is-primary .navbar-item-logo, .is-primary.hero-home .navbar-item-logo, .is-primary.hero-company .navbar-item-logo, .hero.is-primary .navbar-item-footer, .is-primary.hero-home .navbar-item-footer, .is-primary.hero-company .navbar-item-footer, .hero.is-primary .navbar-item-section, .is-primary.hero-home .navbar-item-section, .is-primary.hero-company .navbar-item-section,
     .hero.is-primary .navbar-link,
-    .is-primary.hero-home .navbar-link {
+    .is-primary.hero-home .navbar-link,
+    .is-primary.hero-company .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-primary a.navbar-item:hover, .is-primary.hero-home a.navbar-item:hover, .hero.is-primary a.navbar-item-logo:hover, .is-primary.hero-home a.navbar-item-logo:hover, .hero.is-primary a.navbar-item-footer:hover, .is-primary.hero-home a.navbar-item-footer:hover, .hero.is-primary a.navbar-item-section:hover, .is-primary.hero-home a.navbar-item-section:hover, .hero.is-primary a.navbar-item.is-active, .is-primary.hero-home a.navbar-item.is-active, .hero.is-primary a.is-active.navbar-item-logo, .is-primary.hero-home a.is-active.navbar-item-logo, .hero.is-primary a.is-active.navbar-item-footer, .is-primary.hero-home a.is-active.navbar-item-footer, .hero.is-primary a.is-active.navbar-item-section, .is-primary.hero-home a.is-active.navbar-item-section,
+    .hero.is-primary a.navbar-item:hover, .is-primary.hero-home a.navbar-item:hover, .is-primary.hero-company a.navbar-item:hover, .hero.is-primary a.navbar-item-logo:hover, .is-primary.hero-home a.navbar-item-logo:hover, .is-primary.hero-company a.navbar-item-logo:hover, .hero.is-primary a.navbar-item-footer:hover, .is-primary.hero-home a.navbar-item-footer:hover, .is-primary.hero-company a.navbar-item-footer:hover, .hero.is-primary a.navbar-item-section:hover, .is-primary.hero-home a.navbar-item-section:hover, .is-primary.hero-company a.navbar-item-section:hover, .hero.is-primary a.navbar-item.is-active, .is-primary.hero-home a.navbar-item.is-active, .is-primary.hero-company a.navbar-item.is-active, .hero.is-primary a.is-active.navbar-item-logo, .is-primary.hero-home a.is-active.navbar-item-logo, .is-primary.hero-company a.is-active.navbar-item-logo, .hero.is-primary a.is-active.navbar-item-footer, .is-primary.hero-home a.is-active.navbar-item-footer, .is-primary.hero-company a.is-active.navbar-item-footer, .hero.is-primary a.is-active.navbar-item-section, .is-primary.hero-home a.is-active.navbar-item-section, .is-primary.hero-company a.is-active.navbar-item-section,
     .hero.is-primary .navbar-link:hover,
     .is-primary.hero-home .navbar-link:hover,
+    .is-primary.hero-company .navbar-link:hover,
     .hero.is-primary .navbar-link.is-active,
-    .is-primary.hero-home .navbar-link.is-active {
+    .is-primary.hero-home .navbar-link.is-active,
+    .is-primary.hero-company .navbar-link.is-active {
       background-color: #00b89c;
       color: #fff; }
-    .hero.is-primary .tabs a, .is-primary.hero-home .tabs a {
+    .hero.is-primary .tabs a, .is-primary.hero-home .tabs a, .is-primary.hero-company .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-primary .tabs a:hover, .is-primary.hero-home .tabs a:hover {
+      .hero.is-primary .tabs a:hover, .is-primary.hero-home .tabs a:hover, .is-primary.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-primary .tabs li.is-active a, .is-primary.hero-home .tabs li.is-active a {
+    .hero.is-primary .tabs li.is-active a, .is-primary.hero-home .tabs li.is-active a, .is-primary.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-primary .tabs.is-boxed a, .is-primary.hero-home .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a, .is-primary.hero-home .tabs.is-toggle a {
+    .hero.is-primary .tabs.is-boxed a, .is-primary.hero-home .tabs.is-boxed a, .is-primary.hero-company .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a, .is-primary.hero-home .tabs.is-toggle a, .is-primary.hero-company .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-primary .tabs.is-boxed a:hover, .is-primary.hero-home .tabs.is-boxed a:hover, .hero.is-primary .tabs.is-toggle a:hover, .is-primary.hero-home .tabs.is-toggle a:hover {
+      .hero.is-primary .tabs.is-boxed a:hover, .is-primary.hero-home .tabs.is-boxed a:hover, .is-primary.hero-company .tabs.is-boxed a:hover, .hero.is-primary .tabs.is-toggle a:hover, .is-primary.hero-home .tabs.is-toggle a:hover, .is-primary.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-primary .tabs.is-boxed li.is-active a, .is-primary.hero-home .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .is-primary.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .is-primary.hero-home .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover, .is-primary.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-primary .tabs.is-boxed li.is-active a, .is-primary.hero-home .tabs.is-boxed li.is-active a, .is-primary.hero-company .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .is-primary.hero-home .tabs.is-boxed li.is-active a:hover, .is-primary.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .is-primary.hero-home .tabs.is-toggle li.is-active a, .is-primary.hero-company .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover, .is-primary.hero-home .tabs.is-toggle li.is-active a:hover, .is-primary.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #00d1b2; }
-    .hero.is-primary.is-bold, .is-primary.is-bold.hero-home {
+    .hero.is-primary.is-bold, .is-primary.is-bold.hero-home, .is-primary.is-bold.hero-company {
       background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-primary.is-bold .navbar-menu, .is-primary.is-bold.hero-home .navbar-menu {
+        .hero.is-primary.is-bold .navbar-menu, .is-primary.is-bold.hero-home .navbar-menu, .is-primary.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%); } }
-  .hero.is-link, .is-link.hero-home {
+  .hero.is-link, .is-link.hero-home, .is-link.hero-company {
     background-color: #3273dc;
     color: #fff; }
-    .hero.is-link a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-link.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-link a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-link.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-link.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-link strong,
-    .is-link.hero-home strong {
+    .is-link.hero-home strong,
+    .is-link.hero-company strong {
       color: inherit; }
-    .hero.is-link .title, .is-link.hero-home .title, .hero.is-link .title-main, .is-link.hero-home .title-main, .hero.is-link .programming-title, .is-link.hero-home .programming-title, .hero.is-link .section-title, .is-link.hero-home .section-title, .hero.is-link .logo-title, .is-link.hero-home .logo-title {
+    .hero.is-link .title, .is-link.hero-home .title, .is-link.hero-company .title, .hero.is-link .title-main, .is-link.hero-home .title-main, .is-link.hero-company .title-main, .hero.is-link .programming-title, .is-link.hero-home .programming-title, .is-link.hero-company .programming-title, .hero.is-link .section-title, .is-link.hero-home .section-title, .is-link.hero-company .section-title, .hero.is-link .logo-title, .is-link.hero-home .logo-title, .is-link.hero-company .logo-title {
       color: #fff; }
-    .hero.is-link .subtitle, .is-link.hero-home .subtitle {
+    .hero.is-link .subtitle, .is-link.hero-home .subtitle, .is-link.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-link .subtitle a:not(.button), .is-link.hero-home .subtitle a:not(.button),
+      .hero.is-link .subtitle a:not(.button), .is-link.hero-home .subtitle a:not(.button), .is-link.hero-company .subtitle a:not(.button),
       .hero.is-link .subtitle strong,
-      .is-link.hero-home .subtitle strong {
+      .is-link.hero-home .subtitle strong,
+      .is-link.hero-company .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-link .navbar-menu, .is-link.hero-home .navbar-menu {
+      .hero.is-link .navbar-menu, .is-link.hero-home .navbar-menu, .is-link.hero-company .navbar-menu {
         background-color: #3273dc; } }
-    .hero.is-link .navbar-item, .is-link.hero-home .navbar-item, .hero.is-link .navbar-item-logo, .is-link.hero-home .navbar-item-logo, .hero.is-link .navbar-item-footer, .is-link.hero-home .navbar-item-footer, .hero.is-link .navbar-item-section, .is-link.hero-home .navbar-item-section,
+    .hero.is-link .navbar-item, .is-link.hero-home .navbar-item, .is-link.hero-company .navbar-item, .hero.is-link .navbar-item-logo, .is-link.hero-home .navbar-item-logo, .is-link.hero-company .navbar-item-logo, .hero.is-link .navbar-item-footer, .is-link.hero-home .navbar-item-footer, .is-link.hero-company .navbar-item-footer, .hero.is-link .navbar-item-section, .is-link.hero-home .navbar-item-section, .is-link.hero-company .navbar-item-section,
     .hero.is-link .navbar-link,
-    .is-link.hero-home .navbar-link {
+    .is-link.hero-home .navbar-link,
+    .is-link.hero-company .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-link a.navbar-item:hover, .is-link.hero-home a.navbar-item:hover, .hero.is-link a.navbar-item-logo:hover, .is-link.hero-home a.navbar-item-logo:hover, .hero.is-link a.navbar-item-footer:hover, .is-link.hero-home a.navbar-item-footer:hover, .hero.is-link a.navbar-item-section:hover, .is-link.hero-home a.navbar-item-section:hover, .hero.is-link a.navbar-item.is-active, .is-link.hero-home a.navbar-item.is-active, .hero.is-link a.is-active.navbar-item-logo, .is-link.hero-home a.is-active.navbar-item-logo, .hero.is-link a.is-active.navbar-item-footer, .is-link.hero-home a.is-active.navbar-item-footer, .hero.is-link a.is-active.navbar-item-section, .is-link.hero-home a.is-active.navbar-item-section,
+    .hero.is-link a.navbar-item:hover, .is-link.hero-home a.navbar-item:hover, .is-link.hero-company a.navbar-item:hover, .hero.is-link a.navbar-item-logo:hover, .is-link.hero-home a.navbar-item-logo:hover, .is-link.hero-company a.navbar-item-logo:hover, .hero.is-link a.navbar-item-footer:hover, .is-link.hero-home a.navbar-item-footer:hover, .is-link.hero-company a.navbar-item-footer:hover, .hero.is-link a.navbar-item-section:hover, .is-link.hero-home a.navbar-item-section:hover, .is-link.hero-company a.navbar-item-section:hover, .hero.is-link a.navbar-item.is-active, .is-link.hero-home a.navbar-item.is-active, .is-link.hero-company a.navbar-item.is-active, .hero.is-link a.is-active.navbar-item-logo, .is-link.hero-home a.is-active.navbar-item-logo, .is-link.hero-company a.is-active.navbar-item-logo, .hero.is-link a.is-active.navbar-item-footer, .is-link.hero-home a.is-active.navbar-item-footer, .is-link.hero-company a.is-active.navbar-item-footer, .hero.is-link a.is-active.navbar-item-section, .is-link.hero-home a.is-active.navbar-item-section, .is-link.hero-company a.is-active.navbar-item-section,
     .hero.is-link .navbar-link:hover,
     .is-link.hero-home .navbar-link:hover,
+    .is-link.hero-company .navbar-link:hover,
     .hero.is-link .navbar-link.is-active,
-    .is-link.hero-home .navbar-link.is-active {
+    .is-link.hero-home .navbar-link.is-active,
+    .is-link.hero-company .navbar-link.is-active {
       background-color: #2366d1;
       color: #fff; }
-    .hero.is-link .tabs a, .is-link.hero-home .tabs a {
+    .hero.is-link .tabs a, .is-link.hero-home .tabs a, .is-link.hero-company .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-link .tabs a:hover, .is-link.hero-home .tabs a:hover {
+      .hero.is-link .tabs a:hover, .is-link.hero-home .tabs a:hover, .is-link.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-link .tabs li.is-active a, .is-link.hero-home .tabs li.is-active a {
+    .hero.is-link .tabs li.is-active a, .is-link.hero-home .tabs li.is-active a, .is-link.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-link .tabs.is-boxed a, .is-link.hero-home .tabs.is-boxed a, .hero.is-link .tabs.is-toggle a, .is-link.hero-home .tabs.is-toggle a {
+    .hero.is-link .tabs.is-boxed a, .is-link.hero-home .tabs.is-boxed a, .is-link.hero-company .tabs.is-boxed a, .hero.is-link .tabs.is-toggle a, .is-link.hero-home .tabs.is-toggle a, .is-link.hero-company .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-link .tabs.is-boxed a:hover, .is-link.hero-home .tabs.is-boxed a:hover, .hero.is-link .tabs.is-toggle a:hover, .is-link.hero-home .tabs.is-toggle a:hover {
+      .hero.is-link .tabs.is-boxed a:hover, .is-link.hero-home .tabs.is-boxed a:hover, .is-link.hero-company .tabs.is-boxed a:hover, .hero.is-link .tabs.is-toggle a:hover, .is-link.hero-home .tabs.is-toggle a:hover, .is-link.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-link .tabs.is-boxed li.is-active a, .is-link.hero-home .tabs.is-boxed li.is-active a, .hero.is-link .tabs.is-boxed li.is-active a:hover, .is-link.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-link .tabs.is-toggle li.is-active a, .is-link.hero-home .tabs.is-toggle li.is-active a, .hero.is-link .tabs.is-toggle li.is-active a:hover, .is-link.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-link .tabs.is-boxed li.is-active a, .is-link.hero-home .tabs.is-boxed li.is-active a, .is-link.hero-company .tabs.is-boxed li.is-active a, .hero.is-link .tabs.is-boxed li.is-active a:hover, .is-link.hero-home .tabs.is-boxed li.is-active a:hover, .is-link.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-link .tabs.is-toggle li.is-active a, .is-link.hero-home .tabs.is-toggle li.is-active a, .is-link.hero-company .tabs.is-toggle li.is-active a, .hero.is-link .tabs.is-toggle li.is-active a:hover, .is-link.hero-home .tabs.is-toggle li.is-active a:hover, .is-link.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #3273dc; }
-    .hero.is-link.is-bold, .is-link.is-bold.hero-home {
+    .hero.is-link.is-bold, .is-link.is-bold.hero-home, .is-link.is-bold.hero-company {
       background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-link.is-bold .navbar-menu, .is-link.is-bold.hero-home .navbar-menu {
+        .hero.is-link.is-bold .navbar-menu, .is-link.is-bold.hero-home .navbar-menu, .is-link.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%); } }
-  .hero.is-info, .is-info.hero-home {
+  .hero.is-info, .is-info.hero-home, .is-info.hero-company {
     background-color: #3298dc;
     color: #fff; }
-    .hero.is-info a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-info.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-info a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-info.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-info.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-info strong,
-    .is-info.hero-home strong {
+    .is-info.hero-home strong,
+    .is-info.hero-company strong {
       color: inherit; }
-    .hero.is-info .title, .is-info.hero-home .title, .hero.is-info .title-main, .is-info.hero-home .title-main, .hero.is-info .programming-title, .is-info.hero-home .programming-title, .hero.is-info .section-title, .is-info.hero-home .section-title, .hero.is-info .logo-title, .is-info.hero-home .logo-title {
+    .hero.is-info .title, .is-info.hero-home .title, .is-info.hero-company .title, .hero.is-info .title-main, .is-info.hero-home .title-main, .is-info.hero-company .title-main, .hero.is-info .programming-title, .is-info.hero-home .programming-title, .is-info.hero-company .programming-title, .hero.is-info .section-title, .is-info.hero-home .section-title, .is-info.hero-company .section-title, .hero.is-info .logo-title, .is-info.hero-home .logo-title, .is-info.hero-company .logo-title {
       color: #fff; }
-    .hero.is-info .subtitle, .is-info.hero-home .subtitle {
+    .hero.is-info .subtitle, .is-info.hero-home .subtitle, .is-info.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-info .subtitle a:not(.button), .is-info.hero-home .subtitle a:not(.button),
+      .hero.is-info .subtitle a:not(.button), .is-info.hero-home .subtitle a:not(.button), .is-info.hero-company .subtitle a:not(.button),
       .hero.is-info .subtitle strong,
-      .is-info.hero-home .subtitle strong {
+      .is-info.hero-home .subtitle strong,
+      .is-info.hero-company .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-info .navbar-menu, .is-info.hero-home .navbar-menu {
+      .hero.is-info .navbar-menu, .is-info.hero-home .navbar-menu, .is-info.hero-company .navbar-menu {
         background-color: #3298dc; } }
-    .hero.is-info .navbar-item, .is-info.hero-home .navbar-item, .hero.is-info .navbar-item-logo, .is-info.hero-home .navbar-item-logo, .hero.is-info .navbar-item-footer, .is-info.hero-home .navbar-item-footer, .hero.is-info .navbar-item-section, .is-info.hero-home .navbar-item-section,
+    .hero.is-info .navbar-item, .is-info.hero-home .navbar-item, .is-info.hero-company .navbar-item, .hero.is-info .navbar-item-logo, .is-info.hero-home .navbar-item-logo, .is-info.hero-company .navbar-item-logo, .hero.is-info .navbar-item-footer, .is-info.hero-home .navbar-item-footer, .is-info.hero-company .navbar-item-footer, .hero.is-info .navbar-item-section, .is-info.hero-home .navbar-item-section, .is-info.hero-company .navbar-item-section,
     .hero.is-info .navbar-link,
-    .is-info.hero-home .navbar-link {
+    .is-info.hero-home .navbar-link,
+    .is-info.hero-company .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-info a.navbar-item:hover, .is-info.hero-home a.navbar-item:hover, .hero.is-info a.navbar-item-logo:hover, .is-info.hero-home a.navbar-item-logo:hover, .hero.is-info a.navbar-item-footer:hover, .is-info.hero-home a.navbar-item-footer:hover, .hero.is-info a.navbar-item-section:hover, .is-info.hero-home a.navbar-item-section:hover, .hero.is-info a.navbar-item.is-active, .is-info.hero-home a.navbar-item.is-active, .hero.is-info a.is-active.navbar-item-logo, .is-info.hero-home a.is-active.navbar-item-logo, .hero.is-info a.is-active.navbar-item-footer, .is-info.hero-home a.is-active.navbar-item-footer, .hero.is-info a.is-active.navbar-item-section, .is-info.hero-home a.is-active.navbar-item-section,
+    .hero.is-info a.navbar-item:hover, .is-info.hero-home a.navbar-item:hover, .is-info.hero-company a.navbar-item:hover, .hero.is-info a.navbar-item-logo:hover, .is-info.hero-home a.navbar-item-logo:hover, .is-info.hero-company a.navbar-item-logo:hover, .hero.is-info a.navbar-item-footer:hover, .is-info.hero-home a.navbar-item-footer:hover, .is-info.hero-company a.navbar-item-footer:hover, .hero.is-info a.navbar-item-section:hover, .is-info.hero-home a.navbar-item-section:hover, .is-info.hero-company a.navbar-item-section:hover, .hero.is-info a.navbar-item.is-active, .is-info.hero-home a.navbar-item.is-active, .is-info.hero-company a.navbar-item.is-active, .hero.is-info a.is-active.navbar-item-logo, .is-info.hero-home a.is-active.navbar-item-logo, .is-info.hero-company a.is-active.navbar-item-logo, .hero.is-info a.is-active.navbar-item-footer, .is-info.hero-home a.is-active.navbar-item-footer, .is-info.hero-company a.is-active.navbar-item-footer, .hero.is-info a.is-active.navbar-item-section, .is-info.hero-home a.is-active.navbar-item-section, .is-info.hero-company a.is-active.navbar-item-section,
     .hero.is-info .navbar-link:hover,
     .is-info.hero-home .navbar-link:hover,
+    .is-info.hero-company .navbar-link:hover,
     .hero.is-info .navbar-link.is-active,
-    .is-info.hero-home .navbar-link.is-active {
+    .is-info.hero-home .navbar-link.is-active,
+    .is-info.hero-company .navbar-link.is-active {
       background-color: #238cd1;
       color: #fff; }
-    .hero.is-info .tabs a, .is-info.hero-home .tabs a {
+    .hero.is-info .tabs a, .is-info.hero-home .tabs a, .is-info.hero-company .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-info .tabs a:hover, .is-info.hero-home .tabs a:hover {
+      .hero.is-info .tabs a:hover, .is-info.hero-home .tabs a:hover, .is-info.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-info .tabs li.is-active a, .is-info.hero-home .tabs li.is-active a {
+    .hero.is-info .tabs li.is-active a, .is-info.hero-home .tabs li.is-active a, .is-info.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-info .tabs.is-boxed a, .is-info.hero-home .tabs.is-boxed a, .hero.is-info .tabs.is-toggle a, .is-info.hero-home .tabs.is-toggle a {
+    .hero.is-info .tabs.is-boxed a, .is-info.hero-home .tabs.is-boxed a, .is-info.hero-company .tabs.is-boxed a, .hero.is-info .tabs.is-toggle a, .is-info.hero-home .tabs.is-toggle a, .is-info.hero-company .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-info .tabs.is-boxed a:hover, .is-info.hero-home .tabs.is-boxed a:hover, .hero.is-info .tabs.is-toggle a:hover, .is-info.hero-home .tabs.is-toggle a:hover {
+      .hero.is-info .tabs.is-boxed a:hover, .is-info.hero-home .tabs.is-boxed a:hover, .is-info.hero-company .tabs.is-boxed a:hover, .hero.is-info .tabs.is-toggle a:hover, .is-info.hero-home .tabs.is-toggle a:hover, .is-info.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-info .tabs.is-boxed li.is-active a, .is-info.hero-home .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .is-info.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .is-info.hero-home .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover, .is-info.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-info .tabs.is-boxed li.is-active a, .is-info.hero-home .tabs.is-boxed li.is-active a, .is-info.hero-company .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .is-info.hero-home .tabs.is-boxed li.is-active a:hover, .is-info.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .is-info.hero-home .tabs.is-toggle li.is-active a, .is-info.hero-company .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover, .is-info.hero-home .tabs.is-toggle li.is-active a:hover, .is-info.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #3298dc; }
-    .hero.is-info.is-bold, .is-info.is-bold.hero-home {
+    .hero.is-info.is-bold, .is-info.is-bold.hero-home, .is-info.is-bold.hero-company {
       background-image: linear-gradient(141deg, #159dc6 0%, #3298dc 71%, #4389e5 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-info.is-bold .navbar-menu, .is-info.is-bold.hero-home .navbar-menu {
+        .hero.is-info.is-bold .navbar-menu, .is-info.is-bold.hero-home .navbar-menu, .is-info.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, #159dc6 0%, #3298dc 71%, #4389e5 100%); } }
-  .hero.is-success, .is-success.hero-home {
+  .hero.is-success, .is-success.hero-home, .is-success.hero-company {
     background-color: #48c774;
     color: #fff; }
-    .hero.is-success a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-success.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-success a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-success.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-success.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-success strong,
-    .is-success.hero-home strong {
+    .is-success.hero-home strong,
+    .is-success.hero-company strong {
       color: inherit; }
-    .hero.is-success .title, .is-success.hero-home .title, .hero.is-success .title-main, .is-success.hero-home .title-main, .hero.is-success .programming-title, .is-success.hero-home .programming-title, .hero.is-success .section-title, .is-success.hero-home .section-title, .hero.is-success .logo-title, .is-success.hero-home .logo-title {
+    .hero.is-success .title, .is-success.hero-home .title, .is-success.hero-company .title, .hero.is-success .title-main, .is-success.hero-home .title-main, .is-success.hero-company .title-main, .hero.is-success .programming-title, .is-success.hero-home .programming-title, .is-success.hero-company .programming-title, .hero.is-success .section-title, .is-success.hero-home .section-title, .is-success.hero-company .section-title, .hero.is-success .logo-title, .is-success.hero-home .logo-title, .is-success.hero-company .logo-title {
       color: #fff; }
-    .hero.is-success .subtitle, .is-success.hero-home .subtitle {
+    .hero.is-success .subtitle, .is-success.hero-home .subtitle, .is-success.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-success .subtitle a:not(.button), .is-success.hero-home .subtitle a:not(.button),
+      .hero.is-success .subtitle a:not(.button), .is-success.hero-home .subtitle a:not(.button), .is-success.hero-company .subtitle a:not(.button),
       .hero.is-success .subtitle strong,
-      .is-success.hero-home .subtitle strong {
+      .is-success.hero-home .subtitle strong,
+      .is-success.hero-company .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-success .navbar-menu, .is-success.hero-home .navbar-menu {
+      .hero.is-success .navbar-menu, .is-success.hero-home .navbar-menu, .is-success.hero-company .navbar-menu {
         background-color: #48c774; } }
-    .hero.is-success .navbar-item, .is-success.hero-home .navbar-item, .hero.is-success .navbar-item-logo, .is-success.hero-home .navbar-item-logo, .hero.is-success .navbar-item-footer, .is-success.hero-home .navbar-item-footer, .hero.is-success .navbar-item-section, .is-success.hero-home .navbar-item-section,
+    .hero.is-success .navbar-item, .is-success.hero-home .navbar-item, .is-success.hero-company .navbar-item, .hero.is-success .navbar-item-logo, .is-success.hero-home .navbar-item-logo, .is-success.hero-company .navbar-item-logo, .hero.is-success .navbar-item-footer, .is-success.hero-home .navbar-item-footer, .is-success.hero-company .navbar-item-footer, .hero.is-success .navbar-item-section, .is-success.hero-home .navbar-item-section, .is-success.hero-company .navbar-item-section,
     .hero.is-success .navbar-link,
-    .is-success.hero-home .navbar-link {
+    .is-success.hero-home .navbar-link,
+    .is-success.hero-company .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-success a.navbar-item:hover, .is-success.hero-home a.navbar-item:hover, .hero.is-success a.navbar-item-logo:hover, .is-success.hero-home a.navbar-item-logo:hover, .hero.is-success a.navbar-item-footer:hover, .is-success.hero-home a.navbar-item-footer:hover, .hero.is-success a.navbar-item-section:hover, .is-success.hero-home a.navbar-item-section:hover, .hero.is-success a.navbar-item.is-active, .is-success.hero-home a.navbar-item.is-active, .hero.is-success a.is-active.navbar-item-logo, .is-success.hero-home a.is-active.navbar-item-logo, .hero.is-success a.is-active.navbar-item-footer, .is-success.hero-home a.is-active.navbar-item-footer, .hero.is-success a.is-active.navbar-item-section, .is-success.hero-home a.is-active.navbar-item-section,
+    .hero.is-success a.navbar-item:hover, .is-success.hero-home a.navbar-item:hover, .is-success.hero-company a.navbar-item:hover, .hero.is-success a.navbar-item-logo:hover, .is-success.hero-home a.navbar-item-logo:hover, .is-success.hero-company a.navbar-item-logo:hover, .hero.is-success a.navbar-item-footer:hover, .is-success.hero-home a.navbar-item-footer:hover, .is-success.hero-company a.navbar-item-footer:hover, .hero.is-success a.navbar-item-section:hover, .is-success.hero-home a.navbar-item-section:hover, .is-success.hero-company a.navbar-item-section:hover, .hero.is-success a.navbar-item.is-active, .is-success.hero-home a.navbar-item.is-active, .is-success.hero-company a.navbar-item.is-active, .hero.is-success a.is-active.navbar-item-logo, .is-success.hero-home a.is-active.navbar-item-logo, .is-success.hero-company a.is-active.navbar-item-logo, .hero.is-success a.is-active.navbar-item-footer, .is-success.hero-home a.is-active.navbar-item-footer, .is-success.hero-company a.is-active.navbar-item-footer, .hero.is-success a.is-active.navbar-item-section, .is-success.hero-home a.is-active.navbar-item-section, .is-success.hero-company a.is-active.navbar-item-section,
     .hero.is-success .navbar-link:hover,
     .is-success.hero-home .navbar-link:hover,
+    .is-success.hero-company .navbar-link:hover,
     .hero.is-success .navbar-link.is-active,
-    .is-success.hero-home .navbar-link.is-active {
+    .is-success.hero-home .navbar-link.is-active,
+    .is-success.hero-company .navbar-link.is-active {
       background-color: #3abb67;
       color: #fff; }
-    .hero.is-success .tabs a, .is-success.hero-home .tabs a {
+    .hero.is-success .tabs a, .is-success.hero-home .tabs a, .is-success.hero-company .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-success .tabs a:hover, .is-success.hero-home .tabs a:hover {
+      .hero.is-success .tabs a:hover, .is-success.hero-home .tabs a:hover, .is-success.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-success .tabs li.is-active a, .is-success.hero-home .tabs li.is-active a {
+    .hero.is-success .tabs li.is-active a, .is-success.hero-home .tabs li.is-active a, .is-success.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-success .tabs.is-boxed a, .is-success.hero-home .tabs.is-boxed a, .hero.is-success .tabs.is-toggle a, .is-success.hero-home .tabs.is-toggle a {
+    .hero.is-success .tabs.is-boxed a, .is-success.hero-home .tabs.is-boxed a, .is-success.hero-company .tabs.is-boxed a, .hero.is-success .tabs.is-toggle a, .is-success.hero-home .tabs.is-toggle a, .is-success.hero-company .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-success .tabs.is-boxed a:hover, .is-success.hero-home .tabs.is-boxed a:hover, .hero.is-success .tabs.is-toggle a:hover, .is-success.hero-home .tabs.is-toggle a:hover {
+      .hero.is-success .tabs.is-boxed a:hover, .is-success.hero-home .tabs.is-boxed a:hover, .is-success.hero-company .tabs.is-boxed a:hover, .hero.is-success .tabs.is-toggle a:hover, .is-success.hero-home .tabs.is-toggle a:hover, .is-success.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-success .tabs.is-boxed li.is-active a, .is-success.hero-home .tabs.is-boxed li.is-active a, .hero.is-success .tabs.is-boxed li.is-active a:hover, .is-success.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-success .tabs.is-toggle li.is-active a, .is-success.hero-home .tabs.is-toggle li.is-active a, .hero.is-success .tabs.is-toggle li.is-active a:hover, .is-success.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-success .tabs.is-boxed li.is-active a, .is-success.hero-home .tabs.is-boxed li.is-active a, .is-success.hero-company .tabs.is-boxed li.is-active a, .hero.is-success .tabs.is-boxed li.is-active a:hover, .is-success.hero-home .tabs.is-boxed li.is-active a:hover, .is-success.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-success .tabs.is-toggle li.is-active a, .is-success.hero-home .tabs.is-toggle li.is-active a, .is-success.hero-company .tabs.is-toggle li.is-active a, .hero.is-success .tabs.is-toggle li.is-active a:hover, .is-success.hero-home .tabs.is-toggle li.is-active a:hover, .is-success.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #48c774; }
-    .hero.is-success.is-bold, .is-success.is-bold.hero-home {
+    .hero.is-success.is-bold, .is-success.is-bold.hero-home, .is-success.is-bold.hero-company {
       background-image: linear-gradient(141deg, #29b342 0%, #48c774 71%, #56d296 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-success.is-bold .navbar-menu, .is-success.is-bold.hero-home .navbar-menu {
+        .hero.is-success.is-bold .navbar-menu, .is-success.is-bold.hero-home .navbar-menu, .is-success.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, #29b342 0%, #48c774 71%, #56d296 100%); } }
-  .hero.is-warning, .is-warning.hero-home {
+  .hero.is-warning, .is-warning.hero-home, .is-warning.hero-company {
     background-color: #ffdd57;
     color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-warning.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-warning a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-warning.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-warning.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-warning strong,
-    .is-warning.hero-home strong {
+    .is-warning.hero-home strong,
+    .is-warning.hero-company strong {
       color: inherit; }
-    .hero.is-warning .title, .is-warning.hero-home .title, .hero.is-warning .title-main, .is-warning.hero-home .title-main, .hero.is-warning .programming-title, .is-warning.hero-home .programming-title, .hero.is-warning .section-title, .is-warning.hero-home .section-title, .hero.is-warning .logo-title, .is-warning.hero-home .logo-title {
+    .hero.is-warning .title, .is-warning.hero-home .title, .is-warning.hero-company .title, .hero.is-warning .title-main, .is-warning.hero-home .title-main, .is-warning.hero-company .title-main, .hero.is-warning .programming-title, .is-warning.hero-home .programming-title, .is-warning.hero-company .programming-title, .hero.is-warning .section-title, .is-warning.hero-home .section-title, .is-warning.hero-company .section-title, .hero.is-warning .logo-title, .is-warning.hero-home .logo-title, .is-warning.hero-company .logo-title {
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning .subtitle, .is-warning.hero-home .subtitle {
+    .hero.is-warning .subtitle, .is-warning.hero-home .subtitle, .is-warning.hero-company .subtitle {
       color: rgba(0, 0, 0, 0.9); }
-      .hero.is-warning .subtitle a:not(.button), .is-warning.hero-home .subtitle a:not(.button),
+      .hero.is-warning .subtitle a:not(.button), .is-warning.hero-home .subtitle a:not(.button), .is-warning.hero-company .subtitle a:not(.button),
       .hero.is-warning .subtitle strong,
-      .is-warning.hero-home .subtitle strong {
+      .is-warning.hero-home .subtitle strong,
+      .is-warning.hero-company .subtitle strong {
         color: rgba(0, 0, 0, 0.7); }
     @media screen and (max-width: 1023px) {
-      .hero.is-warning .navbar-menu, .is-warning.hero-home .navbar-menu {
+      .hero.is-warning .navbar-menu, .is-warning.hero-home .navbar-menu, .is-warning.hero-company .navbar-menu {
         background-color: #ffdd57; } }
-    .hero.is-warning .navbar-item, .is-warning.hero-home .navbar-item, .hero.is-warning .navbar-item-logo, .is-warning.hero-home .navbar-item-logo, .hero.is-warning .navbar-item-footer, .is-warning.hero-home .navbar-item-footer, .hero.is-warning .navbar-item-section, .is-warning.hero-home .navbar-item-section,
+    .hero.is-warning .navbar-item, .is-warning.hero-home .navbar-item, .is-warning.hero-company .navbar-item, .hero.is-warning .navbar-item-logo, .is-warning.hero-home .navbar-item-logo, .is-warning.hero-company .navbar-item-logo, .hero.is-warning .navbar-item-footer, .is-warning.hero-home .navbar-item-footer, .is-warning.hero-company .navbar-item-footer, .hero.is-warning .navbar-item-section, .is-warning.hero-home .navbar-item-section, .is-warning.hero-company .navbar-item-section,
     .hero.is-warning .navbar-link,
-    .is-warning.hero-home .navbar-link {
+    .is-warning.hero-home .navbar-link,
+    .is-warning.hero-company .navbar-link {
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning a.navbar-item:hover, .is-warning.hero-home a.navbar-item:hover, .hero.is-warning a.navbar-item-logo:hover, .is-warning.hero-home a.navbar-item-logo:hover, .hero.is-warning a.navbar-item-footer:hover, .is-warning.hero-home a.navbar-item-footer:hover, .hero.is-warning a.navbar-item-section:hover, .is-warning.hero-home a.navbar-item-section:hover, .hero.is-warning a.navbar-item.is-active, .is-warning.hero-home a.navbar-item.is-active, .hero.is-warning a.is-active.navbar-item-logo, .is-warning.hero-home a.is-active.navbar-item-logo, .hero.is-warning a.is-active.navbar-item-footer, .is-warning.hero-home a.is-active.navbar-item-footer, .hero.is-warning a.is-active.navbar-item-section, .is-warning.hero-home a.is-active.navbar-item-section,
+    .hero.is-warning a.navbar-item:hover, .is-warning.hero-home a.navbar-item:hover, .is-warning.hero-company a.navbar-item:hover, .hero.is-warning a.navbar-item-logo:hover, .is-warning.hero-home a.navbar-item-logo:hover, .is-warning.hero-company a.navbar-item-logo:hover, .hero.is-warning a.navbar-item-footer:hover, .is-warning.hero-home a.navbar-item-footer:hover, .is-warning.hero-company a.navbar-item-footer:hover, .hero.is-warning a.navbar-item-section:hover, .is-warning.hero-home a.navbar-item-section:hover, .is-warning.hero-company a.navbar-item-section:hover, .hero.is-warning a.navbar-item.is-active, .is-warning.hero-home a.navbar-item.is-active, .is-warning.hero-company a.navbar-item.is-active, .hero.is-warning a.is-active.navbar-item-logo, .is-warning.hero-home a.is-active.navbar-item-logo, .is-warning.hero-company a.is-active.navbar-item-logo, .hero.is-warning a.is-active.navbar-item-footer, .is-warning.hero-home a.is-active.navbar-item-footer, .is-warning.hero-company a.is-active.navbar-item-footer, .hero.is-warning a.is-active.navbar-item-section, .is-warning.hero-home a.is-active.navbar-item-section, .is-warning.hero-company a.is-active.navbar-item-section,
     .hero.is-warning .navbar-link:hover,
     .is-warning.hero-home .navbar-link:hover,
+    .is-warning.hero-company .navbar-link:hover,
     .hero.is-warning .navbar-link.is-active,
-    .is-warning.hero-home .navbar-link.is-active {
+    .is-warning.hero-home .navbar-link.is-active,
+    .is-warning.hero-company .navbar-link.is-active {
       background-color: #ffd83d;
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning .tabs a, .is-warning.hero-home .tabs a {
+    .hero.is-warning .tabs a, .is-warning.hero-home .tabs a, .is-warning.hero-company .tabs a {
       color: rgba(0, 0, 0, 0.7);
       opacity: 0.9; }
-      .hero.is-warning .tabs a:hover, .is-warning.hero-home .tabs a:hover {
+      .hero.is-warning .tabs a:hover, .is-warning.hero-home .tabs a:hover, .is-warning.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-warning .tabs li.is-active a, .is-warning.hero-home .tabs li.is-active a {
+    .hero.is-warning .tabs li.is-active a, .is-warning.hero-home .tabs li.is-active a, .is-warning.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-warning .tabs.is-boxed a, .is-warning.hero-home .tabs.is-boxed a, .hero.is-warning .tabs.is-toggle a, .is-warning.hero-home .tabs.is-toggle a {
+    .hero.is-warning .tabs.is-boxed a, .is-warning.hero-home .tabs.is-boxed a, .is-warning.hero-company .tabs.is-boxed a, .hero.is-warning .tabs.is-toggle a, .is-warning.hero-home .tabs.is-toggle a, .is-warning.hero-company .tabs.is-toggle a {
       color: rgba(0, 0, 0, 0.7); }
-      .hero.is-warning .tabs.is-boxed a:hover, .is-warning.hero-home .tabs.is-boxed a:hover, .hero.is-warning .tabs.is-toggle a:hover, .is-warning.hero-home .tabs.is-toggle a:hover {
+      .hero.is-warning .tabs.is-boxed a:hover, .is-warning.hero-home .tabs.is-boxed a:hover, .is-warning.hero-company .tabs.is-boxed a:hover, .hero.is-warning .tabs.is-toggle a:hover, .is-warning.hero-home .tabs.is-toggle a:hover, .is-warning.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-warning .tabs.is-boxed li.is-active a, .is-warning.hero-home .tabs.is-boxed li.is-active a, .hero.is-warning .tabs.is-boxed li.is-active a:hover, .is-warning.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-warning .tabs.is-toggle li.is-active a, .is-warning.hero-home .tabs.is-toggle li.is-active a, .hero.is-warning .tabs.is-toggle li.is-active a:hover, .is-warning.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-warning .tabs.is-boxed li.is-active a, .is-warning.hero-home .tabs.is-boxed li.is-active a, .is-warning.hero-company .tabs.is-boxed li.is-active a, .hero.is-warning .tabs.is-boxed li.is-active a:hover, .is-warning.hero-home .tabs.is-boxed li.is-active a:hover, .is-warning.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-warning .tabs.is-toggle li.is-active a, .is-warning.hero-home .tabs.is-toggle li.is-active a, .is-warning.hero-company .tabs.is-toggle li.is-active a, .hero.is-warning .tabs.is-toggle li.is-active a:hover, .is-warning.hero-home .tabs.is-toggle li.is-active a:hover, .is-warning.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: rgba(0, 0, 0, 0.7);
       border-color: rgba(0, 0, 0, 0.7);
       color: #ffdd57; }
-    .hero.is-warning.is-bold, .is-warning.is-bold.hero-home {
+    .hero.is-warning.is-bold, .is-warning.is-bold.hero-home, .is-warning.is-bold.hero-company {
       background-image: linear-gradient(141deg, #ffaf24 0%, #ffdd57 71%, #fffa70 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-warning.is-bold .navbar-menu, .is-warning.is-bold.hero-home .navbar-menu {
+        .hero.is-warning.is-bold .navbar-menu, .is-warning.is-bold.hero-home .navbar-menu, .is-warning.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, #ffaf24 0%, #ffdd57 71%, #fffa70 100%); } }
-  .hero.is-danger, .is-danger.hero-home {
+  .hero.is-danger, .is-danger.hero-home, .is-danger.hero-company {
     background-color: #f14668;
     color: #fff; }
-    .hero.is-danger a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-danger.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-danger a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-danger.hero-home a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-danger.hero-company a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-danger strong,
-    .is-danger.hero-home strong {
+    .is-danger.hero-home strong,
+    .is-danger.hero-company strong {
       color: inherit; }
-    .hero.is-danger .title, .is-danger.hero-home .title, .hero.is-danger .title-main, .is-danger.hero-home .title-main, .hero.is-danger .programming-title, .is-danger.hero-home .programming-title, .hero.is-danger .section-title, .is-danger.hero-home .section-title, .hero.is-danger .logo-title, .is-danger.hero-home .logo-title {
+    .hero.is-danger .title, .is-danger.hero-home .title, .is-danger.hero-company .title, .hero.is-danger .title-main, .is-danger.hero-home .title-main, .is-danger.hero-company .title-main, .hero.is-danger .programming-title, .is-danger.hero-home .programming-title, .is-danger.hero-company .programming-title, .hero.is-danger .section-title, .is-danger.hero-home .section-title, .is-danger.hero-company .section-title, .hero.is-danger .logo-title, .is-danger.hero-home .logo-title, .is-danger.hero-company .logo-title {
       color: #fff; }
-    .hero.is-danger .subtitle, .is-danger.hero-home .subtitle {
+    .hero.is-danger .subtitle, .is-danger.hero-home .subtitle, .is-danger.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-danger .subtitle a:not(.button), .is-danger.hero-home .subtitle a:not(.button),
+      .hero.is-danger .subtitle a:not(.button), .is-danger.hero-home .subtitle a:not(.button), .is-danger.hero-company .subtitle a:not(.button),
       .hero.is-danger .subtitle strong,
-      .is-danger.hero-home .subtitle strong {
+      .is-danger.hero-home .subtitle strong,
+      .is-danger.hero-company .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-danger .navbar-menu, .is-danger.hero-home .navbar-menu {
+      .hero.is-danger .navbar-menu, .is-danger.hero-home .navbar-menu, .is-danger.hero-company .navbar-menu {
         background-color: #f14668; } }
-    .hero.is-danger .navbar-item, .is-danger.hero-home .navbar-item, .hero.is-danger .navbar-item-logo, .is-danger.hero-home .navbar-item-logo, .hero.is-danger .navbar-item-footer, .is-danger.hero-home .navbar-item-footer, .hero.is-danger .navbar-item-section, .is-danger.hero-home .navbar-item-section,
+    .hero.is-danger .navbar-item, .is-danger.hero-home .navbar-item, .is-danger.hero-company .navbar-item, .hero.is-danger .navbar-item-logo, .is-danger.hero-home .navbar-item-logo, .is-danger.hero-company .navbar-item-logo, .hero.is-danger .navbar-item-footer, .is-danger.hero-home .navbar-item-footer, .is-danger.hero-company .navbar-item-footer, .hero.is-danger .navbar-item-section, .is-danger.hero-home .navbar-item-section, .is-danger.hero-company .navbar-item-section,
     .hero.is-danger .navbar-link,
-    .is-danger.hero-home .navbar-link {
+    .is-danger.hero-home .navbar-link,
+    .is-danger.hero-company .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-danger a.navbar-item:hover, .is-danger.hero-home a.navbar-item:hover, .hero.is-danger a.navbar-item-logo:hover, .is-danger.hero-home a.navbar-item-logo:hover, .hero.is-danger a.navbar-item-footer:hover, .is-danger.hero-home a.navbar-item-footer:hover, .hero.is-danger a.navbar-item-section:hover, .is-danger.hero-home a.navbar-item-section:hover, .hero.is-danger a.navbar-item.is-active, .is-danger.hero-home a.navbar-item.is-active, .hero.is-danger a.is-active.navbar-item-logo, .is-danger.hero-home a.is-active.navbar-item-logo, .hero.is-danger a.is-active.navbar-item-footer, .is-danger.hero-home a.is-active.navbar-item-footer, .hero.is-danger a.is-active.navbar-item-section, .is-danger.hero-home a.is-active.navbar-item-section,
+    .hero.is-danger a.navbar-item:hover, .is-danger.hero-home a.navbar-item:hover, .is-danger.hero-company a.navbar-item:hover, .hero.is-danger a.navbar-item-logo:hover, .is-danger.hero-home a.navbar-item-logo:hover, .is-danger.hero-company a.navbar-item-logo:hover, .hero.is-danger a.navbar-item-footer:hover, .is-danger.hero-home a.navbar-item-footer:hover, .is-danger.hero-company a.navbar-item-footer:hover, .hero.is-danger a.navbar-item-section:hover, .is-danger.hero-home a.navbar-item-section:hover, .is-danger.hero-company a.navbar-item-section:hover, .hero.is-danger a.navbar-item.is-active, .is-danger.hero-home a.navbar-item.is-active, .is-danger.hero-company a.navbar-item.is-active, .hero.is-danger a.is-active.navbar-item-logo, .is-danger.hero-home a.is-active.navbar-item-logo, .is-danger.hero-company a.is-active.navbar-item-logo, .hero.is-danger a.is-active.navbar-item-footer, .is-danger.hero-home a.is-active.navbar-item-footer, .is-danger.hero-company a.is-active.navbar-item-footer, .hero.is-danger a.is-active.navbar-item-section, .is-danger.hero-home a.is-active.navbar-item-section, .is-danger.hero-company a.is-active.navbar-item-section,
     .hero.is-danger .navbar-link:hover,
     .is-danger.hero-home .navbar-link:hover,
+    .is-danger.hero-company .navbar-link:hover,
     .hero.is-danger .navbar-link.is-active,
-    .is-danger.hero-home .navbar-link.is-active {
+    .is-danger.hero-home .navbar-link.is-active,
+    .is-danger.hero-company .navbar-link.is-active {
       background-color: #ef2e55;
       color: #fff; }
-    .hero.is-danger .tabs a, .is-danger.hero-home .tabs a {
+    .hero.is-danger .tabs a, .is-danger.hero-home .tabs a, .is-danger.hero-company .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-danger .tabs a:hover, .is-danger.hero-home .tabs a:hover {
+      .hero.is-danger .tabs a:hover, .is-danger.hero-home .tabs a:hover, .is-danger.hero-company .tabs a:hover {
         opacity: 1; }
-    .hero.is-danger .tabs li.is-active a, .is-danger.hero-home .tabs li.is-active a {
+    .hero.is-danger .tabs li.is-active a, .is-danger.hero-home .tabs li.is-active a, .is-danger.hero-company .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-danger .tabs.is-boxed a, .is-danger.hero-home .tabs.is-boxed a, .hero.is-danger .tabs.is-toggle a, .is-danger.hero-home .tabs.is-toggle a {
+    .hero.is-danger .tabs.is-boxed a, .is-danger.hero-home .tabs.is-boxed a, .is-danger.hero-company .tabs.is-boxed a, .hero.is-danger .tabs.is-toggle a, .is-danger.hero-home .tabs.is-toggle a, .is-danger.hero-company .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-danger .tabs.is-boxed a:hover, .is-danger.hero-home .tabs.is-boxed a:hover, .hero.is-danger .tabs.is-toggle a:hover, .is-danger.hero-home .tabs.is-toggle a:hover {
+      .hero.is-danger .tabs.is-boxed a:hover, .is-danger.hero-home .tabs.is-boxed a:hover, .is-danger.hero-company .tabs.is-boxed a:hover, .hero.is-danger .tabs.is-toggle a:hover, .is-danger.hero-home .tabs.is-toggle a:hover, .is-danger.hero-company .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-danger .tabs.is-boxed li.is-active a, .is-danger.hero-home .tabs.is-boxed li.is-active a, .hero.is-danger .tabs.is-boxed li.is-active a:hover, .is-danger.hero-home .tabs.is-boxed li.is-active a:hover, .hero.is-danger .tabs.is-toggle li.is-active a, .is-danger.hero-home .tabs.is-toggle li.is-active a, .hero.is-danger .tabs.is-toggle li.is-active a:hover, .is-danger.hero-home .tabs.is-toggle li.is-active a:hover {
+    .hero.is-danger .tabs.is-boxed li.is-active a, .is-danger.hero-home .tabs.is-boxed li.is-active a, .is-danger.hero-company .tabs.is-boxed li.is-active a, .hero.is-danger .tabs.is-boxed li.is-active a:hover, .is-danger.hero-home .tabs.is-boxed li.is-active a:hover, .is-danger.hero-company .tabs.is-boxed li.is-active a:hover, .hero.is-danger .tabs.is-toggle li.is-active a, .is-danger.hero-home .tabs.is-toggle li.is-active a, .is-danger.hero-company .tabs.is-toggle li.is-active a, .hero.is-danger .tabs.is-toggle li.is-active a:hover, .is-danger.hero-home .tabs.is-toggle li.is-active a:hover, .is-danger.hero-company .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #f14668; }
-    .hero.is-danger.is-bold, .is-danger.is-bold.hero-home {
+    .hero.is-danger.is-bold, .is-danger.is-bold.hero-home, .is-danger.is-bold.hero-company {
       background-image: linear-gradient(141deg, #fa0a62 0%, #f14668 71%, #f7595f 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-danger.is-bold .navbar-menu, .is-danger.is-bold.hero-home .navbar-menu {
+        .hero.is-danger.is-bold .navbar-menu, .is-danger.is-bold.hero-home .navbar-menu, .is-danger.is-bold.hero-company .navbar-menu {
           background-image: linear-gradient(141deg, #fa0a62 0%, #f14668 71%, #f7595f 100%); } }
-  .hero.is-small .hero-body, .is-small.hero-home .hero-body {
+  .hero.is-small .hero-body, .is-small.hero-home .hero-body, .is-small.hero-company .hero-body {
     padding-bottom: 1.5rem;
     padding-top: 1.5rem; }
   @media screen and (min-width: 769px), print {
-    .hero.is-medium .hero-body, .is-medium.hero-home .hero-body {
+    .hero.is-medium .hero-body, .is-medium.hero-home .hero-body, .is-medium.hero-company .hero-body {
       padding-bottom: 9rem;
       padding-top: 9rem; } }
   @media screen and (min-width: 769px), print {
-    .hero.is-large .hero-body, .is-large.hero-home .hero-body {
+    .hero.is-large .hero-body, .is-large.hero-home .hero-body, .is-large.hero-company .hero-body {
       padding-bottom: 18rem;
       padding-top: 18rem; } }
-  .hero.is-halfheight .hero-body, .is-halfheight.hero-home .hero-body, .hero.is-fullheight .hero-body, .is-fullheight.hero-home .hero-body, .hero.is-fullheight-with-navbar .hero-body, .is-fullheight-with-navbar.hero-home .hero-body {
+  .hero.is-halfheight .hero-body, .is-halfheight.hero-home .hero-body, .is-halfheight.hero-company .hero-body, .hero.is-fullheight .hero-body, .is-fullheight.hero-home .hero-body, .is-fullheight.hero-company .hero-body, .hero.is-fullheight-with-navbar .hero-body, .is-fullheight-with-navbar.hero-home .hero-body, .is-fullheight-with-navbar.hero-company .hero-body {
     align-items: center;
     display: flex; }
-    .hero.is-halfheight .hero-body > .container, .is-halfheight.hero-home .hero-body > .container, .hero.is-fullheight .hero-body > .container, .is-fullheight.hero-home .hero-body > .container, .hero.is-fullheight-with-navbar .hero-body > .container, .is-fullheight-with-navbar.hero-home .hero-body > .container {
+    .hero.is-halfheight .hero-body > .container, .is-halfheight.hero-home .hero-body > .container, .is-halfheight.hero-company .hero-body > .container, .hero.is-fullheight .hero-body > .container, .is-fullheight.hero-home .hero-body > .container, .is-fullheight.hero-company .hero-body > .container, .hero.is-fullheight-with-navbar .hero-body > .container, .is-fullheight-with-navbar.hero-home .hero-body > .container, .is-fullheight-with-navbar.hero-company .hero-body > .container {
       flex-grow: 1;
       flex-shrink: 1; }
-  .hero.is-halfheight, .is-halfheight.hero-home {
+  .hero.is-halfheight, .is-halfheight.hero-home, .is-halfheight.hero-company {
     min-height: 50vh; }
-  .hero.is-fullheight, .is-fullheight.hero-home {
+  .hero.is-fullheight, .is-fullheight.hero-home, .is-fullheight.hero-company {
     min-height: 100vh; }
 
 .hero-video {
@@ -7195,6 +7245,15 @@ label.panel-block {
   animation-duration: 2s;
   animation-fill-mode: forwards; }
 
+.hero-company {
+  background-image: url("../image/i2.jpg");
+  background-size: cover;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; }
+
 .title-main {
   font-size: 4rem; }
 
@@ -7217,7 +7276,7 @@ label.panel-block {
   border-bottom-right-radius: 15px; }
 
 .card-image-1 {
-  padding: 2rem;
+  padding: 3rem;
   background-color: #dbdbdb;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px; }
@@ -7256,6 +7315,9 @@ a {
 .fa-external-link-alt {
   font-size: 0.5em; }
 
+@media (width: 1280px) {
+  .map-column {
+    padding-right: 3rem; } }
 #map {
   width: 100%;
-  height: 300px; }
+  height: 350px; }
