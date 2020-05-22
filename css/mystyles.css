@@ -32,7 +32,7 @@
   transform-origin: center;
   width: 0.625em; }
 
-.box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .title-main:not(:last-child), .programming-title:not(:last-child), .section-title:not(:last-child), .logo-title:not(:last-child),
+.box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .title-main:not(:last-child), .programming-title:not(:last-child), .section-title:not(:last-child), .logo-title:not(:last-child), .product-type:not(:last-child),
 .subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .list:not(:last-child), .message:not(:last-child), .pagination:not(:last-child), .tabs:not(:last-child) {
   margin-bottom: 1.5rem; }
 
@@ -2189,7 +2189,7 @@ a.box:active {
     position: absolute;
     right: 0.5rem;
     top: 0.5rem; }
-  .notification .title, .notification .title-main, .notification .programming-title, .notification .section-title, .notification .logo-title,
+  .notification .title, .notification .title-main, .notification .programming-title, .notification .section-title, .notification .logo-title, .notification .product-type,
   .notification .subtitle,
   .notification .content {
     color: currentColor; }
@@ -2625,53 +2625,54 @@ a.box:active {
 a.tag:hover {
   text-decoration: underline; }
 
-.title, .title-main, .programming-title, .section-title, .logo-title,
+.title, .title-main, .programming-title, .section-title, .logo-title, .product-type,
 .subtitle {
   word-break: break-word; }
-  .title em, .title-main em, .programming-title em, .section-title em, .logo-title em,
+  .title em, .title-main em, .programming-title em, .section-title em, .logo-title em, .product-type em,
   .title span,
   .title-main span,
   .programming-title span,
   .section-title span,
   .logo-title span,
+  .product-type span,
   .subtitle em,
   .subtitle span {
     font-weight: inherit; }
-  .title sub, .title-main sub, .programming-title sub, .section-title sub, .logo-title sub,
+  .title sub, .title-main sub, .programming-title sub, .section-title sub, .logo-title sub, .product-type sub,
   .subtitle sub {
     font-size: 0.75em; }
-  .title sup, .title-main sup, .programming-title sup, .section-title sup, .logo-title sup,
+  .title sup, .title-main sup, .programming-title sup, .section-title sup, .logo-title sup, .product-type sup,
   .subtitle sup {
     font-size: 0.75em; }
-  .title .tag, .title-main .tag, .programming-title .tag, .section-title .tag, .logo-title .tag,
+  .title .tag, .title-main .tag, .programming-title .tag, .section-title .tag, .logo-title .tag, .product-type .tag,
   .subtitle .tag {
     vertical-align: middle; }
 
-.title, .title-main, .programming-title, .section-title, .logo-title {
+.title, .title-main, .programming-title, .section-title, .logo-title, .product-type {
   color: #363636;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125; }
-  .title strong, .title-main strong, .programming-title strong, .section-title strong, .logo-title strong {
+  .title strong, .title-main strong, .programming-title strong, .section-title strong, .logo-title strong, .product-type strong {
     color: inherit;
     font-weight: inherit; }
-  .title + .highlight, .title-main + .highlight, .programming-title + .highlight, .section-title + .highlight, .logo-title + .highlight {
+  .title + .highlight, .title-main + .highlight, .programming-title + .highlight, .section-title + .highlight, .logo-title + .highlight, .product-type + .highlight {
     margin-top: -0.75rem; }
-  .title:not(.is-spaced) + .subtitle, .title-main:not(.is-spaced) + .subtitle, .programming-title:not(.is-spaced) + .subtitle, .section-title:not(.is-spaced) + .subtitle, .logo-title:not(.is-spaced) + .subtitle {
+  .title:not(.is-spaced) + .subtitle, .title-main:not(.is-spaced) + .subtitle, .programming-title:not(.is-spaced) + .subtitle, .section-title:not(.is-spaced) + .subtitle, .logo-title:not(.is-spaced) + .subtitle, .product-type:not(.is-spaced) + .subtitle {
     margin-top: -1.25rem; }
-  .title.is-1, .is-1.title-main, .is-1.programming-title, .is-1.section-title, .is-1.logo-title {
+  .title.is-1, .is-1.title-main, .is-1.programming-title, .is-1.section-title, .is-1.logo-title, .is-1.product-type {
     font-size: 3rem; }
-  .title.is-2, .is-2.title-main, .is-2.programming-title, .is-2.section-title, .is-2.logo-title {
+  .title.is-2, .is-2.title-main, .is-2.programming-title, .is-2.section-title, .is-2.logo-title, .is-2.product-type {
     font-size: 2.5rem; }
-  .title.is-3, .is-3.title-main, .is-3.programming-title, .is-3.section-title, .is-3.logo-title {
+  .title.is-3, .is-3.title-main, .is-3.programming-title, .is-3.section-title, .is-3.logo-title, .is-3.product-type {
     font-size: 2rem; }
-  .title.is-4, .is-4.title-main, .is-4.programming-title, .is-4.section-title, .is-4.logo-title {
+  .title.is-4, .is-4.title-main, .is-4.programming-title, .is-4.section-title, .is-4.logo-title, .is-4.product-type {
     font-size: 1.5rem; }
-  .title.is-5, .is-5.title-main, .is-5.programming-title, .is-5.section-title, .is-5.logo-title {
+  .title.is-5, .is-5.title-main, .is-5.programming-title, .is-5.section-title, .is-5.logo-title, .is-5.product-type {
     font-size: 1.25rem; }
-  .title.is-6, .is-6.title-main, .is-6.programming-title, .is-6.section-title, .is-6.logo-title {
+  .title.is-6, .is-6.title-main, .is-6.programming-title, .is-6.section-title, .is-6.logo-title, .is-6.product-type {
     font-size: 1rem; }
-  .title.is-7, .is-7.title-main, .is-7.programming-title, .is-7.section-title, .is-7.logo-title {
+  .title.is-7, .is-7.title-main, .is-7.programming-title, .is-7.section-title, .is-7.logo-title, .is-7.product-type {
     font-size: 0.75rem; }
 
 .subtitle {
@@ -2682,7 +2683,7 @@ a.tag:hover {
   .subtitle strong {
     color: #363636;
     font-weight: 600; }
-  .subtitle:not(.is-spaced) + .title, .subtitle:not(.is-spaced) + .title-main, .subtitle:not(.is-spaced) + .programming-title, .subtitle:not(.is-spaced) + .section-title, .subtitle:not(.is-spaced) + .logo-title {
+  .subtitle:not(.is-spaced) + .title, .subtitle:not(.is-spaced) + .title-main, .subtitle:not(.is-spaced) + .programming-title, .subtitle:not(.is-spaced) + .section-title, .subtitle:not(.is-spaced) + .logo-title, .subtitle:not(.is-spaced) + .product-type {
     margin-top: -1.25rem; }
   .subtitle.is-1 {
     font-size: 3rem; }
@@ -3708,7 +3709,7 @@ button.dropdown-item {
   flex-grow: 0;
   flex-shrink: 0;
   justify-content: center; }
-  .level-item .title, .level-item .title-main, .level-item .programming-title, .level-item .section-title, .level-item .logo-title,
+  .level-item .title, .level-item .title-main, .level-item .programming-title, .level-item .section-title, .level-item .logo-title, .level-item .product-type,
   .level-item .subtitle {
     margin-bottom: 0; }
   @media screen and (max-width: 768px) {
@@ -6633,7 +6634,7 @@ label.panel-block {
     .is-white.hero-home strong,
     .is-white.hero-company strong {
       color: inherit; }
-    .hero.is-white .title, .is-white.hero-home .title, .is-white.hero-company .title, .hero.is-white .title-main, .is-white.hero-home .title-main, .is-white.hero-company .title-main, .hero.is-white .programming-title, .is-white.hero-home .programming-title, .is-white.hero-company .programming-title, .hero.is-white .section-title, .is-white.hero-home .section-title, .is-white.hero-company .section-title, .hero.is-white .logo-title, .is-white.hero-home .logo-title, .is-white.hero-company .logo-title {
+    .hero.is-white .title, .is-white.hero-home .title, .is-white.hero-company .title, .hero.is-white .title-main, .is-white.hero-home .title-main, .is-white.hero-company .title-main, .hero.is-white .programming-title, .is-white.hero-home .programming-title, .is-white.hero-company .programming-title, .hero.is-white .section-title, .is-white.hero-home .section-title, .is-white.hero-company .section-title, .hero.is-white .logo-title, .is-white.hero-home .logo-title, .is-white.hero-company .logo-title, .hero.is-white .product-type, .is-white.hero-home .product-type, .is-white.hero-company .product-type {
       color: #0a0a0a; }
     .hero.is-white .subtitle, .is-white.hero-home .subtitle, .is-white.hero-company .subtitle {
       color: rgba(10, 10, 10, 0.9); }
@@ -6687,7 +6688,7 @@ label.panel-block {
     .is-black.hero-home strong,
     .is-black.hero-company strong {
       color: inherit; }
-    .hero.is-black .title, .is-black.hero-home .title, .is-black.hero-company .title, .hero.is-black .title-main, .is-black.hero-home .title-main, .is-black.hero-company .title-main, .hero.is-black .programming-title, .is-black.hero-home .programming-title, .is-black.hero-company .programming-title, .hero.is-black .section-title, .is-black.hero-home .section-title, .is-black.hero-company .section-title, .hero.is-black .logo-title, .is-black.hero-home .logo-title, .is-black.hero-company .logo-title {
+    .hero.is-black .title, .is-black.hero-home .title, .is-black.hero-company .title, .hero.is-black .title-main, .is-black.hero-home .title-main, .is-black.hero-company .title-main, .hero.is-black .programming-title, .is-black.hero-home .programming-title, .is-black.hero-company .programming-title, .hero.is-black .section-title, .is-black.hero-home .section-title, .is-black.hero-company .section-title, .hero.is-black .logo-title, .is-black.hero-home .logo-title, .is-black.hero-company .logo-title, .hero.is-black .product-type, .is-black.hero-home .product-type, .is-black.hero-company .product-type {
       color: white; }
     .hero.is-black .subtitle, .is-black.hero-home .subtitle, .is-black.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6741,7 +6742,7 @@ label.panel-block {
     .is-light.hero-home strong,
     .is-light.hero-company strong {
       color: inherit; }
-    .hero.is-light .title, .is-light.hero-home .title, .is-light.hero-company .title, .hero.is-light .title-main, .is-light.hero-home .title-main, .is-light.hero-company .title-main, .hero.is-light .programming-title, .is-light.hero-home .programming-title, .is-light.hero-company .programming-title, .hero.is-light .section-title, .is-light.hero-home .section-title, .is-light.hero-company .section-title, .hero.is-light .logo-title, .is-light.hero-home .logo-title, .is-light.hero-company .logo-title {
+    .hero.is-light .title, .is-light.hero-home .title, .is-light.hero-company .title, .hero.is-light .title-main, .is-light.hero-home .title-main, .is-light.hero-company .title-main, .hero.is-light .programming-title, .is-light.hero-home .programming-title, .is-light.hero-company .programming-title, .hero.is-light .section-title, .is-light.hero-home .section-title, .is-light.hero-company .section-title, .hero.is-light .logo-title, .is-light.hero-home .logo-title, .is-light.hero-company .logo-title, .hero.is-light .product-type, .is-light.hero-home .product-type, .is-light.hero-company .product-type {
       color: rgba(0, 0, 0, 0.7); }
     .hero.is-light .subtitle, .is-light.hero-home .subtitle, .is-light.hero-company .subtitle {
       color: rgba(0, 0, 0, 0.9); }
@@ -6795,7 +6796,7 @@ label.panel-block {
     .is-dark.hero-home strong,
     .is-dark.hero-company strong {
       color: inherit; }
-    .hero.is-dark .title, .is-dark.hero-home .title, .is-dark.hero-company .title, .hero.is-dark .title-main, .is-dark.hero-home .title-main, .is-dark.hero-company .title-main, .hero.is-dark .programming-title, .is-dark.hero-home .programming-title, .is-dark.hero-company .programming-title, .hero.is-dark .section-title, .is-dark.hero-home .section-title, .is-dark.hero-company .section-title, .hero.is-dark .logo-title, .is-dark.hero-home .logo-title, .is-dark.hero-company .logo-title {
+    .hero.is-dark .title, .is-dark.hero-home .title, .is-dark.hero-company .title, .hero.is-dark .title-main, .is-dark.hero-home .title-main, .is-dark.hero-company .title-main, .hero.is-dark .programming-title, .is-dark.hero-home .programming-title, .is-dark.hero-company .programming-title, .hero.is-dark .section-title, .is-dark.hero-home .section-title, .is-dark.hero-company .section-title, .hero.is-dark .logo-title, .is-dark.hero-home .logo-title, .is-dark.hero-company .logo-title, .hero.is-dark .product-type, .is-dark.hero-home .product-type, .is-dark.hero-company .product-type {
       color: #fff; }
     .hero.is-dark .subtitle, .is-dark.hero-home .subtitle, .is-dark.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6849,7 +6850,7 @@ label.panel-block {
     .is-primary.hero-home strong,
     .is-primary.hero-company strong {
       color: inherit; }
-    .hero.is-primary .title, .is-primary.hero-home .title, .is-primary.hero-company .title, .hero.is-primary .title-main, .is-primary.hero-home .title-main, .is-primary.hero-company .title-main, .hero.is-primary .programming-title, .is-primary.hero-home .programming-title, .is-primary.hero-company .programming-title, .hero.is-primary .section-title, .is-primary.hero-home .section-title, .is-primary.hero-company .section-title, .hero.is-primary .logo-title, .is-primary.hero-home .logo-title, .is-primary.hero-company .logo-title {
+    .hero.is-primary .title, .is-primary.hero-home .title, .is-primary.hero-company .title, .hero.is-primary .title-main, .is-primary.hero-home .title-main, .is-primary.hero-company .title-main, .hero.is-primary .programming-title, .is-primary.hero-home .programming-title, .is-primary.hero-company .programming-title, .hero.is-primary .section-title, .is-primary.hero-home .section-title, .is-primary.hero-company .section-title, .hero.is-primary .logo-title, .is-primary.hero-home .logo-title, .is-primary.hero-company .logo-title, .hero.is-primary .product-type, .is-primary.hero-home .product-type, .is-primary.hero-company .product-type {
       color: #fff; }
     .hero.is-primary .subtitle, .is-primary.hero-home .subtitle, .is-primary.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6903,7 +6904,7 @@ label.panel-block {
     .is-link.hero-home strong,
     .is-link.hero-company strong {
       color: inherit; }
-    .hero.is-link .title, .is-link.hero-home .title, .is-link.hero-company .title, .hero.is-link .title-main, .is-link.hero-home .title-main, .is-link.hero-company .title-main, .hero.is-link .programming-title, .is-link.hero-home .programming-title, .is-link.hero-company .programming-title, .hero.is-link .section-title, .is-link.hero-home .section-title, .is-link.hero-company .section-title, .hero.is-link .logo-title, .is-link.hero-home .logo-title, .is-link.hero-company .logo-title {
+    .hero.is-link .title, .is-link.hero-home .title, .is-link.hero-company .title, .hero.is-link .title-main, .is-link.hero-home .title-main, .is-link.hero-company .title-main, .hero.is-link .programming-title, .is-link.hero-home .programming-title, .is-link.hero-company .programming-title, .hero.is-link .section-title, .is-link.hero-home .section-title, .is-link.hero-company .section-title, .hero.is-link .logo-title, .is-link.hero-home .logo-title, .is-link.hero-company .logo-title, .hero.is-link .product-type, .is-link.hero-home .product-type, .is-link.hero-company .product-type {
       color: #fff; }
     .hero.is-link .subtitle, .is-link.hero-home .subtitle, .is-link.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6957,7 +6958,7 @@ label.panel-block {
     .is-info.hero-home strong,
     .is-info.hero-company strong {
       color: inherit; }
-    .hero.is-info .title, .is-info.hero-home .title, .is-info.hero-company .title, .hero.is-info .title-main, .is-info.hero-home .title-main, .is-info.hero-company .title-main, .hero.is-info .programming-title, .is-info.hero-home .programming-title, .is-info.hero-company .programming-title, .hero.is-info .section-title, .is-info.hero-home .section-title, .is-info.hero-company .section-title, .hero.is-info .logo-title, .is-info.hero-home .logo-title, .is-info.hero-company .logo-title {
+    .hero.is-info .title, .is-info.hero-home .title, .is-info.hero-company .title, .hero.is-info .title-main, .is-info.hero-home .title-main, .is-info.hero-company .title-main, .hero.is-info .programming-title, .is-info.hero-home .programming-title, .is-info.hero-company .programming-title, .hero.is-info .section-title, .is-info.hero-home .section-title, .is-info.hero-company .section-title, .hero.is-info .logo-title, .is-info.hero-home .logo-title, .is-info.hero-company .logo-title, .hero.is-info .product-type, .is-info.hero-home .product-type, .is-info.hero-company .product-type {
       color: #fff; }
     .hero.is-info .subtitle, .is-info.hero-home .subtitle, .is-info.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -7011,7 +7012,7 @@ label.panel-block {
     .is-success.hero-home strong,
     .is-success.hero-company strong {
       color: inherit; }
-    .hero.is-success .title, .is-success.hero-home .title, .is-success.hero-company .title, .hero.is-success .title-main, .is-success.hero-home .title-main, .is-success.hero-company .title-main, .hero.is-success .programming-title, .is-success.hero-home .programming-title, .is-success.hero-company .programming-title, .hero.is-success .section-title, .is-success.hero-home .section-title, .is-success.hero-company .section-title, .hero.is-success .logo-title, .is-success.hero-home .logo-title, .is-success.hero-company .logo-title {
+    .hero.is-success .title, .is-success.hero-home .title, .is-success.hero-company .title, .hero.is-success .title-main, .is-success.hero-home .title-main, .is-success.hero-company .title-main, .hero.is-success .programming-title, .is-success.hero-home .programming-title, .is-success.hero-company .programming-title, .hero.is-success .section-title, .is-success.hero-home .section-title, .is-success.hero-company .section-title, .hero.is-success .logo-title, .is-success.hero-home .logo-title, .is-success.hero-company .logo-title, .hero.is-success .product-type, .is-success.hero-home .product-type, .is-success.hero-company .product-type {
       color: #fff; }
     .hero.is-success .subtitle, .is-success.hero-home .subtitle, .is-success.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -7065,7 +7066,7 @@ label.panel-block {
     .is-warning.hero-home strong,
     .is-warning.hero-company strong {
       color: inherit; }
-    .hero.is-warning .title, .is-warning.hero-home .title, .is-warning.hero-company .title, .hero.is-warning .title-main, .is-warning.hero-home .title-main, .is-warning.hero-company .title-main, .hero.is-warning .programming-title, .is-warning.hero-home .programming-title, .is-warning.hero-company .programming-title, .hero.is-warning .section-title, .is-warning.hero-home .section-title, .is-warning.hero-company .section-title, .hero.is-warning .logo-title, .is-warning.hero-home .logo-title, .is-warning.hero-company .logo-title {
+    .hero.is-warning .title, .is-warning.hero-home .title, .is-warning.hero-company .title, .hero.is-warning .title-main, .is-warning.hero-home .title-main, .is-warning.hero-company .title-main, .hero.is-warning .programming-title, .is-warning.hero-home .programming-title, .is-warning.hero-company .programming-title, .hero.is-warning .section-title, .is-warning.hero-home .section-title, .is-warning.hero-company .section-title, .hero.is-warning .logo-title, .is-warning.hero-home .logo-title, .is-warning.hero-company .logo-title, .hero.is-warning .product-type, .is-warning.hero-home .product-type, .is-warning.hero-company .product-type {
       color: rgba(0, 0, 0, 0.7); }
     .hero.is-warning .subtitle, .is-warning.hero-home .subtitle, .is-warning.hero-company .subtitle {
       color: rgba(0, 0, 0, 0.9); }
@@ -7119,7 +7120,7 @@ label.panel-block {
     .is-danger.hero-home strong,
     .is-danger.hero-company strong {
       color: inherit; }
-    .hero.is-danger .title, .is-danger.hero-home .title, .is-danger.hero-company .title, .hero.is-danger .title-main, .is-danger.hero-home .title-main, .is-danger.hero-company .title-main, .hero.is-danger .programming-title, .is-danger.hero-home .programming-title, .is-danger.hero-company .programming-title, .hero.is-danger .section-title, .is-danger.hero-home .section-title, .is-danger.hero-company .section-title, .hero.is-danger .logo-title, .is-danger.hero-home .logo-title, .is-danger.hero-company .logo-title {
+    .hero.is-danger .title, .is-danger.hero-home .title, .is-danger.hero-company .title, .hero.is-danger .title-main, .is-danger.hero-home .title-main, .is-danger.hero-company .title-main, .hero.is-danger .programming-title, .is-danger.hero-home .programming-title, .is-danger.hero-company .programming-title, .hero.is-danger .section-title, .is-danger.hero-home .section-title, .is-danger.hero-company .section-title, .hero.is-danger .logo-title, .is-danger.hero-home .logo-title, .is-danger.hero-company .logo-title, .hero.is-danger .product-type, .is-danger.hero-home .product-type, .is-danger.hero-company .product-type {
       color: #fff; }
     .hero.is-danger .subtitle, .is-danger.hero-home .subtitle, .is-danger.hero-company .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -7278,7 +7279,7 @@ label.panel-block {
   border-bottom-right-radius: 15px; }
 
 .card-image-1 {
-  padding: 3rem;
+  padding: 3.5rem;
   background-color: #dbdbdb;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px; }
@@ -7351,3 +7352,19 @@ a {
 #map {
   width: 100%;
   height: 350px; }
+
+.product-image {
+  min-height: 50%;
+  max-height: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-width: 100%;
+  object-fit: scale-down; }
+
+.product-title {
+  font-weight: bold;
+  text-align: center; }
+
+.product-caption {
+  font-size: 0.8rem;
+  text-align: center; }
